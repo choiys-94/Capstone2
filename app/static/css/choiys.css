@@ -1,0 +1,15 @@
+.domain_search_input::placeholder
+{
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	color: #aaaaaa !important;
+}
+
+.domain_search_selected
+{
+	width: 100%;
+	font-size: 24px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-left: 14px;
+}

@@ -1,0 +1,79 @@
+{% include 'header.html' %}
+
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content text-center">
+							<div class="home_title">Find malwares on webpage</div>
+							<div class="home_text">Put, Search, View.<br>That's all.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<div class="domain_search_form_container">
+							<form action="#" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">
+								<div class="d-flex flex-row align-items-center justify-content-start">
+									<input type="text" class="domain_search_input" placeholder="targetURL" required="required">
+									<div class="domain_search_dropdown d-flex flex-row align-items-center justify-content-start">
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										<div class="domain_search_selected">single</div>
+										<ul>
+											<li>single</li>
+											<li>related</li>
+										</ul>
+									</div>
+								</div>
+								<button class="domain_search_button d-flex flex-row align-items-center justify-content-center"><img src="{{ url_for('static', filename='images/search.png') }}" alt="">Search</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col magic_fade_in">
+					<div class="section_title text-center"><h2>Reported List</h2></div>
+				</div>
+			</div>
+			<div style="text-align: center;">
+{% for i in range(num) %}
+	<button class="btn btn-default">
+	<a href="/test/{{ i+1 }}">{{ i+1 }}</a>
+	</button>
+{% endfor %}
+			<br><br>
+			</div>
+{% if passed_num %}
+			<iframe src="/report/{{ passed_num }}" frameborder=0 width="100%" height="1024px" align="center" scrolling="auto"></iframe>
+{% elif num==0 %}
+			nope
+{% else %}
+			<iframe src="/report/latest" frameborder=0 width="100%" height="1024px" align="center" scrolling="auto"></iframe>
+{% endif %}
+		</div>
+	</div>
+</div>
+
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename='css/bootstrap-4.1.2/popper.js') }}"></script>
+<script src="{{ url_for('static', filename='css/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TweenMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/TimelineMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/scrollmagic/ScrollMagic.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/animation.gsap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/greensock/ScrollToPlugin.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/easing/easing.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/progressbar/progressbar.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/parallax-js-master/parallax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>
