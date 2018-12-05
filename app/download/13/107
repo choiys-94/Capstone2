@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>대한내과학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.1.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim_sub.css" />
+<script type="text/javascript" src="/script/jquery.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/unreset.css" />
+<link type="text/css" rel="stylesheet" href="/admin/button_package/button.css" />
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15291461-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98717380-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Hotjar Tracking Code for http://www.kaim.or.kr/ -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1001270,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+ -->
+<script type="text/javascript" src="/script/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	$('.date_month').mask('9999-99');
+});
+</script>
+<!-- 2016-11-21 김영환추가 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+<link rel='stylesheet' type='text/css' href='/admin/mail/conf/jquery-flick.css'/>
+<script type="text/javascript" src="/script/kaim.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/jquery.alerts.css"/>
+<SCRIPT LANGUAGE="javascript" SRC="/script/jquery.ui-jalert.js"></SCRIPT>
+<script type="text/javascript">
+	function sendTwitter(sTitle,sUrl){
+		var shref ="http://twitter.com/home?status="+encodeURIComponent(sTitle)+" "+encodeURIComponent(sUrl);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+
+	//페이스북
+	function sendFacebook(sTitle,sUrl){
+		var shref ="http://www.facebook.com/share.php?u="+encodeURIComponent(sUrl)+"&t="+encodeURIComponent(sTitle);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+	function depart_pass_pop(){
+		var date1 = "1531818000";
+		var date2 = "1544037973";
+		if(date2 > date1){
+			window.open("/popup_main/popup_list.php","","width=1020,height=900,scrollbars=yes")
+		}else{
+			alert("금일 오후 6시부터 확인 가능합니다.");
+		}
+	}
+</script>
+
+
+</head>
+<body id="body">
+
+<div class="wrapper">
+	<div class="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="/" title="홈으로 이동"><img src="/image/common/header_logo.jpg" alt="대한내과학회" /></a></h1>    
+			
+
+			<div class="utilMenu">
+				<div class="majorBtn">
+					<div>
+																													</div>
+				</div>
+
+				<ul>
+					
+										<li><a href="/">Home</a></li>
+										<li><a href="/member/?sn=3">Login</a></li>
+					<li><a href="/member/?sn=1">Join</a></li>
+										<li><a href="http://eng.kaim.or.kr/" target="_blank">English</a></li>
+				</ul>	
+			</div>
+			
+			<ul class="globalMenu">
+				<li class="facebook"><a href="https://www.facebook.com/kaim4311" target="_blank"><img src="/image/common/headerBtn_facebook.png" alt="Facebook" /></a></li>
+				<li class="viewPopup"><a class="globalSearch" href="#">전체검색</a></li>
+				<li class="viewPopup"><a class="allMenu" href="#">전체메뉴</a></li>
+			</ul>
+
+
+			<div class="globalPopup allMenu">
+				<ul class="gnb">
+										<li><a href="/about/">학회소개</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/about/">인사말 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=2">대한내과학회 약사 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=3">회칙 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=4">조직도 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=5">임원진 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=6">평의원 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=7&sn2=1">위원회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=8">지회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=10">연구비, 학술상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=11">사무국 안내 및 연락처 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=schedule">학술행사</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=schedule">연간일정 </a></li>
+														<li style="font-size:11px;"><a href="/schedule/work_schedule.php">학술행사 일정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/major/">전공의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/major/?sn=1">전공의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/major/?sn=2">내과전문의 자격시험 </a></li>
+													</ul>
+					</li>
+															<li><a href="/specialist/">분과전문의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/specialist/?sn=1">전임의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/specialist/depart/info.php">분과전문의 자격인정시험 및 자격갱신 </a></li>
+													</ul>
+					</li>
+															<li><a href="/education/">평생교육</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/education/?sn=1">제도 도입 및 취지 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=2">규정 및 시행규칙 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=3">연수강좌 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=4">이수증 발급 안내 </a></li>
+														<li style="font-size:11px;"><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육 </a></li>
+													</ul>
+					</li>
+															<li><a href="/ethics/">의료윤리</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/ethics/?sn=1">내과의사 윤리선언 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집 </a></li>
+														<li style="font-size:11px;"><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=2">죽음과 임종 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=5">연명의료 결정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/pds/?sn=1&sn2=1">자료실</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/pds/?sn=1&sn2=1">노년내과 교육목표 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=pds2">보험관련 자료 </a></li>
+														<li style="font-size:11px;"><a href="http://term.kma.org/" target="_blank"">의학용어 검색 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=notice">회원공간</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=notice">공지사항/새소식 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=gallery">사진 모음 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=event">게시판 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=proposal">제안방 </a></li>
+														<li style="font-size:11px;"><a href="/mypage/?sn=1">My Page </a></li>
+													</ul>
+					</li>
+									</ul>
+				
+				<p class="close"><a href="#">메뉴 닫기</a></p>
+			</div>
+			
+			
+			<div class="globalPopup globalSearch">
+			
+				<dl>
+					<dt>전체검색</dt>
+					<dd>
+						<form id="total_seachF" name="total_seachF" action="/search/" method="post">
+							<fieldset>
+								<legend>대한내과학회 전체검색</legend>
+								<input type="text" name="key" id="key" placeholder="검색어를 입력하세요." class="_placeholder" />
+								<input class="btnBg" type="submit" value="검색" />
+							</fieldset>
+						</form>
+					</dd>
+				</dl>
+				
+				<p class="close"><a href="#">검색 닫기</a></p>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+	<div id="container"  >
+
+		<div class="contents ">
+
+					<div class="titArea">
+				<h2>
+					공지사항/새소식				</h2>
+				
+				<dl>
+					<dt class="hidden">페이지 경로</dt>
+					<dd>Home &gt; 회원공간 &gt; 공지사항/새소식<!--  --></dd>
+				</dl>
+				
+				<ul class="subUtil">
+					<li><a href="javascript:view_mode_change('')" title="와이드모드"><img src="/image/sub/subUtilBtn_wide.gif" alt="" /></a></li>
+					<li><a href="javascript:sendFacebook('facebook','www.kaim.or.kr///bbs/index.html?code=notice&page=8')" title="페이스북에 공유하기"><img src="/image/sub/subUtilBtn_facebook.gif" alt="" /></a></li>
+					<li><a href="javascript:sendTwitter('twitter','www.kaim.or.kr///bbs/index.html?code=notice&page=8')" title="트위터에 공유하기"><img src="/image/sub/subUtilBtn_twitter.gif" alt="" /></a></li>
+					<li><a href="#" title="글자크기 키우기"><img src="/image/sub/subUtilBtn_plus.gif" alt="" class="font_size_plus"/></a></li>
+					<li><a href="#" title="글자크기 줄이기"><img src="/image/sub/subUtilBtn_minus.gif" alt="" class="font_size_minus"/></a></li>
+					<li><a href="#" title="현재페이지 프린트 하기"><img src="/image/sub/subUtilBtn_print.gif" alt="" class="contents_print"/></a></li>
+				</ul>
+			</div>
+						<dl id="lnb">
+				<dt>회원공간</dt>
+				<dd>
+					<ul class="subMenu">
+												<li class="on"><a href="/bbs/?code=notice">공지사항/새소식</a>
+													</li>
+												<li ><a href="/bbs/?code=gallery">사진 모음</a>
+													</li>
+												<li ><a href="/bbs/?code=event">게시판</a>
+													</li>
+												<li ><a href="/bbs/?code=proposal">제안방</a>
+													</li>
+												<li ><a href="/mypage/?sn=1">My Page</a>
+													</li>
+											</ul>
+				</dd>
+			</dl>
+							<div class="print_area"><script type="text/javascript">
+//<![CDATA[
+
+	$(function () {
+		$(function () { $(".delete").click(function () { if(confirm('삭제하시겠습니까?')) return true; return false; }); });
+						$("#gubun").change(function () { document.location="/bbs/index.html?code=notice&category=&gubun="+$(this).val(); });
+		
+
+			});
+
+//]]>
+</script>
+
+
+		
+	
+	
+	<p class="bbsBrief">
+	
+		<span class="fl">* 총 게시물 : 1,181</span>
+		<span class="fr">
+				현재페이지 8 / 79		</span>
+	
+	</p>
+
+
+		<table class="bbs borderTbl">
+			<colgroup>
+				<col style="width:7%;">
+				<col style="width:200px;">
+								<col style="width:10%;">
+												<col style="width:10%;">
+				<col style="width:15%;">
+												
+			</colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+										<th>파일</th>
+										
+										<th>조회수</th>
+					
+					<th>등록일</th>
+					
+																				
+				</tr>
+			</thead>
+			<tbody>
+			
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10667&mode=view&keyfield=&key=" class="">
+							<span>[대한내과학회] 대한의사협회 연수교육 지침변경에 따른 필수...</span>
+													</a>
+						
+					</td>
+					<td>
+										  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE4MDMxNjEwMzE1OC4xNjAwLjAuMA==&filename=64yA7ZWc64K06rO87ZWZ7ZqMIOygnDEx7LCoIOyngOuPhOyghOusuOydmOq1kOycoSDtlITroZzqt7jrnqgg67CPIOydmOyCrOuptO2XiOqwseyLoCDtlYTsiJjqs7zrqqkg7ZSE66Gc6re4656oIOyViOuCtC5wZGY="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="대한내과학회 제11차 지도전문의교육 프로그램 및 의사면허갱신 필수과목 프로그램 안내.pdf" align="middle"/></a>
+										  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE4MDMxOTE3MDIxOC42OTcwLjQuMA==&filename=64yA7ZWc7J2Y7IKs7ZiR7ZqMIOyXsOyImOq1kOycoSDsp4Dsuajrs4Dqsr0ucGRm"><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="대한의사협회 연수교육 지침변경.pdf" align="middle"/></a>
+										</td>
+										<td>11626</td>
+					<td>2018-03-16</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10594&mode=view&keyfield=&key=" class="">
+							<span>내과전공의 초음파 지도인증의 자격 기준 안내...</span>
+													</a>
+						
+					</td>
+					<td>
+										</td>
+										<td>16591</td>
+					<td>2018-01-31</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10396&mode=view&keyfield=&key=" class="">
+							<span>대한내과학회 홈페이지 회원 정보 수정 요청...</span>
+													</a>
+						
+					</td>
+					<td>
+										</td>
+										<td>12336</td>
+					<td>2017-11-02</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=9962&mode=view&keyfield=&key=" class="">
+							<span>'흥미로운 증례 코너' 오픈</span>
+													</a>
+						
+					</td>
+					<td>
+										</td>
+										<td>19355</td>
+					<td>2017-03-02</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=3740&mode=view&keyfield=&key=" class="">
+							<span>[대한내과학회] 전공의의 연차별 수련교과과정 일부개정 안내...</span>
+													</a>
+						
+					</td>
+					<td>
+										  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8xNDY1MzQ3OTA0X7Trs7vH0CAyMDE2LTI2N8ijIC0gwPyw+MDHwMcgv6zC97qwILz2t8Oxs7D6sPrBpCDAz7rOsLPBpCC+yLO7LnBkZg==&filename=MTQ2NTM0NzkwNF/rjIDrgrTtlZkgMjAxNi0yNjftmLggLSDsoITqs7XsnZjsnZgg7Jew7LCo67OEIOyImOugqOq1kOqzvOqzvOyglSDsnbzrtoDqsJzsoJUg7JWI64K0LnBkZg=="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="1465347904_대내학 2016-267호 - 전공의의 연차별 수련교과과정 일부개정 안내.pdf" align="middle"/></a>
+										  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8xNDY1MzQ3OTA0X7qww7cgMS4gtOvH0cDHx9DIuCCw+LmuICi068DHx9AgwaYyMDE2LTI3OcijKS5wZGY=&filename=MTQ2NTM0NzkwNF/rs4TssqggMS4g64yA7ZWc7J2Y7ZWZ7ZqMIOqzteusuCAo64yA7J2Y7ZWZIOygnDIwMTYtMjc57Zi4KS5wZGY="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="1465347904_별첨 1. 대한의학회 공문 (대의학 제2016-279호).pdf" align="middle"/></a>
+										</td>
+										<td>23881</td>
+					<td>2016-06-08</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10606&mode=view&keyfield=&key=" class="">
+							<span>2018년 내과전문의자격증 발급 안내...</span>
+													</a>
+						
+					</td>
+					<td>
+										  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE4MDMyODE0Mjc0NS42ODkwLjguMA==&filename=7KCE66y47J2YIOyekOqyqeymnSDsnITsnoTsnqUuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="전문의 자격증 위임장.hwp" align="middle"/></a>
+										</td>
+										<td>14806</td>
+					<td>2018-02-02</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=9834&mode=view&keyfield=&key=" class="">
+							<span>대한내과학회 하나SK카드 제휴 Platinum 카드...</span>
+													</a>
+						
+					</td>
+					<td>
+										</td>
+										<td>34089</td>
+					<td>2016-12-29</td>
+															
+										
+				</tr>
+												<tr>
+					<td><span class="bullet bgcDef">공지</span></td>
+					<td class="tit">
+						<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=3759&mode=view&keyfield=&key=" class="">
+							<span>보건복지부 입원전담전문의 시범사업 참여 신청 의료기관 채용...</span>
+													</a>
+						
+					</td>
+					<td>
+										</td>
+										<td>21380</td>
+					<td>2016-08-18</td>
+															
+										
+				</tr>
+								
+												<tr>
+					<td>1076</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10156&mode=view&keyfield=&key=" class="">
+							<span>2017년도 진단용 방사선 안전관리책임자 교육 참가 협조 요청 및 안내(질병관리본부)</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYyNjEwMDQzNS40MTEwLjguMA==&filename=MTcwNjIzW+uwnOyGoV0gMjAxN+uFhOuPhCDsp4Tri6jsmqkg67Cp7IKs7ISgIOyViOyghOq0gOumrOyxheyehOyekCDqtZDsnKEg7LC46rCAIO2YkeyhsCDsmpTssq0g67CPIOyViOuCtCjsp4jrs5HqtIDrpqzrs7jrtoApLmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="170623[발송] 2017년도 진단용 방사선 안전관리책임자 교육 참가 협조 요청 및 안내(질병관리본부).hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYyNjEwMDQzNS43MjQwLjAuMQ==&filename=67aZ7J6EXyjrsLDtj6wpIDIwMTfrhYTrj4Rf7KeE64uo7JqpX+uwqeyCrOyEoF/slYjsoITqtIDrpqzssYXsnoTsnpBf6rWQ7JyhX+yLpOyLnF/slYjrgrQuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="붙임_(배포) 2017년도_진단용_방사선_안전관리책임자_교육_실시_안내.hwp" align="middle"/></a>
+										</td>
+										<td>3695</td>
+					<td>2017-06-26</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1075</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10144&mode=view&keyfield=&key=" class="">
+							<span>2017년 보건의료기술진흥 유공자 정부포상 관련 대상자 추천 의뢰의 건</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYxOTE2NDQ1NC44MTEwLjUuMA==&filename=W+uMgO2VnOydmOyCrO2Yke2ajF0gMjAxN+uFhCDrs7TqsbTsnZjro4zquLDsiKDsp4TtnaUg7Jyg6rO17J6QIOygleu2gO2PrOyDgSDqtIDroKgg64yA7IOB7J6QIOy2lOyynCDsnZjrorDsnZgg6rG0Lmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="[대한의사협회] 2017년 보건의료기술진흥 유공자 정부포상 관련 대상자 추천 의뢰의 건.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYxOTE2NDQ1Ni40MDYwLjguMQ==&filename=W+u2meyehOyekOujjF0yMDE364WE64+EIOuztOqxtOydmOujjOq4sOyIoOynhO2dpeycoOqzteyekCDsoJXrtoDtj6zsg4Hqs4Ttmo0g6rO16rOg66y4Lmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="[붙임자료]2017년도 보건의료기술진흥유공자 정부포상계획 공고문.hwp" align="middle"/></a>
+										</td>
+										<td>2836</td>
+					<td>2017-06-19</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1074</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10141&mode=view&keyfield=&key=" class="">
+							<span>한국보건의료인국가시험원, 보건의료인 면허(자격)증 교부신청용 의사진단서 표준문구 수정 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYxOTE1MzU0OC42MjEwLjUuMA==&filename=W+uMgOydmO2YkSDsoJw2ODktMjE5Nu2YuF0g7ZWc6rWt67O06rG07J2Y66OM7J246rWt6rCA7Iuc7ZeY7JuQLCDrs7TqsbTsnZjro4zsnbgg66m07ZeIKOyekOqyqSnspp0g6rWQ67aA7Iug7LKt7JqpIOydmOyCrOynhOuLqOyEnCDtkZzspIDrrLjqtawg7IiY7KCVIOuTsSDslYjrgrQucGRm"><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="[대의협 제689-2196호] 한국보건의료인국가시험원, 보건의료인 면허(자격)증 교부신청용 의사진단서 표준문구 수정 등 안내.pdf" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYxOTE1MzU0OC43MzcwLjYuMQ==&filename=W+u2meyehF0g7ZWc6rWt67O06rG07J2Y66OM7J246rWt6rCA7Iuc7ZeY7JuQLCDrs7TqsbTsnZjro4zsnbgg66m07ZeIKOyekOqyqSnspp0g6rWQ67aA7Iug7LKt7JqpIOydmOyCrOynhOuLqOyEnCDtkZzspIDrrLjqtawg7IiY7KCVIOuTsSDtmJHsobDsmpTssq0ucGRm"><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="[붙임] 한국보건의료인국가시험원, 보건의료인 면허(자격)증 교부신청용 의사진단서 표준문구 수정 등 협조요청.pdf" align="middle"/></a>
+										</td>
+										<td>3729</td>
+					<td>2017-06-19</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1073</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10124&mode=view&keyfield=&key=" class="">
+							<span>한국보건산업진흥원, 외국인환자 유치의료기관 역량강화 교육 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYwOTE1NDEwNS44ODUwLjQuMA==&filename=W+uMgOydmO2YkSDsoJw2ODktMTk5M+2YuF0g7ZWc6rWt67O06rG07IKw7JeF7KeE7Z2l7JuQLCDsmbjqta3snbjtmZjsnpAg7Jyg7LmY7J2Y66OM6riw6rSAIOyXreufieqwle2ZlCDqtZDsnKEg7JWI64K0LnBkZg=="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="[대의협 제689-1993호] 한국보건산업진흥원, 외국인환자 유치의료기관 역량강화 교육 안내.pdf" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYwOTE1NDEwNi42ODAuOC4x&filename=W+u2meyehDFdIO2VnOq1reuztOqxtOyCsOyXheynhO2dpeybkCwg7Jm46rWt7J247ZmY7J6QIOycoOy5mOydmOujjOq4sOq0gCDsl63rn4nqsJXtmZQg6rWQ7JyhIOyViOuCtC5wZGY="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="[붙임1] 한국보건산업진흥원, 외국인환자 유치의료기관 역량강화 교육 안내.pdf" align="middle"/></a>
+										</td>
+										<td>3375</td>
+					<td>2017-06-09</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1072</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10111&mode=view&keyfield=&key=" class="">
+							<span>「예방접종 후 이상반응 감시 및 인과성 판단 워크숍」개최 안내 및 참석 요청</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYwMjEyMTQ0OC42NjYwLjcuMA==&filename=44CM7JiI67Cp7KCR7KKFIO2bhCDsnbTsg4HrsJjsnZEg6rCQ7IucIOuwjyDsnbjqs7zshLEg7YyQ64uoIOybjO2BrOyIjeOAjeqwnOy1nCDslYjrgrQg67CPIOywuOyEnSDsmpTssq0oNCkuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="「예방접종 후 이상반응 감시 및 인과성 판단 워크숍」개최 안내 및 참석 요청(4).hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDYwMjEyMTQ0OC45MTEwLjQuMQ==&filename=Mi4g7KeI67OR6rSA66as67O467aALeyEuOqzhOuztOqxtOq4sOq1rCDqs7Xrj5nso7zqtIAg7JiI67Cp7KCR7KKFIO2bhCDsnbTsg4HrsJjsnZEg6rCQ7IucIOuwjyDsnbjqs7zshLHtjJDri6gg7JuM7YGs7IiNIOyEuOu2gOydvOyglSjslYgpLmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2. 질병관리본부-세계보건기구 공동주관 예방접종 후 이상반응 감시 및 인과성판단 워크숍 세부일정(안).hwp" align="middle"/></a>
+										</td>
+										<td>2721</td>
+					<td>2017-06-02</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1071</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10091&mode=view&keyfield=&key=" class="">
+							<span>질병관리본부 희귀질환 진단 및 치료법 개발을 위한 질병경과연구 과제 제안요약서 공모 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyOTEwMzgzMS40NDEwLjguMA==&filename=7KeI67OR6rSA66as67O467aAIOqzteusuDEuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="질병관리본부 공문1.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyOTEwMzgzMS41ODkwLjguMQ==&filename=7Z2s6reA7KeI7ZmYIOyehOyDgeyXsOq1rCDsoJzslYjsmpTslb3shJwuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="희귀질환 임상연구 제안요약서.hwp" align="middle"/></a>
+										</td>
+										<td>2763</td>
+					<td>2017-05-29</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1070</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10090&mode=view&keyfield=&key=" class="">
+							<span>한국과학기술한림원 2018년도 신입 정회원 후보자 추천 의뢰</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyOTEwMzQwMi45OTgwLjIuMA==&filename=MjAxOOuFhOuPhCDtlZzrprzsm5DsoJXtmozsm5Ag7ZuE67O07J6QIOy2lOyynOyEnCDslpHsi50uaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2018년도 한림원정회원 후보자 추천서 양식.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyOTEwMzQwMy4xMTcwLjkuMQ==&filename=7ZWc6rWt6rO87ZWZ6riw7Iig7ZWc66a87JuQIDIwMTjrhYTrj4Qg7Iug7J6FIOygle2ajOybkCDtm4Trs7TsnpAg7LaU7LKcIOydmOuisC5od3A="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="한국과학기술한림원 2018년도 신입 정회원 후보자 추천 의뢰.hwp" align="middle"/></a>
+										</td>
+										<td>2556</td>
+					<td>2017-05-29</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1069</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10089&mode=view&keyfield=&key=" class="">
+							<span>제27회 분쉬의학상 젊은의학자상 수상후보자 공모 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNjExMzgzMy44OTkwLjAuMA==&filename=MjAxN18yOTMo7KCcMjftmowg67aE7Ims7J2Y7ZWZ7IOBIOuzuOyDgSDsiJjsg4Htm4Trs7TsnpAg7LaU7LKcIOydmOuisCkt67aZ7J6ELmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2017_293(제27회 분쉬의학상 본상 수상후보자 추천 의뢰)-붙임.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNjExMzgzMy45ODMwLjYuMQ==&filename=MjAxN18yOTMo7KCcMjftmowg67aE7Ims7J2Y7ZWZ7IOBIOuzuOyDgSDsiJjsg4Htm4Trs7TsnpAg7LaU7LKcIOydmOuisC3tmozsm5DtlZntmowpLnBkZg=="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="2017_293(제27회 분쉬의학상 본상 수상후보자 추천 의뢰-회원학회).pdf" align="middle"/></a>
+										</td>
+										<td>2702</td>
+					<td>2017-05-26</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1068</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10088&mode=view&keyfield=&key=" class="">
+							<span>제27회 분쉬의학상 본상 수상후보자 추천 의뢰</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNjExMzIxNy4xOTUwLjIuMA==&filename=MjAxN18yOTMo7KCcMjftmowg67aE7Ims7J2Y7ZWZ7IOBIOuzuOyDgSDsiJjsg4Htm4Trs7TsnpAg7LaU7LKcIOydmOuisCkt67aZ7J6ELmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2017_293(제27회 분쉬의학상 본상 수상후보자 추천 의뢰)-붙임.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNjExMzIxNy4yODIwLjUuMQ==&filename=MjAxN18yOTMo7KCcMjftmowg67aE7Ims7J2Y7ZWZ7IOBIOuzuOyDgSDsiJjsg4Htm4Trs7TsnpAg7LaU7LKcIOydmOuisC3tmozsm5DtlZntmowpLnBkZg=="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="2017_293(제27회 분쉬의학상 본상 수상후보자 추천 의뢰-회원학회).pdf" align="middle"/></a>
+										</td>
+										<td>1934</td>
+					<td>2017-05-26</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1067</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10077&mode=view&keyfield=&key=" class="">
+							<span>'17년 1차 「첨단바이오의약품 허가교육 워크숍」 홍보 협조 요청</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNTIwMTkwOS42MjUwLjEuMA==&filename=JzE364WEIDHssKgg44CM7LKo64uo67CU7J207Jik7J2Y7JW97ZKIIO2XiOqwgOq1kOycoSDsm4ztgazsiI3jgI0g7ZmN7ZiR7KGwIOyalOyyrS3si5ztlokoMSkucGRm"><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="'17년 1차 「첨단바이오의약품 허가교육 워크숍」 홍협조 요청-시행(1).pdf" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUyNTIwMTkwOS44MTkwLjkuMQ==&filename=MjAxNyAx7LCoIOyyqOuLqOuwlOydtOyYpOydmOyVve2SiO2XiOqwgOq1kOycoSDsm4ztgazsiI0g7JWM66a8KDEpLmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2017 1차 첨단바이오의약품허가교육 워크숍 알림(1).hwp" align="middle"/></a>
+										</td>
+										<td>2151</td>
+					<td>2017-05-25</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1066</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10045&mode=view&keyfield=&key=" class="">
+							<span>2017년도 제2차 「해외 우수신진연구자 유치사업」 공고 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MzczNC40ODQwLjcuMA==&filename=KOqzteqzoOusuCntlbTsmbjsmrDsiJjsi6Dsp4Tsl7DqtazsnpDsnKDsuZjsgqzsl4UoS1JGKV8xN+uFhCAy7LCoX+qzteqzoOusuC5od3A="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="(공고문)해외우수신진연구자유치사업(KRF)_17년 2차_공고문.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MzczNS40NjYwLjguMQ==&filename=KOq0gOugqCDqs7XrrLgpMjAxN+uFhCDsoJwy7LCoIO2VtOyZuOyasOyImOyLoOynhOyXsOq1rOyekOycoOy5mChLUkYp7IKs7JeFIOqzteqzoCDslYjrgrQuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="(관련 공문)2017년 제2차 해외우수신진연구자유치(KRF)사업 공고 안내.hwp" align="middle"/></a>
+										</td>
+										<td>2024</td>
+					<td>2017-05-08</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1065</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10042&mode=view&keyfield=&key=" class="">
+							<span>‘2017 두산연강학술상’ 안내</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MjU1NS4zMTMwLjguMC5qcGc=&filename=MjAxNyDrkZDsgrDsl7DqsJXqs7XrqqjsoIQg7LWc7KKF67O4LmpwZw=="><img src="/bbs/skin/notice_popup/icon/icon_jpg.gif" width="16" height="16" alt="2017 두산연강공모전 최종본.jpg" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MjU1Ny43MzgwLjEuMQ==&filename=MjAxN1/rkZDsgrDsl7DqsJXtlZnsiKDsg4Ff7KeA7JuQ7IScLmh3cA=="><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="2017_두산연강학술상_지원서.hwp" align="middle"/></a>
+										</td>
+										<td>2278</td>
+					<td>2017-05-08</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1064</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10041&mode=view&keyfield=&key=" class="">
+							<span>[제9회 LG화학미래의학자상] 홍보 협조 및 후보 추천의 건</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MjQxOC40ODkwLjcuMA==&filename=66+4656YIOuwnOyGoeqzteusuC3tlZntmowuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="미래 발송공문-학회.hwp" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDUwODE1MjQxOC42MzYwLjAuMS5qcGc=&filename=66+4656Y7J2Y7ZWZ7J6Q7IOBIOqzteuqqCjstZzsooXrs7gpLmpwZw=="><img src="/bbs/skin/notice_popup/icon/icon_jpg.gif" width="16" height="16" alt="미래의학자상 공모(최종본).jpg" align="middle"/></a>
+										</td>
+										<td>2436</td>
+					<td>2017-05-08</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1063</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10034&mode=view&keyfield=&key=" class="">
+							<span>2017년 춘계학술대회 기간 사무국 부재 안내</span>
+													</a>
+					</td>
+					<td>
+										</td>
+										<td>2171</td>
+					<td>2017-04-19</td>
+					</td>
+															
+										
+				</tr>
+												<tr>
+					<td>1062</td>
+					<td class="tit">
+												<a href="/bbs/index.html?code=notice&category=&gubun=&page=8&number=10012&mode=view&keyfield=&key=" class="">
+							<span>2017년 2분기 임상심사위원(의사 심사관) 채용</span>
+													</a>
+					</td>
+					<td>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDQwNTEyMTMyOC41MDUwLjkuMA==&filename=NDU0LnBkZg=="><img src="/bbs/skin/notice_popup/icon/icon_pdf.gif" width="16" height="16" alt="454.pdf" align="middle"/></a>
+										  
+					  <a href="/func/download.php?path=L2hvbWUvdmlydHVhbC9rYWltL2h0ZG9jcy8vdXBsb2FkL25vdGljZS8yMDE3MDQwNTEzNTYwOS43MTAuMC4w&filename=KOqzteqzoCnsnoTsg4Hsi6zsgqzsnITsm5Bf7LGE7JqpX+qzhO2ajSgyMDE364WEMuu2hOq4sCkuaHdw"><img src="/bbs/skin/notice_popup/icon/icon_hwp.gif" width="16" height="16" alt="(공고)임상심사위원_채용_계획(2017년2분기).hwp" align="middle"/></a>
+										</td>
+										<td>2188</td>
+					<td>2017-04-05</td>
+					</td>
+															
+										
+				</tr>
+							</tbody>
+		</table>
+	
+	
+	<ul class="pager" >	
+					<li><img src="/image/icon/block_prev.gif" alt="이전 10 개 페이지를 불러들입니다." class="noBg" width="28" height="28" align="middle"></li>
+				
+					<li><img src="/image/icon/prev.gif" alt="이전 페이지로 이동합니다." class="noBg" width="28" height="28" align="middle" onclick="location.href='/bbs/index.html?code=notice&page=7'" style="cursor:pointer;"></a></li>
+				
+							<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=1">1</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=2">2</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=3">3</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=4">4</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=5">5</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=6">6</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=7">7</a></li>
+									<li><a class="on">8</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=9">9</a></li>
+									<li style="margin:0px;"><a href="/bbs/index.html?code=notice&page=10">10</a></li>
+						
+					<li><img src="/image/icon/next.gif" alt="다음 10 개 페이지를 불러들입니다." class="noBg" width="28" height="28" align="middle" onclick="location.href='/bbs/index.html?code=notice&page=9'" style="cursor:pointer;"></li>
+				
+					<li><img src="/image/icon/block_next.gif" alt="다음 10 개 페이지를 불러들입니다." class="noBg" width="28" height="28" align="middle" onclick="location.href='/bbs/index.html?code=notice&page=11'" style="cursor:pointer;"></li>
+			</ul>
+	
+	<div class="bbsSearch">
+		<form name="searchForm" id="searchForm" method="get" action="">
+		<input type="hidden" name="code" value="notice"> <input type="hidden" name="page" value="8">			<fieldset>
+				<legend>게시판 검색</legend>
+				<select name="keyfield" id="keyfield"  align="middle" >
+<option value="all">제목+내용</option>
+<option value="name">작성자</option>
+<option value="subject">제목</option>
+<option value="content">내용</option>
+</select>				<input type="text" name="keyword" id="keyword" value="" style="width:194px;" />
+				<span class="btn"><input type="submit" class="btnPoint" value="검색"></span>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div class="btn bbsUtil">
+			<!-- <p class="fl"><a href="/bbs/index.html?code=notice" class="btnDef">목록</a></p> -->
+				</div>
+	
+
+</div>
+		<!-- //main -->
+				</div>
+		
+
+	
+	</div>
+	<!-- //container -->
+	<hr />
+
+	<div class="footerWrap">
+		<div>
+			<p><img src="/image/common/footer_logo.jpg" alt="대한내과학회" /></p>
+
+			<dl>
+				<dt class="hidden">대한내과학회 연락처</dt>
+				<dd>
+					서울특별시 마포구 마포대로 109 롯데캐슬프레지던트 101동 2501호 (우. 04146)<br />
+					Tel. 02)793-4364, 4311  Fax. 02)790-0993  E-mail. <a href="mailto:kaim4364@kams.or.kr">kaim4364@kams.or.kr</a><br/>
+					사업자등록번호: 106-82-10554  대표자: 유철규
+				</dd>
+			</dl>
+			
+			<div class="security">
+			<!-- <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script> -->
+				<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+				<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script></div>
+				<div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a></div>
+				</div>
+			</div>
+			
+			<div class="siteInfo">
+				<ul>
+					<li><a href="/member/?sn=2">개인정보 취급 방침</a></li>
+					<li><a href="/popup/popup_email.html" onclick="window.open(this.href,'privacy','width=400, height=300, scrollbars=no'); return false;" target="_blank">이메일 무단 수집 거부</a></li>
+				</ul>
+				
+				<dl class="relSite">
+					<dt><a href="javascript:void window.open('/ebooth/ebooth_detail1.php','ebooth_detail1','width=710, height=760, left=0, top=0, scrollbars=yes, status=no');">대한내과학회 관련사이트</a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.physician.or.kr/" target="_blank">대한개원내과의사회</a></li>
+							<li><a href="http://www.kma.org" target="_blank">대한의사협회</a></li>
+							<li><a href="http://kams.or.kr/" target="_blank">대한의학회</a></li>
+							<li><a href="http://www.ksid.or.kr" target="_blank">대한감염학회</a></li>
+							<li><a href="http://www.lungkorea.org" target="_blank">대한결핵및호흡기학회</a></li>
+							<li><a href="http://www.endocrinology.or.kr" target="_blank">대한내분비학회</a></li>
+							<li><a href="http://www.diabetes.or.kr" target="_blank">대한당뇨병학회</a></li>
+							<li><a href="http://www.rheum.or.kr" target="_blank">대한류마티스학회</a></li>
+							<li><a href="http://www.gie.or.kr" target="_blank">대한소화기내시경학회</a></li>
+							<li><a href="http://www.gastrokorea.org" target="_blank">대한소화기학회</a></li>
+							<li><a href="http://www.circulation.or.kr" target="_blank">대한심장학회</a></li>
+							<li><a href="http://www.ksn.or.kr" target="_blank">대한신장학회</a></li>
+							<li><a href="http://www.allergy.or.kr" target="_blank">대한천식알레르기학회</a></li>
+							<li><a href="http://www.cancer.or.kr" target="_blank">대한암학회</a></li>
+							<li><a href="http://www.kaco.or.kr" target="_blank">대한종양내과학회</a></li>
+							<li><a href="http://www.hematology.or.kr" target="_blank">대한혈액학회</a></li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<p>Copyright © The Korean Association of Internal Medicine. All rights reserved.</p>
+			</div>
+			<!-- //siteInfo -->
+		</div>
+	</div>
+	<!-- //footerWrap -->
+
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

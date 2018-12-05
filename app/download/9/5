@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Korean Academy of Rehabilitation Medicine</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.0.css" />
+<link type="text/css" rel="stylesheet" href="/css/karm.css" />
+<link type="text/css" rel="stylesheet" href="/css/karm_eng.css" />
+<!--[if lt IE 8]>
+<script type="text/javascript">
+//<![CDATA[
+	var IE7_PNG_SUFFIX = ".png";
+//]]>
+</script>
+<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/script/jquery.min.1.7.1.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+
+<!-- jquery  공통 style 및 ui 사용  //-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!-- jquery  공통 style 및 ui 사용  //-->
+
+<script type="text/javascript">
+//<![CDATA[
+;jQuery(function(){
+
+	$('.contents_print').click(function(){
+			var W = $(".subCon").width()+20;
+			var H = $(".subCon").height()+100;
+			var features = "menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=" + W + ",height=" + H + ",left=0,top=0";
+
+			var PrintPage = window.open("about:blank", "print", features);
+			PrintPage.document.open();
+			PrintPage.document.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
+			PrintPage.document.write('<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">\n');
+			PrintPage.document.write("<head>\n");
+			PrintPage.document.write('<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>\n');
+			PrintPage.document.write('<meta http-equiv="X-UA-Compatible" content="IE=10"/>\n');
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/common_v1.0.css'/>\n");
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/karm.css'/>\n");
+			PrintPage.document.write("<title>Korean Academy of Rehabilitation Medicine</title>\n");
+			PrintPage.document.write("</head>\n");
+			PrintPage.document.write("<body style='background:none;'>\n");
+			PrintPage.document.write("<br/><div style='width:98%;margin:0 auto;'>"+$(".subCon").html()+"</div>\n");
+			PrintPage.document.write("</body>\n");
+			PrintPage.document.write("</html>\n");
+			PrintPage.document.close();
+			PrintPage.document.title = document.domain;
+			PrintPage.print();
+		});
+
+		var min_font = 12;
+		var max_font = 20;
+		var font_val = 12;
+		
+		$('.font_plus').click(function(){
+			if(font_val < max_font){
+				font_val++;
+			}else{
+				font_val = max_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+
+		});
+
+		$('.font_minus').click(function(){
+			if(font_val > min_font){
+				font_val--;
+			}else{
+				font_val = min_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+			
+		});
+
+		$('#sdate, #edate ,#pdate').datepicker({showMonthAfterYear:true, changeMonth: true,	changeYear: true,	dateFormat: "yy-mm-dd" ,
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			dayNames: ['일','월','화','수','목','금','토'],
+			dayNamesShort: ['일','월','화','수','목','금','토'],
+			dayNamesMin: ['일','월','화','수','목','금','토'],
+			showMonthAfterYear: true,
+			changeMonth: true,
+			changeYear: true,
+			yearSuffix: ''	
+		});
+
+});
+//]]>
+function twitter(){
+	window.open('https://twitter.com/share?url=http%3A%2F%2Fgastrokorea.org%2Feng%2Findex.php%3F&text=Korean+Academy+of+Rehabilitation+Medicine+&via=Korean+Academy+of+Rehabilitation+Medicine','twitter','width=500, height=300, scrollbars=no')
+}
+
+function WriteComment(){
+
+		var title = 'Korean+Academy+of+Rehabilitation+Medicine+';
+		var summary = "";
+		var url = "http%3A%2F%2Fgastrokorea.org%2Feng%2Findex.php%3F";
+		var imgurl = "http://gastrokorea.org/image/main/top_logo.gif";
+		var txtOption = "toolbar=0,status=0,width=1000,height=600";
+		var openURL = "http://www.facebook.com/sharer.php?s=100&p[title]="+title+"&p[url]="+url+"&p[summary]="+summary+"&p[images][0]"+imgurl;
+		window.open(openURL,"SNS",txtOption);
+	
+}
+
+function blank_popup(url){
+	window.open(url);
+}
+function blank2_popup(url){
+	window.open(url,'privacy','width=750, height=600, scrollbars=yes');
+}
+function location_href(url){
+	location.href=url;
+}
+
+</script>
+<style>
+.ui-datepicker{ font-size: 12px; }
+.ui-datepicker select.ui-datepicker-month{ width:40%; font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{ width:50%; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<!-- headerWrap -->
+	<div id="headerWrap">
+		<!-- skip navigation -->
+		<dl id="skipNavi">
+			<dt>바로가기 메뉴</dt>
+			<dd><a href="#containerWrap">본문내용 바로가기</a></dd>
+			<dd><a href="#footerWrap">하단내용 바로가기</a></dd>
+		</dl>
+		<!-- //skip navigation -->
+
+		<!-- header -->
+		<div class="header">
+			<h1 class="logo"><a href="/eng/"><img src="/image/common/header_logo_eng.png" alt="Korean Academy of Rehabilitation Medicine" /></a></h1>
+
+
+			<div class="posTR">
+	
+				<!-- util menu -->
+				<dl id="utilMenu">
+					<dt class="hidden">유틸메뉴</dt>
+					<dd>
+						<ul class="clfix">
+							<li><a href="/">Home</a></li>
+							<!-- 							<li><a href="/member/login.php">LOGIN</a></li>
+							<li><a href="/member/join_01.php">JOIN</a></li>
+							 -->
+							<li><a href="/eng/intro/intro4.php">CONTACT US</a></li>
+							<li><a href="/eng/sitemap/">SITEMAP</a></li>
+							<!--  -->
+						</ul>
+					</dd>
+				</dl>
+				<!-- //util menu -->
+
+				<p><a href="/" class="eng">KOREAN</a></p>
+				<p><a href="#" class="allMenu">MENU</a></p>
+			</div>
+
+			<!-- gnb -->
+			<h2 class="hidden">주 메뉴</h2>
+			<div class="gnbWrap">
+				<ul id="gnbUI">
+															<li  > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<a href="/eng/intro/">Introduction</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/eng/intro/index.php"> - Greeting</a>
+																			
+									</li>
+									
+																	<li><a href="/eng/intro/intro2.php"> - History</a>
+																			
+									</li>
+									
+																	<li><a href="/eng/intro/intro3.php"> - Organization</a>
+																			
+									</li>
+									
+																	<li><a href="/eng/intro/intro4.php"> - Contact us</a>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li  > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<a href="/workshop/">Meetings</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/eng/meeting/index.php"> - Study and Training Sessions, and Regular Autumn Conferences</a>
+																			
+									</li>
+									
+																	<li><a href="/eng/meeting/index2.php"> - Spring Conferences</a>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li  > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<a href="/jounal/">Journal</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/eng/journal/index.php"> - Annals of Rehabilitation Medicine</a>
+																			
+									</li>
+									
+																	<li><a href="http://www.e-arm.org/submission/"> - E-Submission</a>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li  class="last"> <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<a href="/bbs/?code=down">Links</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/eng/link/index.php"> - Links</a>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+														</ul>
+				
+			</div>
+			<!-- //gnb -->
+		</div>
+		<!-- //header -->
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+<script type="text/javascript">
+//<![CDATA[
+//]]>
+</script>
+	<!-- containerWrap -->
+
+	<!-- 메인페이지 일 경우, #containerWrap 에 클래스 main 추가 -->
+	<div id="containerWrap" class="main">
+		<h2>대한 재활의학회 메인</h2>
+		<!-- main contents -->
+		<div class="contents">
+
+			<div class="mainInfo">
+				<div class="slogan">
+					the Korean Academy of Rehabilitation Medicine (KARM)
+				</div>
+				<!-- //slogan -->
+			</div>
+			<!-- //mainInfo -->
+			
+			<div class="mainCon">
+				<div class="con1">
+					<a href="/eng/intro/index.php"><img src="/image/main/introduction_eng.jpg" alt="introduction" /></a>
+				</div>
+				<div class="con2">
+					<a href="/eng/meeting/index.php"><img src="/image/main/meetings_eng.jpg" alt="meetings" /></a>
+				</div>
+				<div class="con3">
+					<p><span>A</span>nnals of<br /><span>R</span>ehabilitation<br /><span>M</span>edicine</p>
+					<div class="btnWrap">
+						<a href="/eng/journal/index.php" class="rAllow" >More</a>
+						<a href="http://www.e-arm.org/submission/" class="rAllow lts" >Online Submission</a>
+					</div>
+				</div>
+			</div>
+			<!-- //mainCon -->
+
+			
+
+
+		</div>
+		<!-- //main contents -->
+	</div>
+	<!-- //containerWrap -->
+
+
+<hr />
+
+	<!-- footer -->
+	<div id="footerWrap">
+		<h2 class="hidden">하단내용</h2>
+		<div class="footer">
+			<div class="fl">
+				<!-- <ul class="links">
+					<li>
+					<a href="/pop_privacy_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=750, height=600, scrollbars=yes'); return false;">개인정보 취급방침</a>
+					</li>
+					<li>
+					<a href="/pop_email_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=500, height=340, scrollbars=no'); return false;">이메일주소 무단수집 거부</a>
+					</li>
+				
+					<li><a href="/member/join_01.php">회원 가입</a></li>
+					<li><a href="/member/secession.php">회원 탈퇴</a></li>
+				</ul> -->
+				<div class="addressArea">
+					<address>#1004, TotooValley, 217, Saechang-ro, Yongsan-gu, Seoul 140-735, Korea</address>
+					<ul>
+						<li>E-mail : <a href="mailto:karm@karm.or.kr">karm@karm.or.kr</a></li>
+						<!-- <li>Tel : <a href="/intro/intro7.php">[전화번호 안내]</a></li> -->
+						<li>Fax : 02-3295-2014 </li>
+					</ul>
+					<p>Copyright 2008 by Korean Academy of Rehabilitation Medicine. All rights reserved.</p>
+				</div>
+			</div>
+			<!-- //fl -->
+
+			<div class="fr">
+			
+				<ul>
+					<li><a href="#"><img src="/image/common/footer_btn_twitter.png" alt="트위터" /></a></li>
+					<li><a href="#"><img src="/image/common/footer_btn_face.png" alt="페이스북" /></a></li>
+				</ul>
+
+				<!-- SSL -->
+				<div class="ssl "><img src="/image/common/footer_ssl.png" alt="SSL 영역" /></div>
+				<!-- // SSL -->
+			</div>
+			<!-- //fl -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //footerWrap -->
+</div>
+</body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74236036-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

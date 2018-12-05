@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>대한내과학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.1.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim_sub.css" />
+<script type="text/javascript" src="/script/jquery.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/unreset.css" />
+<link type="text/css" rel="stylesheet" href="/admin/button_package/button.css" />
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15291461-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98717380-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Hotjar Tracking Code for http://www.kaim.or.kr/ -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1001270,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+ -->
+<script type="text/javascript" src="/script/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	$('.date_month').mask('9999-99');
+});
+</script>
+<!-- 2016-11-21 김영환추가 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+<link rel='stylesheet' type='text/css' href='/admin/mail/conf/jquery-flick.css'/>
+<script type="text/javascript" src="/script/kaim.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/jquery.alerts.css"/>
+<SCRIPT LANGUAGE="javascript" SRC="/script/jquery.ui-jalert.js"></SCRIPT>
+<script type="text/javascript">
+	function sendTwitter(sTitle,sUrl){
+		var shref ="http://twitter.com/home?status="+encodeURIComponent(sTitle)+" "+encodeURIComponent(sUrl);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+
+	//페이스북
+	function sendFacebook(sTitle,sUrl){
+		var shref ="http://www.facebook.com/share.php?u="+encodeURIComponent(sUrl)+"&t="+encodeURIComponent(sTitle);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+	function depart_pass_pop(){
+		var date1 = "1531818000";
+		var date2 = "1544037956";
+		if(date2 > date1){
+			window.open("/popup_main/popup_list.php","","width=1020,height=900,scrollbars=yes")
+		}else{
+			alert("금일 오후 6시부터 확인 가능합니다.");
+		}
+	}
+</script>
+
+
+</head>
+<body id="body">
+
+<div class="wrapper">
+	<div class="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="/" title="홈으로 이동"><img src="/image/common/header_logo.jpg" alt="대한내과학회" /></a></h1>    
+			
+
+			<div class="utilMenu">
+				<div class="majorBtn">
+					<div>
+																													</div>
+				</div>
+
+				<ul>
+					
+										<li><a href="/">Home</a></li>
+										<li><a href="/member/?sn=3">Login</a></li>
+					<li><a href="/member/?sn=1">Join</a></li>
+										<li><a href="http://eng.kaim.or.kr/" target="_blank">English</a></li>
+				</ul>	
+			</div>
+			
+			<ul class="globalMenu">
+				<li class="facebook"><a href="https://www.facebook.com/kaim4311" target="_blank"><img src="/image/common/headerBtn_facebook.png" alt="Facebook" /></a></li>
+				<li class="viewPopup"><a class="globalSearch" href="#">전체검색</a></li>
+				<li class="viewPopup"><a class="allMenu" href="#">전체메뉴</a></li>
+			</ul>
+
+
+			<div class="globalPopup allMenu">
+				<ul class="gnb">
+										<li><a href="/about/">학회소개</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/about/">인사말 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=2">대한내과학회 약사 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=3">회칙 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=4">조직도 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=5">임원진 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=6">평의원 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=7&sn2=1">위원회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=8">지회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=10">연구비, 학술상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=11">사무국 안내 및 연락처 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=schedule">학술행사</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=schedule">연간일정 </a></li>
+														<li style="font-size:11px;"><a href="/schedule/work_schedule.php">학술행사 일정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/major/">전공의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/major/?sn=1">전공의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/major/?sn=2">내과전문의 자격시험 </a></li>
+													</ul>
+					</li>
+															<li><a href="/specialist/">분과전문의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/specialist/?sn=1">전임의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/specialist/depart/info.php">분과전문의 자격인정시험 및 자격갱신 </a></li>
+													</ul>
+					</li>
+															<li><a href="/education/">평생교육</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/education/?sn=1">제도 도입 및 취지 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=2">규정 및 시행규칙 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=3">연수강좌 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=4">이수증 발급 안내 </a></li>
+														<li style="font-size:11px;"><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육 </a></li>
+													</ul>
+					</li>
+															<li><a href="/ethics/">의료윤리</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/ethics/?sn=1">내과의사 윤리선언 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집 </a></li>
+														<li style="font-size:11px;"><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=2">죽음과 임종 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=5">연명의료 결정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/pds/?sn=1&sn2=1">자료실</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/pds/?sn=1&sn2=1">노년내과 교육목표 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=pds2">보험관련 자료 </a></li>
+														<li style="font-size:11px;"><a href="http://term.kma.org/" target="_blank"">의학용어 검색 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=notice">회원공간</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=notice">공지사항/새소식 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=gallery">사진 모음 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=event">게시판 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=proposal">제안방 </a></li>
+														<li style="font-size:11px;"><a href="/mypage/?sn=1">My Page </a></li>
+													</ul>
+					</li>
+									</ul>
+				
+				<p class="close"><a href="#">메뉴 닫기</a></p>
+			</div>
+			
+			
+			<div class="globalPopup globalSearch">
+			
+				<dl>
+					<dt>전체검색</dt>
+					<dd>
+						<form id="total_seachF" name="total_seachF" action="/search/" method="post">
+							<fieldset>
+								<legend>대한내과학회 전체검색</legend>
+								<input type="text" name="key" id="key" placeholder="검색어를 입력하세요." class="_placeholder" />
+								<input class="btnBg" type="submit" value="검색" />
+							</fieldset>
+						</form>
+					</dd>
+				</dl>
+				
+				<p class="close"><a href="#">검색 닫기</a></p>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+	<div id="container"  >
+
+		<div class="contents ">
+
+					<div class="titArea">
+				<h2>
+					평의원				</h2>
+				
+				<dl>
+					<dt class="hidden">페이지 경로</dt>
+					<dd>Home &gt; 학회소개 &gt; 평의원<!--  &gt; 평의원 --></dd>
+				</dl>
+				
+				<ul class="subUtil">
+					<li><a href="javascript:view_mode_change('')" title="와이드모드"><img src="/image/sub/subUtilBtn_wide.gif" alt="" /></a></li>
+					<li><a href="javascript:sendFacebook('facebook','www.kaim.or.kr///about/?sn=6')" title="페이스북에 공유하기"><img src="/image/sub/subUtilBtn_facebook.gif" alt="" /></a></li>
+					<li><a href="javascript:sendTwitter('twitter','www.kaim.or.kr///about/?sn=6')" title="트위터에 공유하기"><img src="/image/sub/subUtilBtn_twitter.gif" alt="" /></a></li>
+					<li><a href="#" title="글자크기 키우기"><img src="/image/sub/subUtilBtn_plus.gif" alt="" class="font_size_plus"/></a></li>
+					<li><a href="#" title="글자크기 줄이기"><img src="/image/sub/subUtilBtn_minus.gif" alt="" class="font_size_minus"/></a></li>
+					<li><a href="#" title="현재페이지 프린트 하기"><img src="/image/sub/subUtilBtn_print.gif" alt="" class="contents_print"/></a></li>
+				</ul>
+			</div>
+						<dl id="lnb">
+				<dt>학회소개</dt>
+				<dd>
+					<ul class="subMenu">
+												<li ><a href="/about/">인사말</a>
+													</li>
+												<li ><a href="/about/?sn=2">대한내과학회 약사</a>
+													</li>
+												<li ><a href="/about/?sn=3">회칙</a>
+													</li>
+												<li ><a href="/about/?sn=4">조직도</a>
+													</li>
+												<li ><a href="/about/?sn=5">임원진</a>
+													</li>
+												<li class="on"><a href="/about/?sn=6">평의원</a>
+														<ul>
+																<li class="on"><a href="/about/?sn=6&sn2=1">평의원</a>
+																										</li>
+																<li ><a href="/about/?sn=6&sn2=2">자문위원</a>
+																										</li>
+															</ul>
+													</li>
+												<li ><a href="/about/?sn=7&sn2=1">위원회</a>
+													</li>
+												<li ><a href="/about/?sn=8">지회</a>
+													</li>
+												<li ><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상</a>
+													</li>
+												<li ><a href="/about/?sn=10">연구비, 학술상</a>
+													</li>
+												<li ><a href="/about/?sn=11">사무국 안내 및 연락처</a>
+													</li>
+											</ul>
+				</dd>
+			</dl>
+							<div class="print_area"><div class="txtCon">
+	<!-- <h3 class="borderTit">2012년 11월  -  2015년 10월</h3> -->
+	<h3 class="borderTit">2015년 11월  -  2018년 10월</h3>
+	<table class="tm0 ac defTbl">
+		<colgroup>
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+		</colgroup>
+		<tbody>
+		  <tr>
+			<td>강무일</td>
+			<td>강문원</td>
+			<td>강신욱</td>
+			<td>강웅철</td>
+			<td>강윤구</td>
+			<td>계세협</td>
+			<td>고영민</td>
+			<td>고원중</td>
+			<td>고윤석</td>
+			<td>고윤웅</td>
+		  </tr>
+		  <tr>
+			<td>고은미</td>
+			<td>고재기</td>
+			<td>곽경근</td>
+			<td>곽임수</td>
+			<td>곽재용</td>
+			<td>곽진영</td>
+			<td>권기영</td>
+			<td>권순석</td>
+			<td>권영오</td>
+			<td>권영주</td>
+		  </tr>
+		  <tr>
+			<td>권혁문</td>
+			<td>김경래</td>
+			<td>김경아 </td>
+			<td>김관형</td>
+			<td>김광원</td>
+			<td>김권배</td>
+			<td>김근호</td>
+			<td>김기식</td>
+			<td>김난희</td>
+			<td>김노경</td>
+		  </tr>
+		  <tr>
+			<td>김대곤</td>
+			<td>김덕규</td>
+			<td>김도진</td>
+			<td>김동선</td>
+			<td>김동수</td>
+			<td>김동욱</td>
+			<td>김동욱</td>
+			<td>김동준</td>
+			<td>김두만</td>
+			<td>김두일</td>
+		  </tr>
+		  <tr>
+			<td>김명아</td>
+			<td>김문재</td>
+			<td>김문재</td>
+			<td>김민자</td>
+			<td>김백남</td>
+			<td>김범수</td>
+			<td>김범수</td>
+			<td>김병욱</td>
+			<td>김병준</td>
+			<td>김병호</td>
+		  </tr>
+		  <tr>
+			<td>김봉석</td>
+			<td>김상욱</td>
+			<td>김상위</td>
+			<td>김상진</td>
+			<td>김상훈</td>
+			<td>김성남</td>
+			<td>김성록</td>
+			<td>김성순</td>
+			<td>김성운</td>
+			<td>김성태</td>
+		  </tr>
+		  <tr>
+			<td>김성호</td>
+			<td>김세종</td>
+			<td>김순길</td>
+			<td>김순배</td>
+			<td>김승수</td>
+			<td>김시영</td>
+			<td>김신곤</td>
+			<td>김양수</td>
+			<td>김여주</td>
+			<td>김연재</td>
+		  </tr>
+		  <tr>
+			<td>김열홍</td>
+			<td>김영균</td>
+			<td>김영대</td>
+			<td>김영준</td>
+			<td>김영철</td>
+			<td>김영환</td>
+			<td>김완</td>
+			<td>김용림</td>
+			<td>김용성</td>
+			<td>김용진</td>
+		  </tr>
+		  <tr>
+			<td>김용태</td>
+			<td>김용현</td>
+			<td>김용훈</td>
+			<td>김우경</td>
+			<td>김우성</td>
+			<td>김우주</td>
+			<td>김원</td>
+			<td>김원호</td>
+			<td>김유호</td>
+			<td>김인주</td>
+		  </tr>
+		  <tr>
+			<td>김일중</td>
+			<td>김재권</td>
+			<td>김재규</td>
+			<td>김재선</td>
+			<td>김재열</td>
+			<td>김재준</td>
+			<td>김재중</td>
+			<td>김정경</td>
+			<td>김정민</td>
+			<td>김정한</td>
+		  </tr>
+		  <tr>
+			<td>김제형</td>
+			<td>김종웅</td>
+			<td>김종진</td>
+			<td>김주옥</td>
+			<td>김준명</td>
+			<td>김준철</td>
+			<td>김준홍</td>
+			<td>김지연</td>
+			<td>김진</td>
+			<td>김진국</td>
+		  </tr>
+		  <tr>
+			<td>김진석</td>
+			<td>김진오</td>
+			<td>김진호</td>
+			<td>김창호</td>
+			<td>김철호</td>
+			<td>김춘관</td>
+			<td>김치정</td>
+			<td>김치홍</td>
+			<td>김태년</td>
+			<td>김태빈</td>
+		  </tr>
+		  <tr>
+			<td>김태유</td>
+			<td>김태형</td>
+			<td>김태호</td>
+			<td>김학양</td>
+			<td>김현수</td>
+			<td>김형길</td>
+			<td>김형준</td>
+			<td>김형중</td>
+			<td>김형직</td>
+			<td>김혜영</td>
+		  </tr>
+		  <tr>
+			<td>김호각</td>
+			<td>김호철</td>
+			<td>김효종</td>
+			<td>김효진</td>
+			<td>김휘정</td>
+			<td>김흥수</td>
+			<td>김흥업</td>
+			<td>김흥태</td>
+			<td>나인균</td>
+			<td>남승우</td>
+		  </tr>
+		  <tr>
+			<td>노명환</td>
+			<td>류완희</td>
+			<td>류종선</td>
+			<td>류형선</td>
+			<td>목지오</td>
+			<td>문영명</td>
+			<td>문영수</td>
+			<td>문정섭</td>
+			<td>문종호</td>
+			<td>문희범</td>
+		  </tr>
+		  <tr>
+			<td>민영주</td>
+			<td>민용기</td>
+			<td>민유홍</td>
+			<td>박경수</td>
+			<td>박광주</td>
+			<td>박근태</td>
+			<td>박능화</td>
+			<td>박동균</td>
+			<td>박동준</td>
+			<td>박무림</td>
+		  </tr>
+		  <tr>
+			<td>박무인</td>
+			<td>박상준</td>
+			<td>박석오</td>
+			<td>박선미</td>
+			<td>박선자</td>
+			<td>박성규</td>
+			<td>박성배</td>
+			<td>박성학</td>
+			<td>박성환</td>
+			<td>박수길</td>
+		  </tr>
+		  <tr>
+			<td>박수헌</td>
+			<td>박승우</td>
+			<td>박시훈</td>
+			<td>박실무</td>
+			<td>박영부</td>
+			<td>박영석</td>
+			<td>박영숙</td>
+			<td>박영이</td>
+			<td>박원</td>
+			<td>박원근</td>
+		  </tr>
+		  <tr>
+			<td>박이병</td>
+			<td>박인원 </td>
+			<td>박재석</td>
+			<td>박재용</td>
+			<td>박종원</td>
+			<td>박종재</td>
+			<td>박종춘</td>
+			<td>박중열</td>
+			<td>박중원</td>
+			<td>박중원</td>
+		  </tr>
+		  <tr>
+			<td>박찬국</td>
+			<td>박창규</td>
+			<td>박창영</td>
+			<td>박충기</td>
+			<td>박태선</td>
+			<td>박현철</td>
+			<td>박형규</td>
+			<td>박형석</td>
+			<td>박효진</td>
+			<td>박흥우</td>
+		  </tr>
+		  <tr>
+			<td>박희승</td>
+			<td>박희욱</td>
+			<td>방종효</td>
+			<td>배상철</td>
+			<td>배인규</td>
+			<td>배장호</td>
+			<td>백광호 </td>
+			<td>백순구</td>
+			<td>변관수</td>
+			<td>변영섭</td>
+		  </tr>
+		  <tr>
+			<td>서대원</td>
+			<td>서정돈</td>
+			<td>서정일</td>
+			<td>서철원</td>
+			<td>선희식</td>
+			<td>설상영</td>
+			<td>성기철</td>
+			<td>성연아</td>
+			<td>성인환</td>
+			<td>손대원</td>
+		  </tr>
+		  <tr>
+			<td>손상균</td>
+			<td>손성표</td>
+			<td>손장욱</td>
+			<td>손현식</td>
+			<td>손호상</td>
+			<td>송관규</td>
+			<td>송민호</td>
+			<td>송시영</td>
+			<td>송영기</td>
+			<td>송영욱</td>
+		  </tr>
+		  <tr>
+			<td>송인성</td>
+			<td>송일한</td>
+			<td>송재관</td>
+			<td>송종오</td>
+			<td>송호철</td>
+			<td>송홍석</td>
+			<td>승기배</td>
+			<td>신규태</td>
+			<td>신길자</td>
+			<td>신동호</td>
+		  </tr>
+		  <tr>
+			<td>신미승</td>
+			<td>신상원</td>
+			<td>신석균</td>
+			<td>신용운</td>
+			<td>신원창</td>
+			<td>신준한</td>
+			<td>신중호</td>
+			<td>신창록</td>
+			<td>신철</td>
+			<td>심명숙</td>
+		  </tr>
+		  <tr>
+			<td>심재정</td>
+			<td>심찬섭</td>
+			<td>안유배</td>
+			<td>안정천</td>
+			<td>안중현</td>
+			<td>안철민</td>
+			<td>양동호</td>
+			<td>양성현</td>
+			<td>양세훈</td>
+			<td>양윤식</td>
+		  </tr>
+		  <tr>
+			<td>양철우</td>
+			<td>어완규</td>
+			<td>엄중식</td>
+			<td>엄현석</td>
+			<td>연종은</td>
+			<td>염호기</td>
+			<td>오기원</td>
+			<td>오도연</td>
+			<td>오동진</td>
+			<td>오동진</td>
+		  </tr>
+		  <tr>
+			<td>오동호</td>
+			<td>오명돈</td>
+			<td>오병희</td>
+			<td>오석규</td>
+			<td>오석중</td>
+			<td>오윤정</td>
+			<td>오주현</td>
+			<td>오태근</td>
+			<td>오호석</td>
+			<td>온영근</td>
+		  </tr>
+		  <tr>
+			<td>용석중</td>
+			<td>우준희</td>
+			<td>원영준</td>
+			<td>유권</td>
+			<td>유기동</td>
+			<td>유대현</td>
+			<td>유빈</td>
+			<td>유세화</td>
+			<td>유용규</td>
+			<td>유지홍</td>
+		  </tr>
+		  <tr>
+			<td>유철규</td>
+			<td>윤건호</td>
+			<td>윤선애</td>
+			<td>윤성수</td>
+			<td>윤성호</td>
+			<td>윤승규</td>
+			<td>윤정한</td>
+			<td>윤정환</td>
+			<td>윤중원</td>
+			<td>윤휘중</td>
+		  </tr>
+		  <tr>
+			<td>은수훈</td>
+			<td>이강욱</td>
+			<td>이계영</td>
+			<td>이관식</td>
+			<td>이관우</td>
+			<td>이관호</td>
+			<td>이광영</td>
+			<td>이광재</td>
+			<td>이광혁</td>
+			<td>이국래</td>
+		  </tr>
+		  <tr>
+			<td>이규형</td>
+			<td>이기업</td>
+			<td>이동기</td>
+			<td>이동호</td>
+			<td>이만영</td>
+			<td>이명용</td>
+			<td>이명희</td>
+			<td>이문규</td>
+			<td>이문형</td>
+			<td>이병욱</td>
+		  </tr>
+		  <tr>
+			<td>이병재</td>
+			<td>이상곤</td>
+			<td>이상구</td>
+			<td>이상록</td>
+			<td>이상룡</td>
+			<td>이상엽</td>
+			<td>이상우</td>
+			<td>이상표</td>
+			<td>이성구</td>
+			<td>이성윤</td>
+		  </tr>
+		  <tr>
+			<td>이세한</td>
+			<td>이수곤</td>
+			<td>이수봉</td>
+			<td>이순남</td>
+			<td>이승일</td>
+			<td>이연재</td>
+			<td>이영상</td>
+			<td>이영열</td>
+			<td>이용규</td>
+			<td>이용찬</td>
+		  </tr>
+		  <tr>
+			<td>이우형</td>
+			<td>이원표</td>
+			<td>이은봉</td>
+			<td>이은직</td>
+			<td>이인규</td>
+			<td>이일수</td>
+			<td>이재호</td>
+			<td>이정용</td>
+			<td>이정일</td>
+			<td>이제중</td>
+		  </tr>
+		  <tr>
+			<td>이종균</td>
+			<td>이종석</td>
+			<td>이종수</td>
+			<td>이종욱</td>
+			<td>이종인</td>
+			<td>이종훈</td>
+			<td>이준상</td>
+			<td>이준성</td>
+			<td>이준성</td>
+			<td>이준행</td>
+		  </tr>
+		  <tr>
+			<td>이진</td>
+			<td>이찬희</td>
+			<td>이춘택</td>
+			<td>이충기</td>
+			<td>이태영</td>
+			<td>이태희</td>
+			<td>이형우</td>
+			<td>이홍기</td>
+			<td>이홍렬 </td>
+			<td>이홍식</td>
+		  </tr>
+		  <tr>
+			<td>임건일</td>
+			<td>임성희</td>
+			<td>임시영</td>
+			<td>임중규</td>
+			<td>임창훈</td>
+			<td>임채만</td>
+			<td>임천규</td>
+			<td>장대영</td>
+			<td>장성원</td>
+			<td>장세경 </td>
+		  </tr>
+		  <tr>
+			<td>장안수</td>
+			<td>장양수</td>
+			<td>장웅기</td>
+			<td>장유현</td>
+			<td>장윤경</td>
+			<td>장윤식</td>
+			<td>장정순</td>
+			<td>장준</td>
+			<td>장중현</td>
+			<td>장학철</td>
+		  </tr>
+		  <tr>
+			<td>전동운</td>
+			<td>전영준</td>
+			<td>전용덕</td>
+			<td>전용철</td>
+			<td>전재은</td>
+			<td>전현정</td>
+			<td>정경태</td>
+			<td>정기석</td>
+			<td>정남식</td>
+			<td>정두련</td>
+		  </tr>
+		  <tr>
+			<td>정명호</td>
+			<td>정병천</td>
+			<td>정상만</td>
+			<td>정수룡</td>
+			<td>정영화</td>
+			<td>정우경</td>
+			<td>정욱성</td>
+			<td>정욱진</td>
+			<td>정운태</td>
+			<td>정윤석</td>
+		  </tr>
+		  <tr>
+			<td>정이영</td>
+			<td>정익주</td>
+			<td>정재복</td>
+			<td>정재훈</td>
+			<td>정종훈</td>
+			<td>정주섭</td>
+			<td>정철원</td>
+			<td>정해혁</td>
+			<td>정현용</td>
+			<td>정현용</td>
+		  </tr>
+		  <tr>
+			<td>정현채</td>
+			<td>정현철</td>
+			<td>정호연</td>
+			<td>정훈용</td>
+			<td>정희순</td>
+			<td>조광범</td>
+			<td>조덕연</td>
+			<td>조상헌</td>
+			<td>조석구</td>
+			<td>조성욱</td>
+		  </tr>
+		  <tr>
+			<td>조영일</td>
+			<td>조영주</td>
+			<td>조용균</td>
+			<td>조용균</td>
+			<td>조용선</td>
+			<td>조용욱</td>
+			<td>조욱현</td>
+			<td>조은주</td>
+			<td>조종태</td>
+			<td>조주희</td>
+		  </tr>
+		  <tr>
+			<td>조창민</td>
+			<td>조현명</td>
+			<td>주권욱</td>
+			<td>주형준</td>
+			<td>지영구</td>
+			<td>지종대</td>
+			<td>진동규</td>
+			<td>진동찬</td>
+			<td>차동훈</td>
+			<td>차봉수</td>
+		  </tr>
+		  <tr>
+			<td>차봉연</td>
+			<td>차훈석</td>
+			<td>채동완</td>
+			<td>채성철</td>
+			<td>채성철</td>
+			<td>채희복</td>
+			<td>최강원</td>
+			<td>최규복</td>
+			<td>최규헌</td>
+			<td>최락경</td>
+		  </tr>
+		  <tr>
+			<td>최명규</td>
+			<td>최문석</td>
+			<td>최병휘 </td>
+			<td>최석채</td>
+			<td>최성규</td>
+			<td>최성호</td>
+			<td>최승옥</td>
+			<td>최승원</td>
+			<td>최영식</td>
+			<td>최영진</td>
+		  </tr>
+		  <tr>
+			<td>최웅환</td>
+			<td>최익수</td>
+			<td>최재웅</td>
+			<td>최정윤</td>
+			<td>최지용</td>
+			<td>최호순</td>
+			<td>탁원영</td>
+			<td>하상철</td>
+			<td>하종원</td>
+			<td>한광협</td>
+		  </tr>
+		  <tr>
+			<td>한규록</td>
+			<td>한상영</td>
+			<td>한상영</td>
+			<td>한석원</td>
+			<td>한준열</td>
+			<td>한현복</td>
+			<td>허성욱</td>
+			<td>허우성</td>
+			<td>현명수</td>
+			<td>현인규</td>
+		  </tr>
+		  <tr>
+			<td>홍대식</td>
+			<td>홍성표</td>
+			<td>홍순조</td>
+			<td>홍천수</td>
+			<td>홍택종</td>
+			<td>황승덕</td>
+			<td>황재석</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		  </tr>
+		</tbody>
+	</table>
+
+	<p class="ar">(총497명) - 가, 나, 다 순 -</p>
+					
+</div>
+<!-- //txtCon -->
+</div>
+		<!-- //main -->
+				</div>
+		
+
+	
+	</div>
+	<!-- //container -->
+	<hr />
+
+	<div class="footerWrap">
+		<div>
+			<p><img src="/image/common/footer_logo.jpg" alt="대한내과학회" /></p>
+
+			<dl>
+				<dt class="hidden">대한내과학회 연락처</dt>
+				<dd>
+					서울특별시 마포구 마포대로 109 롯데캐슬프레지던트 101동 2501호 (우. 04146)<br />
+					Tel. 02)793-4364, 4311  Fax. 02)790-0993  E-mail. <a href="mailto:kaim4364@kams.or.kr">kaim4364@kams.or.kr</a><br/>
+					사업자등록번호: 106-82-10554  대표자: 유철규
+				</dd>
+			</dl>
+			
+			<div class="security">
+			<!-- <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script> -->
+				<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+				<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script></div>
+				<div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a></div>
+				</div>
+			</div>
+			
+			<div class="siteInfo">
+				<ul>
+					<li><a href="/member/?sn=2">개인정보 취급 방침</a></li>
+					<li><a href="/popup/popup_email.html" onclick="window.open(this.href,'privacy','width=400, height=300, scrollbars=no'); return false;" target="_blank">이메일 무단 수집 거부</a></li>
+				</ul>
+				
+				<dl class="relSite">
+					<dt><a href="javascript:void window.open('/ebooth/ebooth_detail1.php','ebooth_detail1','width=710, height=760, left=0, top=0, scrollbars=yes, status=no');">대한내과학회 관련사이트</a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.physician.or.kr/" target="_blank">대한개원내과의사회</a></li>
+							<li><a href="http://www.kma.org" target="_blank">대한의사협회</a></li>
+							<li><a href="http://kams.or.kr/" target="_blank">대한의학회</a></li>
+							<li><a href="http://www.ksid.or.kr" target="_blank">대한감염학회</a></li>
+							<li><a href="http://www.lungkorea.org" target="_blank">대한결핵및호흡기학회</a></li>
+							<li><a href="http://www.endocrinology.or.kr" target="_blank">대한내분비학회</a></li>
+							<li><a href="http://www.diabetes.or.kr" target="_blank">대한당뇨병학회</a></li>
+							<li><a href="http://www.rheum.or.kr" target="_blank">대한류마티스학회</a></li>
+							<li><a href="http://www.gie.or.kr" target="_blank">대한소화기내시경학회</a></li>
+							<li><a href="http://www.gastrokorea.org" target="_blank">대한소화기학회</a></li>
+							<li><a href="http://www.circulation.or.kr" target="_blank">대한심장학회</a></li>
+							<li><a href="http://www.ksn.or.kr" target="_blank">대한신장학회</a></li>
+							<li><a href="http://www.allergy.or.kr" target="_blank">대한천식알레르기학회</a></li>
+							<li><a href="http://www.cancer.or.kr" target="_blank">대한암학회</a></li>
+							<li><a href="http://www.kaco.or.kr" target="_blank">대한종양내과학회</a></li>
+							<li><a href="http://www.hematology.or.kr" target="_blank">대한혈액학회</a></li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<p>Copyright © The Korean Association of Internal Medicine. All rights reserved.</p>
+			</div>
+			<!-- //siteInfo -->
+		</div>
+	</div>
+	<!-- //footerWrap -->
+
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

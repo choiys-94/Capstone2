@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko" class="default">
+<head>
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/blogs/style/menubar.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651" /><!--[if lt IE 9]><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script><![endif]--><!--[if gte IE 9]>
+<!--><script src="https://t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script><!--<![endif]-->
+<script>var tjQuery = jQuery.noConflict(true);</script><style type="text/css">.tt_article_useless_p_margin p {padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important;}</style><meta name="referrer" content="always"><link rel="icon" href="//t1.daumcdn.net/tistory_admin/static/top/favicon_0630.ico" /><link rel="apple-touch-icon" href="//i1.daumcdn.net/thumb/C180x180/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="76x76" href="//i1.daumcdn.net/thumb/C76x76/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="120x120" href="//i1.daumcdn.net/thumb/C120x120/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803">
+<link rel="apple-touch-icon" sizes="152x152" href="//i1.daumcdn.net/thumb/C152x152/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F241F093D5701E73803"><meta name="description" content="for newbie hacker;
+Choice, Choiys">
+
+<!-- BEGIN OPENGRAPH -->
+<link rel="canonical" href="http://choiys.tistory.com" /><meta property="og:type" content="website" /><meta property="og:site_name" content="Choiys" ><meta property="og:title" content="Choiys" ><meta property="og:description" content="for newbie hacker;
+Choice, Choiys" ><meta property="og:image" content="https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png" >
+<!-- END OPENGRAPH -->
+
+
+
+<!-- BEGIN TWITTERCARD -->
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@TISTORY"><meta name="twitter:title" content="Choiys" ><meta name="twitter:description" content="for newbie hacker;
+Choice, Choiys" ><meta property="twitter:image" content="https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png" >
+<!-- END TWITTERCARD -->
+
+
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">{"@context":"http://schema.org", "@type":"ItemList","itemListElement":[{"@type":"ListItem", "position":1,"item": {"@id":"/category","name":"Post List"}}]}</script>
+<!-- END STRUCTURED_DATA -->
+
+
+	<title>Choiys :: Choiys</title>
+<meta name="google-site-verification" content="FAuXmfMDbDvSDIA6dFGA63mUgNS7KfoG91i6cb0ZJSI" />
+<meta name="naver-site-verification" content="5abddd41be53aefe413c1703410d0cf731ea826d"/>
+<meta name="title" content="Choiys :: Choiys">
+<meta name="description" Content="for newbie hacker;
+Choice, Choiys">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<link rel="alternate" type="application/rss+xml" title="Choiys" href="http://choiys.tistory.com/rss">
+<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="stylesheet" href="https://tistory2.daumcdn.net/tistory/999541/skin/style.css?_T_=1463504050">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<script>
+//추가 단축키
+var key = new Array();
+key['w'] = "/admin/entry/post/";
+key['e'] = "/admin/skin/edit/";
+key['r'] = "/admin/plugin/refererUrlLog/";
+key['h'] = "/";
+
+function getKey(keyStroke) {
+	if ((event.srcElement.tagName != 'INPUT') && (event.srcElement.tagName != 'TEXTAREA')){
+		isNetscape=(document.layers);
+		eventChooser = (isNetscape) ? keyStroke.which : event.keyCode;
+		which = String.fromCharCode(eventChooser).toLowerCase();
+		for (var i in key)
+			if (which == i) window.location = key[i];
+	}
+}
+document.onkeypress = getKey;
+</script>
+<meta http-equiv="imagetoolbar" content="no"/><link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/blogs/plugins/A_ShareEntryWithSNS/css/shareEntryWithSNS.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651">
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/blogs/plugins/A_ShareEntryWithSNS/script/shareEntryWithSNS.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+
+<style type="text/css">
+		#daumSearchBox {
+			height: 21px;
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+			margin: 5px auto ;
+			padding: 0;
+		}
+		#daumSearchBox input {
+			background: none;
+			margin : 0;
+			padding : 0;
+			border : 0;
+		}
+		#daumSearchBox #daumLogo {
+			width: 34px;
+			height: 21px;
+			float: left;
+			margin-right: 5px;
+			background-image : url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+		}
+		#daumSearchBox #show_q {
+			background-color: transparent;
+			border: none;
+			font: 12px Gulim, Sans-serif;
+			color: #555;
+			margin-top: 4px;
+			margin-right: 15px;
+			float: left;
+		}
+
+		#daumSearchBox #show_btn {
+			background-image : url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+			width: 37px;
+			height: 21px;
+			float: left;
+			margin:0;
+			cursor:pointer;
+			text-indent:-1000em;
+		}
+	</style><link rel="stylesheet" href="https://t1.daumcdn.net/tistory_admin/blogs/plugins/lightbox/assets/css/lightbox.min.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651" />
+<link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/blogs/plugins/TistoryProfileLayer/style.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651" />
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/blogs/plugins/TistoryProfileLayer/profile.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+	<style type="text/css">
+		.another_category { border: 1px solid #E5E5E5; padding: 10px 10px 5px; margin:10px 0; clear: both; }
+		.another_category h4 { font-size: 12px !important; margin: 0 !important; border-bottom: 1px solid #E5E5E5 !important; padding: 2px 0 6px !important; }
+		.another_category h4 a { font-weight: bold !important; }
+		.another_category table { table-layout: fixed; border-collapse: collapse; width: 100% !important; margin-top: 10px !important; }
+		* html .another_category table { width: auto !important; }
+		*:first-child+html .another_category table { width: auto !important; }
+		.another_category th, .another_category td { padding: 0 0 4px !important; }
+		.another_category th { text-align: left; font-size: 12px !important; font-weight: normal;  word-break: break-all; overflow: hidden; line-height: 1.5; }
+		.another_category td { text-align: right; width: 80px; font-size: 11px; }
+		.another_category th a { font-weight: normal; text-decoration: none; border: none !important; }
+		.another_category th a.current{ font-weight: bold; text-decoration: none !important; border-bottom: 1px solid !important; }
+		.another_category th span { font-weight: normal; text-decoration: none; font: 10px Tahoma, Sans-serif; border: none !important; }
+
+		.another_category_color_gray, .another_category_color_gray h4 { border-color: #E5E5E5 !important; }
+		.another_category_color_gray * { color: #909090 !important; }
+		.another_category_color_gray th a.current{border-color:#909090 !important;}
+		.another_category_color_gray h4, .another_category_color_gray h4 a { color: #737373 !important; }
+
+
+		.another_category_color_red, .another_category_color_red h4 { border-color: #F6D4D3 !important;  }
+		.another_category_color_red * { color: #E86869 !important; }
+		.another_category_color_red th a.current{border-color:#E86869 !important;}
+		.another_category_color_red h4, .another_category_color_red h4 a { color: #ED0908 !important; }
+
+
+		.another_category_color_green, .another_category_color_green h4 { border-color: #CCE7C8 !important; }
+		.another_category_color_green * { color: #64C05B !important; }
+		.another_category_color_green th a.current{border-color:#64C05B !important;}
+		.another_category_color_green h4, .another_category_color_green h4 a { color: #3EA731 !important; }
+
+
+		.another_category_color_blue, .another_category_color_blue h4 { border-color: #C8DAF2 !important; }
+		.another_category_color_blue * { color: #477FD6 !important; }
+		.another_category_color_blue th a.current{border-color:#477FD6 !important;}
+		.another_category_color_blue h4, .another_category_color_blue h4 a { color: #1960CA !important; }
+
+
+		.another_category_color_violet, .another_category_color_violet h4 { border-color: #E1CEEC !important;  }
+		.another_category_color_violet * { color:#9D64C5 !important; }
+		.another_category_color_violet th a.current{border-color:#9D64C5 !important;}
+		.another_category_color_violet h4, .another_category_color_violet h4 a { color: #7E2CB5 !important; }
+	</style>
+<script type="text/javascript">
+        window.TistoryBlog = {
+            url: "http://choiys.tistory.com",
+            tistoryUrl: "http://choiys.tistory.com",
+			manageUrl: 'https://choiys.tistory.com/manage'
+        };
+        var servicePath = "";
+        var blogURL = "";
+    </script>
+
+	<script> (function() { window.orgjQuery = window.jQuery; window.jQuery = tjQuery })()</script>
+    <script src="https://t1.daumcdn.net/section/uoclike/news/uoclike.min.js"></script>
+	<script> (function() { window.jQuery = window.orgjQuery; delete window.orgjQuery })()</script>
+    <script>
+		(function($) {
+			$.fn.extend({
+				size: function () {
+					return this.length
+				}
+			});
+			$.fn.UOCLike.defaults.updateServiceCategory = true;
+					})(tjQuery)
+    </script>
+        <script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/blogs/script/_/base.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+        <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/blogs/style/dialog.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"/>
+            <link rel="stylesheet" type="text/css" href="https://t1.daumcdn.net/tistory_admin/blogs/style/postBtn.css?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"/>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script></head>
+
+<body id="tt-body-index">
+<script type="text/javascript">
+	(function() {
+		if (!window.T) {
+			window.T = {}
+		}
+		window.T.config = {"TOP_SSL_URL":"https:\/\/www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"?page=2","BLOG":{"isDormancy":false,"title":"Choiys"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https:\/\/www.tistory.com\/auth\/login\/?redirectUrl=http%3A%2F%2Fchoiys.tistory.com%2F","DEFAULT_URL":"http:\/\/choiys.tistory.com","USER":{"name":null,"homepage":null}};
+	})();
+</script>
+
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/blogs/script/blog/common.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+<div style="margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0"></div>
+<div id="wrap">
+	<div id="sidebar">
+		<div class="blank"></div>
+		<h1><a href="/">Choiys</a></h1>
+		
+			<div class="widget"> <!-- Blog Menu -->
+				<ul>		<li class="t_menu_home first">
+			<a href="/">BLOG</a>
+		</li>
+				<li class="t_menu_write">
+			<a href="/gateway/entry/post">WRITE</a>
+		</li>
+				<li class="t_menu_guestbook last">
+			<a href="/guestbook">GUESTBOOK</a>
+		</li>
+		</ul>
+			</div>
+			
+			<div class="widget category"> <!-- Category -->
+				<a href="http://choiys.tistory.com/1"><ul>Profile</ul></a>
+				<ul class="tt_category">
+	<li class="">
+		<a class="link_tit" href="/category">
+			분류 전체보기							<span class="c_cnt">(241)</span>
+			
+					</a>
+
+				<ul class="category_list">
+							<li class="">
+					<a class="link_item" href="/category/Wargame">
+						Wargame													<span class="c_cnt">(208)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/FC3%3ALord%20Of%20the%20BOF">
+									FC3:Lord Of the BOF
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Bandit%3AOverTheWire">
+									Bandit:OverTheWire
+																			<span class="c_cnt">(26)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Leviathan%3AOverTheWire">
+									Leviathan:OverTheWire
+																			<span class="c_cnt">(8)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Narnia%3AOverTheWire">
+									Narnia:OverTheWire
+																			<span class="c_cnt">(10)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Behemoth%3AOverTheWire">
+									Behemoth:OverTheWire
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Natas%3AOverTheWire">
+									Natas:OverTheWire
+																			<span class="c_cnt">(20)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/RedTiger%3AOverTheWire">
+									RedTiger:OverTheWire
+																			<span class="c_cnt">(10)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/LOS1%3ALord%20of%20SQL%20Injection">
+									LOS1:Lord of SQL Inj..
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Protostar%3AExploit-Exercises">
+									Protostar:Exploit-Ex..
+																			<span class="c_cnt">(16)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Reversing.kr">
+									Reversing.kr
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/SuNiNaTaS">
+									SuNiNaTaS
+																			<span class="c_cnt">(12)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Webhacking.kr">
+									Webhacking.kr
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/WebGoat%207.0.1">
+									WebGoat 7.0.1
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Wargame.kr">
+									Wargame.kr
+																			<span class="c_cnt">(34)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Pwnable.kr">
+									Pwnable.kr
+																			<span class="c_cnt">(26)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/PythonChallenge">
+									PythonChallenge
+																			<span class="c_cnt">(11)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Root-Me%3AWeb-Server">
+									Root-Me:Web-Server
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Root-Me%3AApp-System">
+									Root-Me:App-System
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Tasteless">
+									Tasteless
+																			<span class="c_cnt">(2)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Wargame/Hackburger.ee">
+									Hackburger.ee
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/CTF">
+						CTF													<span class="c_cnt">(25)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/H3X0R%20CTF%202016">
+									H3X0R CTF 2016
+																			<span class="c_cnt">(6)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/IceCTF%202016">
+									IceCTF 2016
+																			<span class="c_cnt">(9)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/WITHCON%202016">
+									WITHCON 2016
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/HDCON%202016">
+									HDCON 2016
+																			<span class="c_cnt">(3)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/BISC%202nd%20Web%282016%29">
+									BISC 2nd Web(2016)
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/CTF/Samsung%20CTF%202017">
+									Samsung CTF 2017
+																			<span class="c_cnt">(5)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/Programming">
+						Programming													<span class="c_cnt">(2)</span>
+						
+											</a>
+
+										<ul class="sub_category_list">
+													<li class="">
+								<a class="link_sub_item" href="/category/Programming/Python">
+									Python
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Programming/Django">
+									Django
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Programming/Angular.js">
+									Angular.js
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Programming/C%2C%20C%2B%2B">
+									C, C++
+																			<span class="c_cnt">(0)</span>
+									
+																	</a>
+							</li>
+													<li class="">
+								<a class="link_sub_item" href="/category/Programming/Docker">
+									Docker
+																			<span class="c_cnt">(1)</span>
+									
+																	</a>
+							</li>
+											</ul>
+					
+				</li>
+							<li class="">
+					<a class="link_item" href="/category/ETC.">
+						ETC.													<span class="c_cnt">(5)</span>
+						
+											</a>
+
+					
+				</li>
+					</ul>
+			</li>
+</ul>
+			</div>
+			 <!-- Notice -->
+			
+			<div class="widget">
+				<ul>
+					
+				</ul>
+			</div>
+			
+			
+			<div class="widget"> <!-- Recent Comments -->
+				<ul id="recentComments">
+					<li><a href="/241#comment13921731" title="Choiys〃2017">고려대학교 정보보호대학원 석사과정(진)..</a></li>
+<li><a href="/241#comment13919800" title="horensic〃2017">항상 블로그 잘 보고 있습니다. ^^</a></li>
+<li><a href="/223#comment13777988" title="mtucx〃2017">☺♪ hi choiys it's a long time :p 
+i..</a></li>
+<li><a href="/235#comment13709061" title="qasdas〃2017">[승인대기]</a></li>
+<li><a href="/235#comment13709060" title="qasdas〃2017">[승인대기]</a></li>
+				</ul>
+			</div>
+			 <!-- Links -->
+			<div class="widget">
+				<ul>
+					<li><a href="http://kblab.tistory.com" target="_blank">k3y6reak's lab</a></li>
+<li><a href="http://eram.tistory.com" target="_blank">Non sum qualis ERAM</a></li>
+<li><a href="http://blog.zairo.kr" target="_blank">Stay hungry, stay foolish.</a></li>
+<li><a href="http://shayete.tistory.com" target="_blank">샤의 공간</a></li>
+<li><a href="http://blog.naver.com/wlstngus0504" target="_blank">jsh</a></li>
+<li><a href="http://ezbeat.tistory.com" target="_blank">Library of Ezbeat</a></li>
+<li><a href="http://holinder4s.tistory.com" target="_blank">holinder4S</a></li>
+<li><a href="http://horensic.tistory.com" target="_blank">horensic</a></li>
+<li><a href="http://exchangeinfo.tistory.com" target="_blank">삽이 부서질 때까지 삽질</a></li>
+<li><a href="http://4dla3.tistory.com" target="_blank">hack for dla3</a></li>
+				</ul>
+			</div>
+			 <!-- Counter -->
+			<div class="widget counter text-center">
+				<span class="yesterday">25</span> /
+				<span class="today">5</span> /
+				<span class="total">30,341</span>
+			</div>
+			 <!-- Search -->
+			<div class="widget search text-center">
+				
+				<input class="search" placeholder="press enter to search…" type="text" name="search" value="" onkeypress="if (event.keyCode == 13) { try{window.location.href='/search/'+looseURIEncode(document.getElementsByName('search')[0].value);document.getElementsByName('search')[0].value='';return false;}catch(e){} }">
+				
+			</div>
+			
+		<div class="blank"></div>
+	</div>
+
+	<div id="content">
+		<div id="content-inner">
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div id="head">
+				<h2><a href="/entry/Tasteless-Level4-Stop-Quotes">[Tasteless] Level4 - Stop Quotes</a></h2>
+				<div class="date">2017.11.10 16:06</div>
+			</div>
+
+			<div id="body" class="entry protected">
+				<p><i class="icon-unlock-alt"></i></p>
+				<p><input type="password" maxlength="30" id="entry243password" name="entry243password" value="" onkeydown="if (event.keyCode == 13){reloadEntry(243);return false;}"></p>
+				<p><input type="button" class="submit" value="Unlock" onclick="{reloadEntry(243);return false;}"></p>
+			</div>
+			
+
+			
+
+			<div id="paging">
+			
+				<a  class="prev no-more-prev">PREV</a>
+				<a class="numbox" ><span class="selected">1</span></a><a class="numbox"  href='?page=2'><span >2</span></a><a class="numbox"  href='?page=3'><span >3</span></a><a class="numbox"  href='?page=4'><span >4</span></a><a class="numbox" ><span >&middot;&middot;&middot;</span></a><a class="numbox"  href='?page=241'><span >241</span></a>
+				<a  href='?page=2' class="next ">NEXT</a>
+			
+			</div>
+
+			<s_sidebar_element>
+			<div id="recent-post">
+				<h4><a href="/category">+ Recent posts</a></h4>
+				<ul>
+					
+					<li class="box">
+						<a href="/entry/Tasteless-Level4-Stop-Quotes" class="thumb">
+						<img src="https://tistory2.daumcdn.net/tistory/999541/skin/images/blank.png" alt="post image">
+						<span class="title">[Tasteless] Level4 - Stop Qu..</span>
+						</a>
+					</li>
+					
+
+					<li class="box">
+						<a href="/entry/Tasteless-Level2-Milk" class="thumb">
+						<img src="https://tistory2.daumcdn.net/tistory/999541/skin/images/blank.png" alt="post image">
+						<span class="title">[Tasteless] Level2 - Milk</span>
+						</a>
+					</li>
+					
+
+					<li class="box">
+						<a href="/entry/RedTiger-Level-10" class="thumb">
+						<img src="https://tistory2.daumcdn.net/tistory/999541/skin/images/blank.png" alt="post image">
+						<span class="title">[RedTiger] Level 10</span>
+						</a>
+					</li>
+					
+
+					<li class="box">
+						<a href="/entry/RedTiger-Level-9" class="thumb">
+						<img src="https://tistory2.daumcdn.net/tistory/999541/skin/images/blank.png" alt="post image">
+						<span class="title">[RedTiger] Level 9</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			</s_sidebar_element>
+
+			<div class="clear"></div>
+
+			<div id="foot">
+				<div class="powered">Powered by <a href="http://www.tistory.com/" target="_blank">Tistory</a>, Designed by <a href="http://wallel.com/" target="_blank">wallel</a></div>
+				<div class="social">
+					<a href="http://choiys.tistory.com/rss" target="_blank">Rss Feed</a> and
+					<a href="https://www.twitter.com/" target="_blank">Twitter</a>,
+					<a href="https://www.facebook.com/" target="_blank">Facebook</a>,
+					<a href="https://www.youtube.com/" target="_blank">Youtube</a>,
+					<a href="https://plus.google.com/" target="_blank">Google+</a>
+				</div>
+			</div>
+		</div> <!-- content-inner close -->
+	</div> <!-- content close -->
+</div> <!-- wrap close -->
+
+
+<div id="sidebar-toggle" onclick="javascript:sidebar_toggle();"><i class="icon-reorder"></i></div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://tistory2.daumcdn.net/tistory/999541/skin/images/common.js"></script>
+<script src="https://tistory2.daumcdn.net/tistory/999541/skin/images/ygal-edit.min.js"></script>
+<script type="text/javascript">
+ document.oncontextmenu = new Function ('return false');
+ document.ondragstart = new Function ('return false');
+ document.onselectstart = new Function ('return false');
+  document.body.style.MozUserSelect = 'none';
+</script>
+<script type="text/javascript" src="https://t1.daumcdn.net/tistory_admin/blogs/plugins/PreventCopyContents/js/functions.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+<script src="//search1.daumcdn.net/search/statics/common/js/2017/search_dragselection.min.20170308053514.js"></script>
+<script>
+    (function($) {
+        $("body").bind('copy', function (e) {
+
+            var url = document.location.href,
+                decodedUrl = decodeURI(url),
+                selection = window.getSelection();
+
+
+            if (typeof window.getSelection == "undefined") {//IE8 or earlier...
+                event.preventDefault();
+
+                var pagelink = '\n\n 출처: ' + decodedUrl,
+                    copytext = selection + pagelink;
+
+                if (window.clipboardData) {
+                    window.clipboardData.setData('Text', copytext);
+                }
+                return;
+            }
+            var body_element = document.getElementsByTagName('body')[0];
+
+            //if the selection is short let's not annoy our users
+            if (("" + selection).length < 30) return;
+
+            //create a div outside of the visible area
+            var newdiv = document.createElement('div');
+            newdiv.style.position = 'absolute';
+            newdiv.style.left = '-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+            //we need a <pre> tag workaround
+            //otherwise the text inside "pre" loses all the line breaks!
+            if (selection.getRangeAt(0).commonAncestorContainer.nodeName == "PRE") {
+                newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+            }
+
+            newdiv.innerHTML += '<br /><br />출처: <a href="' + url + '">' + decodedUrl + '</a> [Choiys]';
+
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function () {
+                body_element.removeChild(newdiv);
+            }, 200);
+
+        });
+    })(tjQuery);
+</script><script src="https://t1.daumcdn.net/tistory_admin/blogs/plugins/lightbox/assets/js/lightbox.min.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651"></script>
+	<script>
+	    lightbox.option({
+			"fadeDuration": 200,
+		    "resizeDuration": 200,
+		    "wrapAround": false,
+			"albumLabel": "%1 / %2",
+			"fitImagesInViewport":true ,
+			"stopEvent": false
+	    })
+	</script><script src="https://t1.daumcdn.net/tistory_admin/blogs/plugins/RainbowLink/rainbow.js?_version_=7f67ada086207c70e7b93dc7c7bb1d52147cb651" type="text/javascript"></script>
+<script type="text/javascript">
+var _tiq = 'undefined' !== typeof _tiq ? _tiq : [];
+_tiq.push(['__setConfig', {enableScroll:true, enableClick:true, enableButton:true}]);
+_tiq.push(["__setParam", "svcdomain", "user.tistory.com"]);
+(function(d) {
+	var se = d.createElement('script'); se.type = 'text/javascript'; se.async = true;
+	se.src = location.protocol + '//m2.daumcdn.net/tiara/js/td.min.js';
+	var s = d.getElementsByTagName('head')[0]; s.appendChild(se);
+})(document);
+_tiq.push(['__setParam', 'param_ex', JSON.stringify({"userId":"728423","blogId":"999541"})]);
+_tiq.push(['__trackPageview']);
+var addEvent = function (evt, fn) { window.addEventListener ? window.addEventListener(evt, fn, false) : window.attachEvent('on' + evt, fn); };
+var removeEvent = function(evt, fn) { window.removeEventListener ? window.removeEventListener(evt, fn, false) : window.detachEvent('on' + evt, fn);};
+var ua = navigator.userAgent.toLowerCase(); var isIOS = /iP[ao]d|iPhone/i.test(ua);
+var contentExStat = function() {
+		_tiq.push(['__content', 't_content_ex', {
+			'data_type':'usage'
+}]);
+		removeEvent(isIOS ? 'pagehide' : 'beforeunload', contentExStat);
+};
+addEvent(isIOS ? 'pagehide' : 'beforeunload', contentExStat);
+</script>
+<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || []; window.roosevelt_params_queue.push({channel_id: "dk", channel_label: 'tistory'});</script>
+<script type="text/javascript" src="//t1.daumcdn.net/midas/rt/dk_bt/roosevelt_dk_bt.js" async></script><script type="text/javascript">if(window.console!=undefined){setTimeout(console.log.bind(console,"%cTISTORY","font:8em Arial;color:#EC6521;font-weight:bold"),0);setTimeout(console.log.bind(console,"%c  나를 표현하는 블로그","font:2em sans-serif;color:#333;"),0);}</script><iframe style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="//choiys.tistory.com/api" id="editEntry"></iframe><div id="layer_sns" class="layer_sns">
+        <div class="bg_layer"></div>
+        <ul class="list_sns">
+            <li><a class="ico_sns ico_fb" data-service="facebook">페이스북 공유하기</a></li>
+            <li><a class="ico_sns ico_kt" data-service="kakaotalk">카카오톡 공유하기</a></li>
+            <li><a class="ico_sns ico_ks" data-service="kakaostory">카카오스토리 공유하기</a></li>
+            <li><a class="ico_sns ico_tw" data-service="twitter">트위터 공유하기</a></li>
+        </ul>
+        <button type="button" class="btn_close"><span class="ico_sns ico_close">sns공유하기 레이어 닫기</span></button>
+    </div></body>
+</html>

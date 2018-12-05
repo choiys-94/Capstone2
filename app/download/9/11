@@ -1,0 +1,1607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>대한재활의학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.0.css" />
+<link type="text/css" rel="stylesheet" href="/css/karm.css" />
+<!--[if lt IE 8]>
+<script type="text/javascript">
+//<![CDATA[
+	var IE7_PNG_SUFFIX = ".png";
+//]]>
+</script>
+<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/script/jquery.min.1.7.1.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<script type="text/javascript" src="/script/flowplayer-3.2.12.min.js"></script>
+
+<!-- jquery  공통 style 및 ui 사용  //-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!-- jquery  공통 style 및 ui 사용  //-->
+<script type="text/javascript">
+//<![CDATA[
+;jQuery(function(){
+
+	$('.contents_print').click(function(){
+			var W = $(".subCon").width()+20;
+			var H = $(".subCon").height()+100;
+			var features = "menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=" + W + ",height=" + H + ",left=0,top=0";
+
+			var PrintPage = window.open("about:blank", "print", features);
+			PrintPage.document.open();
+			PrintPage.document.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
+			PrintPage.document.write('<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">\n');
+			PrintPage.document.write("<head>\n");
+			PrintPage.document.write('<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>\n');
+			PrintPage.document.write('<meta http-equiv="X-UA-Compatible" content="IE=10"/>\n');
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/common_v1.0.css'/>\n");
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/karm.css'/>\n");
+			PrintPage.document.write("<title>대한재활의학회</title>\n");
+			PrintPage.document.write("</head>\n");
+			PrintPage.document.write("<body style='background:none;'>\n");
+			PrintPage.document.write("<div style='width:98%;margin:0 auto;'>"+$(".subCon").html()+"</div>\n");
+			PrintPage.document.write("</body>\n");
+			PrintPage.document.write("</html>\n");
+			PrintPage.document.close();
+			PrintPage.document.title = document.domain;
+			// 페이지 완벽히 로딩후 프린트 호출 -송기문-
+			setTimeout( function(){
+		    	PrintPage.print();   
+		    }, 500); 
+			
+		});
+
+		var min_font = 12;
+		var max_font = 20;
+		var font_val = 12;
+		
+		$('.font_plus').click(function(){
+			if(font_val < max_font){
+				font_val++;
+			}else{
+				font_val = max_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+
+		});
+
+		$('.font_minus').click(function(){
+			if(font_val > min_font){
+				font_val--;
+			}else{
+				font_val = min_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+			
+		});
+
+		$('#sdate, #edate ,#pdate').datepicker({showMonthAfterYear:true, changeMonth: true,	changeYear: true,	dateFormat: "yy-mm-dd" ,
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			dayNames: ['일','월','화','수','목','금','토'],
+			dayNamesShort: ['일','월','화','수','목','금','토'],
+			dayNamesMin: ['일','월','화','수','목','금','토'],
+			showMonthAfterYear: true,
+			changeMonth: true,
+			changeYear: true,
+			yearSuffix: ''	
+		});
+		
+});
+//]]>
+function twitter(){
+	window.open('https://twitter.com/share?url=http%3A%2F%2Fgastrokorea.org%2Fintro%2Fintro4.php%3F&text=%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C+&via=%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C','twitter','width=500, height=300, scrollbars=no')
+}
+
+function WriteComment(){
+
+		var title = '%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C+';
+		var summary = "";
+		var url = "http%3A%2F%2Fgastrokorea.org%2Fintro%2Fintro4.php%3F";
+		var imgurl = "http://gastrokorea.org/image/main/top_logo.gif";
+		var txtOption = "toolbar=0,status=0,width=1000,height=600";
+		var openURL = "http://www.facebook.com/sharer.php?s=100&p[title]="+title+"&p[url]="+url+"&p[summary]="+summary+"&p[images][0]"+imgurl;
+		window.open(openURL,"SNS",txtOption);
+	
+}
+
+function blank_popup(url){
+	window.open(url);
+}
+function blank2_popup(url){
+	window.open(url,'privacy','width=750, height=600, scrollbars=yes');
+}
+function location_href(url){
+	location.href=url;
+}
+
+/* 2016-12-29 팝업 소스가 없어 추가 함 김상훈 K*/
+function popup_getCookie( name )
+{
+		var nameOfCookie = name + "=";
+		var x = 0;
+		while ( x <= document.cookie.length )
+		{
+				var y = (x+nameOfCookie.length);
+				if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+						if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+								endOfCookie = document.cookie.length;
+						return unescape( document.cookie.substring( y, endOfCookie ) );
+				}
+				x = document.cookie.indexOf( " ", x ) + 1;
+				if ( x == 0 )
+						break;
+		}
+		return "";
+}
+
+
+var karm_win=null;
+function NewWindow(mypage,myname,w,h,scroll,pos){
+	if(pos=="random")
+		{LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100; }
+	if(pos=="center")
+		{LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;	}
+	if(pos=="imsi"){
+		LeftPosition=0;TopPosition=0;
+	} else	if(pos=="imsia"){
+		LeftPosition=450;TopPosition=0;
+	} else	if(pos=="imsib"){
+		LeftPosition=516;TopPosition=0;
+	} else	if(pos=="imsic"){
+		LeftPosition=0;TopPosition=0;
+	} 	else if((pos!="center" && pos!="random") || pos==null){	
+		LeftPosition=0;TopPosition=0;
+	}
+	settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+	karm_win=window.open(mypage,myname,settings);
+	if(karm_win.focus){karm_win.focus();}
+}
+/* 2016-12-29 팝업 소스가 없어 추가 함 김상훈 K*/
+
+
+/*추가팝업 완료*/
+</script>
+<style>
+.ui-datepicker{ font-size: 12px; }
+.ui-datepicker select.ui-datepicker-month{ width:40%; font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{ width:50%; font-size: 11px; }
+
+/*김상훈 추가 게시판에서 사용하는 클랙스 2016-12-28*/
+.addborderRed { border: 1px solid Red !important; }
+.addborderBlack { border: 1px solid Black !important; }
+.addborderGreen { border: 1px solid Green !important; }
+.addborderGray { border: 1px solid gray !important; }
+.addborderBlue { border: 1px solid Blue !important; }
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<!-- headerWrap -->
+	<div id="headerWrap">
+		<!-- skip navigation -->
+		<dl id="skipNavi">
+			<dt>바로가기 메뉴</dt>
+			<dd><a href="#containerWrap">본문내용 바로가기</a></dd>
+			<dd><a href="#footerWrap">하단내용 바로가기</a></dd>
+		</dl>
+		<!-- //skip navigation -->
+
+		<!-- header -->
+		<div class="header">
+			<h1 class="logo"><a href="/"><img src="/image/common/header_logo.png" alt="대한재활의학회" /></a></h1>
+
+
+			<div class="posTR">
+	
+				<!-- util menu -->
+				<dl id="utilMenu">
+					<dt class="hidden">유틸메뉴</dt>
+					<dd>
+						<ul class="clfix">
+							<li><a href="/">Home</a></li>
+														<li><a href="/member/login.php">LOGIN</a></li>
+							<li><a href="/member/join_01.php">JOIN</a></li>
+														<li><a href="/intro/intro7.php">CONTACT US</a></li>
+							<li><a href="/sitemap/">SITEMAP</a></li>
+													</ul>
+					</dd>
+				</dl>
+				<!-- //util menu -->
+
+				<p><a href="/eng" target="_blank" class="eng">ENGLISH</a></p>
+				<p><a href="#" class="allMenu">전체메뉴 보기</a></p>
+			</div>
+
+			<!-- gnb -->
+			<h2 class="hidden">주 메뉴</h2>
+			<div class="gnbWrap">
+				<ul id="gnbUI">
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/intro/">학회소개</a>//-->
+						<a href="#" onclick="return false;">학회소개</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/intro/index.php">인사말</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro2.php">학회 연혁</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro3.php">학회 기구도</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro4.php">학회 현황</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro5.php">수련병원현황</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro6.php">학회 회칙</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro_index.php">연구회 안내</a>
+																			<li><a href="/intro/intro7.php">사무국 안내</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/workshop/">학회지</a>//-->
+						<a href="#" onclick="return false;">학회지</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org');">학회지 검색</a>
+																													
+									</li>
+									
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org/for/authors.html');">투고 규정</a>
+																													
+									</li>
+									
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org/submission/Login.html');">온라인 논문투고</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/jounal/">학술행사</a>//-->
+						<a href="#" onclick="return false;">학술행사</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=workshop">주요 학술행사</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=schedule">국내외 행사일정</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=schedule_pds">학술대회 발표자료</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=history">역대 학술대회</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=gallery">행사 앨범</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/bbs/?code=down">공지 및 소식</a>//-->
+						<a href="#" onclick="return false;">공지 및 소식</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=notice">공지사항</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=news">학회소식</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=insure">보험공지</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=research">연구과제공모</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=mornitoring">정책 모니터링</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=mornitoring2">언론보도</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/community/">회원광장</a>//-->
+						<a href="#" onclick="return false;">회원광장</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=paper">월간 소식지</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=member">회원 게시판</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=talk">전공의 특별법 토의방</a>
+																													
+									</li>
+									
+																	<li><a href="/committee/index.php">위원회 공간</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=region">각지회 소식</a>
+																													
+									</li>
+									
+																	<li><a href="/member/report.php">불법/부당 신고 및 건의</a>
+																														<ul>
+																					</ul>
+																			
+									</li>
+									
+																	<li><a href="/member/search.php">회원검색</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=case">증례 토론</a>
+																													
+									</li>
+									
+																	<li><a href="/member/spray.php">회원 분포도</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=study">전공의 학습목표</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/info/">자료실</a>//-->
+						<a href="#" onclick="return false;">자료실</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/data/term.php">용어검색</a>
+																													
+									</li>
+									
+																	<li><a href="/data/data01_1.php">상대가치점수표</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=data2">생명표</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=health">보건복지부 자료</a>
+																													
+									</li>
+									
+																	<li><a href="/data/rule.php">학회 규정</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=pds">일반 자료실</a>
+																													
+									</li>
+									
+																	<li><a href="/data/site_01.php">관련사이트</a>
+																														<ul>
+																							<li class="">
+													<a href="/data/site_01.php">- 국내 사이트</a>
+												</li>
+																							<li class="">
+													<a href="/data/site_02.php">- 국외 사이트</a>
+												</li>
+																							<li class="">
+													<a href="/data/site_03.php">- 재활관련 추천사이트</a>
+												</li>
+																					</ul>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/info/">재활의학과 건강정보</a>//-->
+						<a href="#" onclick="return false;">재활의학과 건강정보</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/hospital/index.php">진료병원안내</a>
+																													
+									</li>
+									
+																	<li><a href="/info/info.php">재활의학회 소개</a>
+																													
+									</li>
+									
+																	<li><a href="/info/disease.php">질병별소개</a>
+																														<ul>
+																					</ul>
+																			
+									</li>
+									
+																	<li><a href="/info/movie.php">질병별  재활 소개 동영상</a>
+																													
+									</li>
+									
+																	<li><a href="/info/list.php">발달선별검사 의뢰기관</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+														</ul>
+				
+			</div>
+			<!-- //gnb -->
+		</div>
+		<!-- //header -->
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+
+	<!-- containerWrap -->
+
+	<div id="containerWrap">
+		<h2 class="hidden">본문내용</h2>
+		<!-- sub contents -->
+		<div class="contents">
+
+
+
+			<dl id="lnb">
+				<dt >학회소개</dt>
+				<dd>
+					<ul>
+											<li  class="">
+						<a href="/intro/index.php">인사말</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro2.php">학회 연혁</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro3.php">학회 기구도</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro4.php">학회 현황</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro5.php">수련병원현황</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro6.php">학회 회칙</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro_index.php">연구회 안내</a>
+														<ul>
+																	<li class="">
+										<a href="/intro/intro_index.php">규정 및 설립신청</a>
+									</li>
+																	<li class="">
+										<a href="/intro/intro8.php">신경근육질환연구회</a>
+									</li>
+															</ul>
+													</li>
+											<li  class="">
+						<a href="/intro/intro7.php">사무국 안내</a>
+													</li>
+										</ul>
+				</dd>
+			</dl>
+
+			<div class="titArea">
+				<h2>
+									</h2>
+
+
+				<div class="fr">
+				<dl class="pagePath">
+					<dt class="hidden">페이지 경로</dt>
+					<dd>
+						<ul>
+							<li>Home</li>
+							<li>학회소개</li>
+							<li></li>
+							<li class="current"> </li>
+						</ul>
+					</dd>
+				</dl>
+				<!-- //pagePath -->
+				
+				<div class="subUtility">
+					<ul>
+						<li class="facebook"><a href="#" onclick="WriteComment()">Facebook</a></li>
+						<li class="twitter"><a href="#" onclick="twitter()">Twitter</a></li>
+						<li class="print contents_print"><a href="#none">Print</a></li>
+					</ul>
+					<ul>
+						<li class="plus font_plus"><a href="#none">본문 글자크기 확대</a></li>
+						<li class="minus font_minus"><a href="#none">본문 글자크기 축소</a></li>
+					</ul>
+				</div>
+				<!-- //subUtility -->
+				</div>
+
+
+			</div>
+			<!-- //titArea -->
+		
+	
+
+			<div class="subCon">
+			
+
+<div class="intro04">
+	<div class="tabArea type01"><!-- tabArea -->
+		<ul class="tabMenu">
+			<li><a href="#" class="on">전문의 또는 회원현황 / 지부 <span class="webOnly">및 연구회</span></a></li>
+			<li><a href="#">학술대회연혁</a></li>
+			<li><a href="#">학회지 발간 및 간행사업</a></li>
+		</ul>
+
+		<div class="tabCon"><!-- tabCon1 -->
+			<h3 class="subTitBg">전문의 또는 회원현황 / 지부 및 연구회</h3>
+			<div class="tblWrap">
+				<table class="tblBbs border" summary="수련위원회" ">
+					<colgroup>
+						<col width="20%" />
+						<col width="20%" />
+						<col width="20%" />
+						<col width="20%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>연도</th>
+							<th>총회원수</th>
+							<th>정회원수</th>
+							<th>준회원수</th>
+							<th>전문의 배출수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1972년</td>
+							<td>50명</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1977년</td>
+							<td>117명</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>1983년</td>
+							<td>232명</td>
+							<td>99명</td>
+							<td>133명</td>
+							<td>22명</td>
+						</tr>
+						<tr>
+							<td>1984년</td>
+							<td>251명</td>
+							<td>131명</td>
+							<td>120명</td>
+							<td>6명</td>
+						</tr>
+						<tr>
+							<td>1985년</td>
+							<td>267명</td>
+							<td>132명</td>
+							<td>135명</td>
+							<td>6명</td>
+						</tr>
+						<tr>
+							<td>1986년</td>
+							<td>185명</td>
+							<td>134명</td>
+							<td>51명</td>
+							<td>9명</td>
+						</tr>
+						<tr>
+							<td>1987년</td>
+							<td>185명</td>
+							<td>136명</td>
+							<td>49명</td>
+							<td>11명</td>
+						</tr>
+						<tr>
+							<td>1988년</td>
+							<td>226명</td>
+							<td>151명</td>
+							<td>75명</td>
+							<td>15명</td>
+						</tr>
+						<tr>
+							<td>1989년</td>
+							<td>252명</td>
+							<td>191명</td>
+							<td>61명</td>
+							<td>15명</td>
+						</tr>
+						<tr>
+							<td>1990년</td>
+							<td>283명</td>
+							<td>209명</td>
+							<td>74명</td>
+							<td>18명</td>
+						</tr>
+						<tr>
+							<td>1991년</td>
+							<td>332명</td>
+							<td>230명</td>
+							<td>102명</td>
+							<td>21명</td>
+						</tr>
+						<tr>
+							<td>1992년</td>
+							<td>381명</td>
+							<td>255명</td>
+							<td>126명</td>
+							<td>25명</td>
+						</tr>
+						<tr>
+							<td>1993년</td>
+							<td>408명</td>
+							<td>230명</td>
+							<td>178명</td>
+							<td>1명</td>
+						</tr>
+						<tr>
+							<td>1994년</td>
+							<td>463명</td>
+							<td>267명</td>
+							<td>195명</td>
+							<td>38명</td>
+						</tr>
+						<tr>
+							<td>1995년</td>
+							<td>517명</td>
+							<td>308명</td>
+							<td>209명</td>
+							<td>45명</td>
+						</tr>
+						<tr>
+							<td>1996년</td>
+							<td>590명</td>
+							<td>352명</td>
+							<td>238명</td>
+							<td>44명</td>
+						</tr>
+						<tr>
+							<td>1997년</td>
+							<td>668명</td>
+							<td>398명</td>
+							<td>270명</td>
+							<td>52명</td>
+						</tr>
+						<tr>
+							<td>1998년</td>
+							<td>754명</td>
+							<td>446명</td>
+							<td>307명</td>
+							<td>48명</td>
+						</tr>
+						<tr>
+							<td>1999년</td>
+							<td>827명</td>
+							<td>506명</td>
+							<td>321명</td>
+							<td>60명</td>
+						</tr>
+						<tr>
+							<td>2000년</td>
+							<td>912명</td>
+							<td>567명</td>
+							<td>345명</td>
+							<td>70명</td>
+						</tr>
+						<tr>
+							<td>2001년</td>
+							<td>981명</td>
+							<td>650명</td>
+							<td>331명</td>
+							<td>82명</td>
+						</tr>
+						<tr>
+							<td>2002년</td>
+							<td>1,055명</td>
+							<td>744명</td>
+							<td>311명</td>
+							<td>89명</td>
+						</tr>
+						<tr>
+							<td>2003년</td>
+							<td>1,152명</td>
+							<td>832명</td>
+							<td>320명</td>
+							<td>68명</td>
+						</tr>
+						<tr>
+							<td>2004년</td>
+							<td>1,207명</td>
+							<td>913명</td>
+							<td>294명</td>
+							<td>82명</td>
+						</tr>
+						<tr>
+							<td>2005년</td>
+							<td>1,287명</td>
+							<td>981명</td>
+							<td>306명 </td>
+							<td>66명</td>
+						</tr>
+						<tr>
+							<td>2006년</td>
+							<td>1,395명</td>
+							<td>1,064명</td>
+							<td>331명</td>
+							<td>64명</td>
+						</tr>
+						<tr>
+							<td>2007년</td>
+							<td>1,052명</td>
+							<td>1,138명</td>
+							<td>364명</td>
+							<td>89명</td>
+						</tr>
+						<tr>
+							<td>2008년</td>
+							<td>1,614명</td>
+							<td>1,207명</td>
+							<td>407명</td>
+							<td>72명</td>
+						</tr>
+						<tr>
+							<td>2009년</td>
+							<td>1,714명</td>
+							<td>1,267명</td>
+							<td>447명</td>
+							<td>81명</td>
+						</tr>
+						<tr>
+							<td>2010년</td>
+							<td>1,828명</td>
+							<td>1,361명</td>
+							<td>467명</td>
+							<td>96명</td>
+						</tr>
+						<tr>
+							<td>2011년</td>
+							<td>1,961명</td>
+							<td>1,463명</td>
+							<td>498명</td>
+							<td>103명</td>
+						</tr>
+						<tr>
+							<td>2012년</td>
+							<td>2,092명</td>
+							<td>1,582명</td>
+							<td>510명</td>
+							<td>119명</td>
+						</tr>
+						<tr>
+							<td>2013년</td>
+							<td>2,214명</td>
+							<td>1,691명</td>
+							<td>523명</td>
+							<td>112명</td>
+						</tr>
+						<tr>
+							<td>2014년</td>
+							<td>2,335명</td>
+							<td>1,815명</td>
+							<td>520명</td>
+							<td>124명</td>
+						</tr>
+						<tr>
+							<td>2015년</td>
+							<td>2,455명</td>
+							<td>1,935명</td>
+							<td>600명</td>
+							<td>123명</td>
+						</tr>
+						<tr>
+							<td>2016년</td>
+							<td>2,550명</td>
+							<td>2,066명</td>
+							<td>484명</td>
+							<td>132명</td>
+						</tr>
+						<tr>
+							<td>2017년</td>
+							<td>2,659명</td>
+							<td>2,193명</td>
+							<td>466명</td>
+							<td>127명</td>
+						</tr>
+						<tr>
+							<td>2018년</td>
+							<td>2,760명</td>
+							<td>2,311명</td>
+							<td>449명</td>
+							<td>119명</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="subTitBg">지회</h3>
+			<div class="tblWrap">
+				<table class="tblBbs border" summary="지회">
+					<colgroup>
+						<col width="33.33%" />
+						<col width="33.33%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>지회</th>
+							<th>지회장</th>
+							<th>소속</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>부산울산경남지회</td>
+							<td>김현동</td>
+							<td>인제의대</td>
+						</tr>
+						<tr>
+							<td>중부지회</td>
+							<td>복수경</td>
+							<td>충남의대</td>
+						</tr>
+						<tr>
+							<td>호남제주지회</td>
+							<td>주민철</td>
+							<td>원광의대</td>
+						</tr>
+						<tr>
+							<td>대구경북지회</td>
+							<td>김철현</td>
+							<td>경북의대</td>
+						</tr>	
+					</tbody>								
+				</table>
+			</div>
+		</div><!-- // tabCon1 -->
+
+		<div class="tabCon"><!-- tabCon2 -->
+			<h3 class="subTitBg">학술대회연혁</h3><br>추계학술대회 연혁
+
+			<div class="tblWrap">
+				<table class="tblBbs border" summary="학술대회연혁">
+					<colgroup>
+						<col width="25%" />
+						<col width="25%" />
+						<col width="25%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>회수</th>
+							<th>연도</th>
+							<th>장소</th>
+							<th>연제수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>제1회 </td>
+							<td>1973년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>18편 </td>
+						</tr>
+						<tr>
+							<td>제2회 </td>
+							<td>1974년 </td>
+							<td>연세의대 </td>
+							<td>14편 </td>
+						</tr>
+						<tr>
+							<td>제3회 </td>
+							<td>1975년 </td>
+							<td>고려의대병원 </td>
+							<td>20편 </td>
+						</tr>
+						<tr>
+							<td>제4회 </td>
+							<td>1976년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>14편 </td>
+						</tr>
+						<tr>
+							<td>제5회 </td>
+							<td>1977년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>22편 </td>
+						</tr>
+						<tr>
+							<td>제6회 </td>
+							<td>1978년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>24편 </td>
+						</tr>
+						<tr>
+							<td>제7회 </td>
+							<td>1979년 </td>
+							<td>서울의대병원 </td>
+							<td>19편 </td>
+						</tr>
+						<tr>
+							<td>제8회 </td>
+							<td>1980년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>12편 </td>
+						</tr>
+						<tr>
+							<td>제9회 </td>
+							<td>1981년 </td>
+							<td>가톨릭의대병원 </td>
+							<td>16편 </td>
+						</tr>
+						<tr>
+							<td>제10회 </td>
+							<td>1982년 </td>
+							<td>전주예수병원 </td>
+							<td>19편 </td>
+						</tr>
+						<tr>
+							<td>제11회 </td>
+							<td>1983년 </td>
+							<td>연세의대 </td>
+							<td>23편 </td>
+						</tr>
+						<tr>
+							<td>제12회 </td>
+							<td>1984년 </td>
+							<td>올림피아호텔 </td>
+							<td>23편 </td>
+						</tr>
+						<tr>
+							<td>제13회 </td>
+							<td>1985년 </td>
+							<td>신라호텔 </td>
+							<td>37편 </td>
+						</tr>
+						<tr>
+							<td>제14회 </td>
+							<td>1986년 </td>
+							<td>신라호텔 </td>
+							<td>30편 </td>
+						</tr>
+						<tr>
+							<td>제15회 </td>
+							<td>1987년 </td>
+							<td>신라호텔 </td>
+							<td>34편 </td>
+						</tr>
+						<tr>
+							<td>제16회 </td>
+							<td>1988년 </td>
+							<td>신라호텔 </td>
+							<td>44편 </td>
+						</tr>
+						<tr>
+							<td>제17회 </td>
+							<td>1989년 </td>
+							<td>신라호텔 </td>
+							<td>54편 </td>
+						</tr>
+						<tr>
+							<td>제18회 </td>
+							<td>1990년 </td>
+							<td>리버사이드호텔 </td>
+							<td>78편 </td>
+						</tr>
+						<tr>
+							<td>제19회 </td>
+							<td>1991년 </td>
+							<td>하얏트호텔</td>
+							<td>78편 </td>
+						</tr>
+						<tr>
+							<td>제20회 </td>
+							<td>1992년 </td>
+							<td>하얏트호텔</td>
+							<td>97편 </td>
+						</tr>
+						<tr>
+							<td>제21회 </td>
+							<td>1993년 </td>
+							<td>하얏트호텔</td>
+							<td>107편 </td>
+						</tr>
+						<tr>
+							<td>제22회 </td>
+							<td>1994년 </td>
+							<td>하얏트호텔</td>
+							<td>141편 </td>
+						</tr>
+						<tr>
+							<td>제23회 </td>
+							<td>1995년 </td>
+							<td>하얏트호텔</td>
+							<td>194편 </td>
+						</tr>
+						<tr>
+							<td>제24회 </td>
+							<td>1996년 </td>
+							<td>하얏트호텔</td>
+							<td>263편 </td>
+						</tr>
+						<tr>
+							<td>제25회 </td>
+							<td>1997년 </td>
+							<td>하얏트호텔</td>
+							<td>316편 </td>
+						</tr>
+						<tr>
+							<td>제26회 </td>
+							<td>1998년 </td>
+							<td>하얏트호텔</td>
+							<td>330편 </td>
+						</tr>
+						<tr>
+							<td>제27회 </td>
+							<td>1999년 </td>
+							<td>하얏트호텔</td>
+							<td>370편 </td>
+						</tr>
+						<tr>
+							<td>제28회 </td>
+							<td>2000년 </td>
+							<td>강남성모병원 의과학원 </td>
+							<td>369편 </td>
+						</tr>
+						<tr>
+							<td>제29회 </td>
+							<td>2001년 </td>
+							<td>메리어트호텔 </td>
+							<td>367편 </td>
+						</tr>
+						<tr>
+							<td>제30회 </td>
+							<td>2002년 </td>
+							<td>하얏트호텔</td>
+							<td>340편 </td>
+						</tr>
+						<tr>
+							<td>제31회 </td>
+							<td>2003년 </td>
+							<td>하얏트호텔</td>
+							<td>395편 </td>
+						</tr>
+						<tr>
+							<td>제32회 </td>
+							<td>2004년 </td>
+							<td>그랜드 힐튼호텔 </td>
+							<td>443편 </td>
+						</tr>
+						<tr>
+							<td>제33회 </td>
+							<td>2005년 </td>
+							<td>롯데호텔 </td>
+							<td>409편 </td>
+						</tr>
+						<tr>
+							<td>제34회</td>
+							<td>2006년</td>
+							<td>그랜드 힐튼호텔</td>
+							<td>463편</td>
+						</tr>
+						<tr>
+							<td>제35회</td>
+							<td>2007년</td>
+							<td>하얏트호텔</td>
+							<td>438편</td>
+						</tr>
+						<tr>
+							<td>제36회</td>
+							<td>2008년</td>
+							<td>하얏트호텔</td>
+							<td>418편</td>
+						</tr>
+						<tr>
+							<td>제37회</td>
+							<td>2009년</td>
+							<td>하얏트호텔</td>
+							<td>479편</td>
+						</tr>
+						<tr>
+							<td>제38회</td>
+							<td>2010년</td>
+							<td>하얏트호텔</td>
+							<td>480편</td>
+						</tr>
+						<tr>
+							<td>제39회</td>
+							<td>2011년</td>
+							<td>하얏트호텔</td>
+							<td>498편</td>
+						</tr>
+						<tr>
+							<td>제40회</td>
+							<td>2012년</td>
+							<td>하얏트호텔</td>
+							<td>470편</td>
+						</tr>
+						<tr>
+							<td>제41회</td>
+							<td>2013년</td>
+							<td>하얏트호텔</td>
+							<td>562편</td>
+						</tr>
+						<tr>
+							<td>제42회</td>
+							<td>2014년</td>
+							<td>그랜드 힐튼호텔</td>
+							<td>548편</td>
+						</tr>
+						<tr>
+							<td>제43회</td>
+							<td>2015년</td>
+							<td>그랜드 힐튼호텔</td>
+							<td>600편</td>
+						</tr>
+						<tr>
+							<td>제44회</td>
+							<td>2016년</td>
+							<td>그랜드 힐튼호텔</td>
+							<td>562편</td>
+						</tr>
+						<tr>
+							<td>제45회</td>
+							<td>2017년</td>
+							<td>그랜드 하얏트 서울</td>
+							<td>556편</td>
+						</tr>
+						<tr>
+							<td>제46회</td>
+							<td>2018년</td>
+							<td>서울 드레곤시티</td>
+							<td>543편</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- // tabCon2 -->
+
+		<div class="tabCon"><!-- tabCon3 -->
+			<h3 class="subTitBg">학회지 발간 및 간행사업</h3>
+			<div class="tblWrap">
+				<table class="tblBbs border" summary="학회지 발간 및 간행사업">
+					<colgroup>
+						<col width="20%" />
+						<col />
+						<col width="20%" />
+						<col width="20%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>년도</th>
+							<th>출판물</th>
+							<th>발행호수</th>
+							<th>게재편수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1977년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>14편 </td>
+						</tr>
+						<tr>
+							<td>1978년 </td>
+							<td>대한재활의학회지</td>
+							<td>2호 </td>
+							<td>12편 </td>
+						</tr>
+						<tr>
+							<td>1979년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>11편 </td>
+						</tr>
+						<tr>
+							<td>1980년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>9편 </td>
+						</tr>
+						<tr>
+							<td>1981년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>10편 </td>
+						</tr>
+						<tr>
+							<td>1982년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>11편 </td>
+						</tr>
+						<tr>
+							<td>1983년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>14편 </td>
+						</tr>
+						<tr>
+							<td>1984년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>26편 </td>
+						</tr>
+							<tr>
+							<td>1985년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>26편 </td>
+						</tr>
+						<tr>
+							<td>1986년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>28편 </td>
+						</tr>
+						<tr>
+							<td>1987년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>35편 </td>
+						</tr>
+						<tr>
+							<td>1988년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>41편 </td>
+						</tr>
+						<tr>
+							<td>1989년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>45편 </td>
+						</tr>
+						<tr>
+							<td>1990년 </td>
+							<td>대한재활의학회지 </td>
+							<td>2호 </td>
+							<td>52편 </td>
+						</tr>
+						<tr>
+							<td>1991년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>73편 </td>
+						</tr>
+						<tr>
+							<td>1992년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>68편 </td>
+						</tr>
+						<tr>
+							<td>1993년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>86편 </td>
+						</tr>
+						<tr>
+							<td>1994년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>119편 </td>
+						</tr>
+						<tr>
+							<td>1995년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>130편 </td>
+						</tr>
+						<tr>
+							<td>1996년 </td>
+							<td>대한재활의학회지 </td>
+							<td>4호 </td>
+							<td>154편 </td>
+						</tr>
+						<tr>
+							<td>1997년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>173편 </td>
+						</tr>
+						<tr>
+							<td>1998년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>199편 </td>
+						</tr>
+						<tr>
+							<td>1999년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>176편 </td>
+						</tr>
+						<tr>
+							<td>2000년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>174편 </td>
+						</tr>
+						<tr>
+							<td>2001년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>152편 </td>
+						</tr>
+						<tr>
+							<td>2002년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>139편 </td>
+						</tr>
+						<tr>
+							<td>2003년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>172편 </td>
+						</tr>
+						<tr>
+							<td>2004년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>101편 </td>
+						</tr>
+						<tr>
+							<td>2005년 </td>
+							<td>대한재활의학회지 </td>
+							<td>6호 </td>
+							<td>110편 </td>
+						</tr>
+						<tr>
+							<td>2006년</td>
+							<td>대한재활의학회지</td>
+							<td>6호</td>
+							<td>110편</td>
+						</tr>
+						<tr>
+							<td>2007년</td>
+							<td>대한재활의학회지</td>
+							<td>6호</td>
+							<td>124편</td>
+						</tr>
+						<tr>
+							<td>2008년</td>
+							<td>대한재활의학회지</td>
+							<td>6호</td>
+							<td>123편</td>
+						</tr>
+						<tr>
+							<td>2009년</td>
+							<td>대한재활의학회지</td>
+							<td>6호 </td>
+							<td>128편</td>
+						</tr>
+						<tr>
+							<td>2010년</td>
+							<td>대한재활의학회지</td>
+							<td>6호</td>
+							<td>127편</td>
+						</tr>
+						<tr>
+							<td>2011년</td>
+							<td>Annals of Rehabilitation Medicine </td>
+							<td>6호</td>
+							<td>136편</td>
+						</tr>
+						<tr>
+							<td>2012년</td>
+							<td>Annals of Rehabilitation Medicine </td>
+							<td>6호</td>
+							<td>131편</td>
+						</tr>
+						<tr>
+							<td>2013년</td>
+							<td>Annals of Rehabilitation Medicine </td>
+							<td>6호</td>
+							<td>130편</td>
+						</tr>
+						<tr>
+							<td>2014년</td>
+							<td>Annals of Rehabilitation Medicine</td>
+							<td>6호</td>
+							<td>127편</td>
+						</tr>
+						<tr>
+							<td>2015년</td>
+							<td>Annals of Rehabilitation Medicine</td>
+							<td>6호</td>
+							<td>142편</td>
+						</tr>
+						<tr>
+							<td>2016년</td>
+							<td>Annals of Rehabilitation Medicine</td>
+							<td>6호</td>
+							<td>149편</td>
+						</tr>
+						<tr>
+							<td>2017년</td>
+							<td>Annals of Rehabilitation Medicine</td>
+							<td>6호</td>
+							<td>150편</td>
+						</tr>
+						<tr>
+							<td>2018년 9월 현재</td>
+							<td>Annals of Rehabilitation Medicine</td>
+							<td>4호</td>
+							<td>84편</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- // tabCon3 -->
+
+		
+	</div><!-- // tabArea -->
+</div>			
+	
+				
+				<p id="btnGoTop"><a href="#headerWrap"><img src="/image/common/goTop.gif" alt="위로 이동" /></a></p>
+			</div>
+			<!-- //subCon -->
+
+
+		</div>
+		<!-- //sub contents -->
+	</div>
+	<!-- //containerWrap -->
+
+
+<hr />
+
+	<!-- footer -->
+	<div id="footerWrap">
+		<h2 class="hidden">하단내용</h2>
+		<div class="footer">
+			<div class="fl">
+				<ul class="links">
+					<li>
+					<a href="/pop_privacy_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=750, height=600, scrollbars=yes'); return false;">개인정보 취급 방침</a>
+					</li>
+					<li>
+					<a href="/pop_email_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=500, height=340, scrollbars=no'); return false;">이메일주소 무단수집 거부</a>
+					</li>
+
+					<li><a href="/member/join_01.php">회원 가입</a></li>
+					<li><a href="/member/secession.php">회원 탈퇴</a></li>
+				</ul>
+				<div class="addressArea">
+					<address>주소 : (04376) 서울 용산구 새창로 217 (한강로2가 2-37) 토투밸리 1004호 대한재활의학회</address>
+					<ul>
+						<li>E-mail : <a href="mailto:karm@karm.or.kr">karm@karm.or.kr</a></li>
+						<li>전화 : <a href="/intro/intro7.php">[전화번호 안내]</a></li>
+						<li>팩스 : 02-3295-2014 </li>
+					</ul>
+					<p>Copyright by Korean Academy of Rehabilitation Medicine. All rights reserved.</p>
+				</div>
+			</div>
+			<!-- //fl -->
+
+			<div class="fr">
+				<dl class="otherSite">
+					<dt><a href="#" class="toggle">관련사이트</a></dt>
+					<dd class="toggleCon">
+						<ul>
+							<li><a href="http://www.kanem.or.kr" target="_blank">대한근전도전기진단의학회</a></li>
+							<li><a href="http://www.kagrm.or.kr/" target="_blank">대한노인재활의학회</a></li>
+							<li><a href="http://www.ksnr.or.kr/" target="_blank">대한뇌신경재활학회</a></li>
+							<li><a href="http://www.kslymph.or.kr/" target="_blank">대한림프부종학회</a></li>
+							<li><a href="http://footmed.org/" target="_blank">대한발의학회</a></li>
+							<li><a href="http://ksprm.or.kr/" target="_blank">대한소아재활발달의학회</a></li>
+							<li><a href="http://www.kassem.or.kr/main.html" target="_blank">대한스포츠과학∙운동의학회</a></li>
+							<li><a href="http://www.sono.or.kr/" target="_blank">대한신경근골격초음파학회</a></li>
+							<li><a href="http://www.kacprm.or.kr/" target="_blank">대한심장호흡재활의학회</a></li>
+							<li><a href="http://www.kscr.co.kr/" target="_blank">대한암재활학회</a></li>
+							<li><a href="http://www.kdys.or.kr/" target="_blank">대한연하장애학회</a></li>
+							<li><a href="http://www.painzero.or.kr/" target="_blank">대한임상통증학회</a></li>
+							<li><a href="http://www.koscos.kr/" target="_blank">대한척수학회</a></li>
+							<li><a href="http://www.ispokorea.org/" target="_blank">한국의지∙보조기학회</a></li>
+						</ul>
+					</dd>
+				</dl>	
+				
+				<ul>
+					<li><a href="https://twitter.com/karm_1972" target="_blank"><img src="/image/common/footer_btn_twitter.png" alt="트위터" /></a></li>
+					<li><a href="https://www.facebook.com/karm.or.kr" target="_blank"><img src="/image/common/footer_btn_face.png" alt="페이스북" /></a></li>
+				</ul>
+
+				<p class="app"><a href="/popup/popup_mobile.html" onclick="window.open(this.href,'privacy','width=610, height=900, scrollbars=yes'); return false;" target="_blank">모바일앱 설치안내</a></p>
+
+				<!-- SSL -->
+				<div class="ssl ">
+						<script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=gastrokorea.org&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ko"></script><br />
+<a href="https://www.symantec.com/ko/kr/ssl-certificates" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a>
+
+				</div>
+				<!-- // SSL -->
+			</div>
+			<!-- //fl -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //footerWrap -->
+</div>
+</body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74236036-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

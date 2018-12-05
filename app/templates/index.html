@@ -5,15 +5,23 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							{% with messages = get_flashed_messages() %}
-								{% if messages %}
-								{% for message in messages %}
+							{% if download %}
 								<div class="alert alert-success">
-									<strong>Success!</strong> Download is successfully done! Please wait.
+									<strong>Success!</strong> Download is successfully done! {{ count }} files downloaded.
 								</div>
-								{% endfor %}
-								{% endif %}
-							{% endwith %}
+								<form action="/submit" method="POST">
+									<input type="hidden" name="num" value="{{ num }}">
+									<button type="submit" class="btn btn-primary">
+										Submit <span class="badge badge-light">{{ count }}</span>
+									</button>
+								</form>
+							{% endif %}
+							{% if submit %}
+								<div class="alert alert-success">
+									<strong>Success!</strong> Submit is successfully done! Please confirm the report.
+									<a href="test"><button type="button" class="btn btn-outline-info">View report!</button></a>
+								</div>
+							{% endif %}
 							<div></div>
 							<div class="home_title">Find malwares on webpage</div>
 							<div class="home_text">Put, Search, View.<br>That's all.</div>
@@ -25,7 +33,7 @@
 						<div class="domain_search_form_container">
 							<form action="search" method="post" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">
 								<div class="d-flex flex-row align-items-center justify-content-start">
-									<input type="text" name="url" class="domain_search_input" placeholder="targetURL" required="required">
+									<input type="text" name="url" class="domain_search_input" placeholder="http(s)://targetURL" required="required">
 									<div class="domain_search_dropdown d-flex flex-row align-items-center justify-content-start">
 										<i class="fa fa-chevron-down" aria-hidden="true"></i>
 										<div class="domain_search_selected">single</div>

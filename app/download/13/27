@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>대한내과학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.1.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim_sub.css" />
+<script type="text/javascript" src="/script/jquery.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/unreset.css" />
+<link type="text/css" rel="stylesheet" href="/admin/button_package/button.css" />
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15291461-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98717380-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Hotjar Tracking Code for http://www.kaim.or.kr/ -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1001270,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+ -->
+<script type="text/javascript" src="/script/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	$('.date_month').mask('9999-99');
+});
+</script>
+<!-- 2016-11-21 김영환추가 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+<link rel='stylesheet' type='text/css' href='/admin/mail/conf/jquery-flick.css'/>
+<script type="text/javascript" src="/script/kaim.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/jquery.alerts.css"/>
+<SCRIPT LANGUAGE="javascript" SRC="/script/jquery.ui-jalert.js"></SCRIPT>
+<script type="text/javascript">
+	function sendTwitter(sTitle,sUrl){
+		var shref ="http://twitter.com/home?status="+encodeURIComponent(sTitle)+" "+encodeURIComponent(sUrl);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+
+	//페이스북
+	function sendFacebook(sTitle,sUrl){
+		var shref ="http://www.facebook.com/share.php?u="+encodeURIComponent(sUrl)+"&t="+encodeURIComponent(sTitle);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+	function depart_pass_pop(){
+		var date1 = "1531818000";
+		var date2 = "1544037958";
+		if(date2 > date1){
+			window.open("/popup_main/popup_list.php","","width=1020,height=900,scrollbars=yes")
+		}else{
+			alert("금일 오후 6시부터 확인 가능합니다.");
+		}
+	}
+</script>
+
+
+</head>
+<body id="body">
+
+<div class="wrapper">
+	<div class="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="/" title="홈으로 이동"><img src="/image/common/header_logo.jpg" alt="대한내과학회" /></a></h1>    
+			
+
+			<div class="utilMenu">
+				<div class="majorBtn">
+					<div>
+																													</div>
+				</div>
+
+				<ul>
+					
+										<li><a href="/">Home</a></li>
+										<li><a href="/member/?sn=3">Login</a></li>
+					<li><a href="/member/?sn=1">Join</a></li>
+										<li><a href="http://eng.kaim.or.kr/" target="_blank">English</a></li>
+				</ul>	
+			</div>
+			
+			<ul class="globalMenu">
+				<li class="facebook"><a href="https://www.facebook.com/kaim4311" target="_blank"><img src="/image/common/headerBtn_facebook.png" alt="Facebook" /></a></li>
+				<li class="viewPopup"><a class="globalSearch" href="#">전체검색</a></li>
+				<li class="viewPopup"><a class="allMenu" href="#">전체메뉴</a></li>
+			</ul>
+
+
+			<div class="globalPopup allMenu">
+				<ul class="gnb">
+										<li><a href="/about/">학회소개</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/about/">인사말 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=2">대한내과학회 약사 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=3">회칙 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=4">조직도 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=5">임원진 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=6">평의원 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=7&sn2=1">위원회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=8">지회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=10">연구비, 학술상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=11">사무국 안내 및 연락처 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=schedule">학술행사</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=schedule">연간일정 </a></li>
+														<li style="font-size:11px;"><a href="/schedule/work_schedule.php">학술행사 일정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/major/">전공의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/major/?sn=1">전공의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/major/?sn=2">내과전문의 자격시험 </a></li>
+													</ul>
+					</li>
+															<li><a href="/specialist/">분과전문의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/specialist/?sn=1">전임의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/specialist/depart/info.php">분과전문의 자격인정시험 및 자격갱신 </a></li>
+													</ul>
+					</li>
+															<li><a href="/education/">평생교육</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/education/?sn=1">제도 도입 및 취지 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=2">규정 및 시행규칙 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=3">연수강좌 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=4">이수증 발급 안내 </a></li>
+														<li style="font-size:11px;"><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육 </a></li>
+													</ul>
+					</li>
+															<li><a href="/ethics/">의료윤리</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/ethics/?sn=1">내과의사 윤리선언 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집 </a></li>
+														<li style="font-size:11px;"><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=2">죽음과 임종 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=5">연명의료 결정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/pds/?sn=1&sn2=1">자료실</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/pds/?sn=1&sn2=1">노년내과 교육목표 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=pds2">보험관련 자료 </a></li>
+														<li style="font-size:11px;"><a href="http://term.kma.org/" target="_blank"">의학용어 검색 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=notice">회원공간</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=notice">공지사항/새소식 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=gallery">사진 모음 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=event">게시판 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=proposal">제안방 </a></li>
+														<li style="font-size:11px;"><a href="/mypage/?sn=1">My Page </a></li>
+													</ul>
+					</li>
+									</ul>
+				
+				<p class="close"><a href="#">메뉴 닫기</a></p>
+			</div>
+			
+			
+			<div class="globalPopup globalSearch">
+			
+				<dl>
+					<dt>전체검색</dt>
+					<dd>
+						<form id="total_seachF" name="total_seachF" action="/search/" method="post">
+							<fieldset>
+								<legend>대한내과학회 전체검색</legend>
+								<input type="text" name="key" id="key" placeholder="검색어를 입력하세요." class="_placeholder" />
+								<input class="btnBg" type="submit" value="검색" />
+							</fieldset>
+						</form>
+					</dd>
+				</dl>
+				
+				<p class="close"><a href="#">검색 닫기</a></p>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+	<div id="container"  >
+
+		<div class="contents ">
+
+					<div class="titArea">
+				<h2>
+					내과의사 윤리선언				</h2>
+				
+				<dl>
+					<dt class="hidden">페이지 경로</dt>
+					<dd>Home &gt; 의료윤리 &gt; 내과의사 윤리선언<!--  --></dd>
+				</dl>
+				
+				<ul class="subUtil">
+					<li><a href="javascript:view_mode_change('')" title="와이드모드"><img src="/image/sub/subUtilBtn_wide.gif" alt="" /></a></li>
+					<li><a href="javascript:sendFacebook('facebook','www.kaim.or.kr///ethics/?sn=1')" title="페이스북에 공유하기"><img src="/image/sub/subUtilBtn_facebook.gif" alt="" /></a></li>
+					<li><a href="javascript:sendTwitter('twitter','www.kaim.or.kr///ethics/?sn=1')" title="트위터에 공유하기"><img src="/image/sub/subUtilBtn_twitter.gif" alt="" /></a></li>
+					<li><a href="#" title="글자크기 키우기"><img src="/image/sub/subUtilBtn_plus.gif" alt="" class="font_size_plus"/></a></li>
+					<li><a href="#" title="글자크기 줄이기"><img src="/image/sub/subUtilBtn_minus.gif" alt="" class="font_size_minus"/></a></li>
+					<li><a href="#" title="현재페이지 프린트 하기"><img src="/image/sub/subUtilBtn_print.gif" alt="" class="contents_print"/></a></li>
+				</ul>
+			</div>
+						<dl id="lnb">
+				<dt>의료윤리</dt>
+				<dd>
+					<ul class="subMenu">
+												<li class="on"><a href="/ethics/?sn=1">내과의사 윤리선언</a>
+													</li>
+												<li ><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집</a>
+													</li>
+												<li ><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육</a>
+													</li>
+												<li ><a href="/ethics/?sn=2">죽음과 임종</a>
+													</li>
+												<li ><a href="/ethics/?sn=5">연명의료 결정</a>
+													</li>
+											</ul>
+				</dd>
+			</dl>
+							<div class="print_area"><div class="txtCon ethics">
+	
+	<dl class="moral">
+		<dt>내과의사 윤리선언</dt>
+		<dd>내과(內科)는 의학의 근본(根本)으로, 내과의사는 이를 깊이 인식하고 히포크라테스 정신을 충실하게 계승하고 있다. 오늘날 사회와 의료 환경은 급격하게 변하고 있으며,질병의 다양화, 생명과학학의 발전등으로 인해 의료 윤리를 더욱 엄격히 지킬 것이 요구되고 있다. 이에 우리 내과의사는 '환자의 생명을 지키는 것이 본연의 사명임'을 다짐한다. 나아가 의료 분야에서 국민에게 봉사하고, 국가 의료 발전에 이바지하며, 환자의 건강 회복을 위해 성심을 다하여 진료할 것을 서약한다.</dd>
+	</dl>
+
+	<ul class="moral">
+		<li><span>01</span>내과의사는 언제나 환자의 건강과 안전을 최우선으로 생각하고 환자에게 가장 적절한 의료를 제공한다.</li>
+		<li><span>02</span>내과의사는 최신 의학지식을 습득하기 위해 노력하며 과학적이고 합리적인 근거에 기초하여 환자를 진료한다.</li>
+		<li><span>03</span>내과의사는 성별, 종교, 국적, 인종, 빈부를 초월하여 모든 환자를 차별없이 평등하게 진료한다.</li>
+		<li><span>04</span>내과의사는 진료과정 중에 습득한 환자의 비밀을 철처히 보호하고 환자의 자율적인 선택을 존중한다.</li>
+		<li><span>05</span>내과의사는 의업(醫業)의 품위와 전문성을 지키고, 더하여 동료 의사의 비윤리적인 행위를 예방하기 위해 노력한다.</li>
+		<li><span>06</span>내과의사는 동료 의사와 보건의료 종사자의 직무 영역별 전문성을 존중하며 국민건강 증진을 위해 함께 노력한다.</li>
+		<li><span>07</span>내과의사는 의료계를 계승할 자들의 전문 능력과 윤리적 품성을 성심껏 교육하고 지도한다.</li>
+		<li><span>08</span>내과의사는 의도적이든 비의도적이든 비도덕적 의료 행위 및 반인륜적 행위와 관련된 일에는 결코 참여하지 않는다.</li>
+		<li><span>09</span>내과의사는 임상 연구에서 발생할 수 있는 윤리적 문제에 관심을 가지고 그 예방은 물론 피험자의 인격과 건강보호를 위해 최선을 다한다.</li>
+		<li><span>10</span>내과의사는 효과적인 환자 치유와 의료 발전을 위해 대한내과학회 및 소속된 학술단체의 활동에 적극 참여한다.</li>
+	</ul>
+
+</div></div>
+		<!-- //main -->
+				</div>
+		
+
+	
+	</div>
+	<!-- //container -->
+	<hr />
+
+	<div class="footerWrap">
+		<div>
+			<p><img src="/image/common/footer_logo.jpg" alt="대한내과학회" /></p>
+
+			<dl>
+				<dt class="hidden">대한내과학회 연락처</dt>
+				<dd>
+					서울특별시 마포구 마포대로 109 롯데캐슬프레지던트 101동 2501호 (우. 04146)<br />
+					Tel. 02)793-4364, 4311  Fax. 02)790-0993  E-mail. <a href="mailto:kaim4364@kams.or.kr">kaim4364@kams.or.kr</a><br/>
+					사업자등록번호: 106-82-10554  대표자: 유철규
+				</dd>
+			</dl>
+			
+			<div class="security">
+			<!-- <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script> -->
+				<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+				<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script></div>
+				<div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a></div>
+				</div>
+			</div>
+			
+			<div class="siteInfo">
+				<ul>
+					<li><a href="/member/?sn=2">개인정보 취급 방침</a></li>
+					<li><a href="/popup/popup_email.html" onclick="window.open(this.href,'privacy','width=400, height=300, scrollbars=no'); return false;" target="_blank">이메일 무단 수집 거부</a></li>
+				</ul>
+				
+				<dl class="relSite">
+					<dt><a href="javascript:void window.open('/ebooth/ebooth_detail1.php','ebooth_detail1','width=710, height=760, left=0, top=0, scrollbars=yes, status=no');">대한내과학회 관련사이트</a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.physician.or.kr/" target="_blank">대한개원내과의사회</a></li>
+							<li><a href="http://www.kma.org" target="_blank">대한의사협회</a></li>
+							<li><a href="http://kams.or.kr/" target="_blank">대한의학회</a></li>
+							<li><a href="http://www.ksid.or.kr" target="_blank">대한감염학회</a></li>
+							<li><a href="http://www.lungkorea.org" target="_blank">대한결핵및호흡기학회</a></li>
+							<li><a href="http://www.endocrinology.or.kr" target="_blank">대한내분비학회</a></li>
+							<li><a href="http://www.diabetes.or.kr" target="_blank">대한당뇨병학회</a></li>
+							<li><a href="http://www.rheum.or.kr" target="_blank">대한류마티스학회</a></li>
+							<li><a href="http://www.gie.or.kr" target="_blank">대한소화기내시경학회</a></li>
+							<li><a href="http://www.gastrokorea.org" target="_blank">대한소화기학회</a></li>
+							<li><a href="http://www.circulation.or.kr" target="_blank">대한심장학회</a></li>
+							<li><a href="http://www.ksn.or.kr" target="_blank">대한신장학회</a></li>
+							<li><a href="http://www.allergy.or.kr" target="_blank">대한천식알레르기학회</a></li>
+							<li><a href="http://www.cancer.or.kr" target="_blank">대한암학회</a></li>
+							<li><a href="http://www.kaco.or.kr" target="_blank">대한종양내과학회</a></li>
+							<li><a href="http://www.hematology.or.kr" target="_blank">대한혈액학회</a></li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<p>Copyright © The Korean Association of Internal Medicine. All rights reserved.</p>
+			</div>
+			<!-- //siteInfo -->
+		</div>
+	</div>
+	<!-- //footerWrap -->
+
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

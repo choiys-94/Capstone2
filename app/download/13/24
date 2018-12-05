@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>대한내과학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.1.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim_sub.css" />
+<script type="text/javascript" src="/script/jquery.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/unreset.css" />
+<link type="text/css" rel="stylesheet" href="/admin/button_package/button.css" />
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15291461-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98717380-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Hotjar Tracking Code for http://www.kaim.or.kr/ -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1001270,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+ -->
+<script type="text/javascript" src="/script/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	$('.date_month').mask('9999-99');
+});
+</script>
+<!-- 2016-11-21 김영환추가 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+<link rel='stylesheet' type='text/css' href='/admin/mail/conf/jquery-flick.css'/>
+<script type="text/javascript" src="/script/kaim.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/jquery.alerts.css"/>
+<SCRIPT LANGUAGE="javascript" SRC="/script/jquery.ui-jalert.js"></SCRIPT>
+<script type="text/javascript">
+	function sendTwitter(sTitle,sUrl){
+		var shref ="http://twitter.com/home?status="+encodeURIComponent(sTitle)+" "+encodeURIComponent(sUrl);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+
+	//페이스북
+	function sendFacebook(sTitle,sUrl){
+		var shref ="http://www.facebook.com/share.php?u="+encodeURIComponent(sUrl)+"&t="+encodeURIComponent(sTitle);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+	function depart_pass_pop(){
+		var date1 = "1531818000";
+		var date2 = "1544037958";
+		if(date2 > date1){
+			window.open("/popup_main/popup_list.php","","width=1020,height=900,scrollbars=yes")
+		}else{
+			alert("금일 오후 6시부터 확인 가능합니다.");
+		}
+	}
+</script>
+
+
+</head>
+<body id="body">
+
+<div class="wrapper">
+	<div class="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="/" title="홈으로 이동"><img src="/image/common/header_logo.jpg" alt="대한내과학회" /></a></h1>    
+			
+
+			<div class="utilMenu">
+				<div class="majorBtn">
+					<div>
+																													</div>
+				</div>
+
+				<ul>
+					
+										<li><a href="/">Home</a></li>
+										<li><a href="/member/?sn=3">Login</a></li>
+					<li><a href="/member/?sn=1">Join</a></li>
+										<li><a href="http://eng.kaim.or.kr/" target="_blank">English</a></li>
+				</ul>	
+			</div>
+			
+			<ul class="globalMenu">
+				<li class="facebook"><a href="https://www.facebook.com/kaim4311" target="_blank"><img src="/image/common/headerBtn_facebook.png" alt="Facebook" /></a></li>
+				<li class="viewPopup"><a class="globalSearch" href="#">전체검색</a></li>
+				<li class="viewPopup"><a class="allMenu" href="#">전체메뉴</a></li>
+			</ul>
+
+
+			<div class="globalPopup allMenu">
+				<ul class="gnb">
+										<li><a href="/about/">학회소개</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/about/">인사말 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=2">대한내과학회 약사 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=3">회칙 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=4">조직도 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=5">임원진 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=6">평의원 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=7&sn2=1">위원회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=8">지회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=10">연구비, 학술상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=11">사무국 안내 및 연락처 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=schedule">학술행사</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=schedule">연간일정 </a></li>
+														<li style="font-size:11px;"><a href="/schedule/work_schedule.php">학술행사 일정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/major/">전공의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/major/?sn=1">전공의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/major/?sn=2">내과전문의 자격시험 </a></li>
+													</ul>
+					</li>
+															<li><a href="/specialist/">분과전문의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/specialist/?sn=1">전임의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/specialist/depart/info.php">분과전문의 자격인정시험 및 자격갱신 </a></li>
+													</ul>
+					</li>
+															<li><a href="/education/">평생교육</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/education/?sn=1">제도 도입 및 취지 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=2">규정 및 시행규칙 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=3">연수강좌 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=4">이수증 발급 안내 </a></li>
+														<li style="font-size:11px;"><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육 </a></li>
+													</ul>
+					</li>
+															<li><a href="/ethics/">의료윤리</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/ethics/?sn=1">내과의사 윤리선언 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집 </a></li>
+														<li style="font-size:11px;"><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=2">죽음과 임종 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=5">연명의료 결정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/pds/?sn=1&sn2=1">자료실</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/pds/?sn=1&sn2=1">노년내과 교육목표 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=pds2">보험관련 자료 </a></li>
+														<li style="font-size:11px;"><a href="http://term.kma.org/" target="_blank"">의학용어 검색 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=notice">회원공간</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=notice">공지사항/새소식 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=gallery">사진 모음 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=event">게시판 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=proposal">제안방 </a></li>
+														<li style="font-size:11px;"><a href="/mypage/?sn=1">My Page </a></li>
+													</ul>
+					</li>
+									</ul>
+				
+				<p class="close"><a href="#">메뉴 닫기</a></p>
+			</div>
+			
+			
+			<div class="globalPopup globalSearch">
+			
+				<dl>
+					<dt>전체검색</dt>
+					<dd>
+						<form id="total_seachF" name="total_seachF" action="/search/" method="post">
+							<fieldset>
+								<legend>대한내과학회 전체검색</legend>
+								<input type="text" name="key" id="key" placeholder="검색어를 입력하세요." class="_placeholder" />
+								<input class="btnBg" type="submit" value="검색" />
+							</fieldset>
+						</form>
+					</dd>
+				</dl>
+				
+				<p class="close"><a href="#">검색 닫기</a></p>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+	<div id="container"  >
+
+		<div class="contents ">
+
+					<div class="titArea">
+				<h2>
+					규정 및 시행규칙				</h2>
+				
+				<dl>
+					<dt class="hidden">페이지 경로</dt>
+					<dd>Home &gt; 평생교육 &gt; 규정 및 시행규칙<!--  --></dd>
+				</dl>
+				
+				<ul class="subUtil">
+					<li><a href="javascript:view_mode_change('')" title="와이드모드"><img src="/image/sub/subUtilBtn_wide.gif" alt="" /></a></li>
+					<li><a href="javascript:sendFacebook('facebook','www.kaim.or.kr///education/?sn=2')" title="페이스북에 공유하기"><img src="/image/sub/subUtilBtn_facebook.gif" alt="" /></a></li>
+					<li><a href="javascript:sendTwitter('twitter','www.kaim.or.kr///education/?sn=2')" title="트위터에 공유하기"><img src="/image/sub/subUtilBtn_twitter.gif" alt="" /></a></li>
+					<li><a href="#" title="글자크기 키우기"><img src="/image/sub/subUtilBtn_plus.gif" alt="" class="font_size_plus"/></a></li>
+					<li><a href="#" title="글자크기 줄이기"><img src="/image/sub/subUtilBtn_minus.gif" alt="" class="font_size_minus"/></a></li>
+					<li><a href="#" title="현재페이지 프린트 하기"><img src="/image/sub/subUtilBtn_print.gif" alt="" class="contents_print"/></a></li>
+				</ul>
+			</div>
+						<dl id="lnb">
+				<dt>평생교육</dt>
+				<dd>
+					<ul class="subMenu">
+												<li ><a href="/education/?sn=1">제도 도입 및 취지</a>
+													</li>
+												<li class="on"><a href="/education/?sn=2">규정 및 시행규칙</a>
+													</li>
+												<li ><a href="/education/?sn=3">연수강좌 동영상</a>
+													</li>
+												<li ><a href="/education/?sn=4">이수증 발급 안내</a>
+													</li>
+												<li ><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육</a>
+													</li>
+											</ul>
+				</dd>
+			</dl>
+							<div class="print_area"><!-- 
+<div class="txtCon">
+	<div class="ing"><img src="/image/sub/ing.jpg" alt="준비중입니다." /></div> -->
+
+<div class="txtCon kaimFund">
+
+<!-- 규정 -->
+	<div class="tabArea">
+		<ul class="tabMenu subMenu">
+			<li><a href="#">규정</a></li>
+			<li><a href="#">시행규칙</a></li>
+		</ul>
+
+		<div class="tabCon">
+			<h3 class="hidden">규정</h3>
+
+			<dl class="rule">
+				<dt class="subTit_bl">제 1 조 (목적)</dt>
+				<dd>본 규정은 전문의 자격을 취득한 내과의사가 평생에 걸쳐 지속적으로 수준 높은 의학지식과 의술을 습득하여 최선의 진료를 제공할 능력을 함양하도록 하는 평생교육의 내용을 규정하는 것을 그 목적 으로 한다.</dd>
+
+				<dt class="subTit_bl">제 2 조 (대상)</dt>
+				<dd>평생교육의 대상은 내과전문의 자격을 취득한 모든 내과전문의로 한다.</dd>
+
+				<dt class="subTit_bl">제 3 조 (주관)</dt>
+				<dd>평생교육은 대한내과학회 교육위원회가 주관한다.</dd>
+
+				<dt class="subTit_bl">제 4 조 (교육 단위 기간)</dt>
+				<dd>평생교육은 5년을 1주기로 운영하며 교육회기는 매년 4월 1일부터 다음 해의 3월 31일까지를 1년으로 한다.</dd>
+
+				<dt class="subTit_bl">제 5 조 (교육 기관)</dt>
+				<dd>
+					<p>다음 각 항에 해당하는 기관이 실시하는 연수교육은 내과전문의 평생교육으로 인정할 수 있다.</p>
+					<ul>
+						<li>① 대한내과학회, 지회 및 분과학회</li>
+						<li>② 대한개원내과의사회 및 지회</li>
+						<li>③ 내과전공의 수련병원</li>
+						<li>④ 기타 해외학회를 포함한 대한내과학회에서 인정하는 학회나 단체</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 6 조 (교육 프로그램)</dt>
+				<dd>
+					<p>평생교육으로 인정하는 교육프로그램은 다음 각 호와 같다.</p>
+					<ul>
+						<li>① 연수강좌, 워크샵, 심포지엄 및 실습</li>
+						<li>② 국내·외 학술대회</li>
+						<li>③ 인터넷-온라인 교육</li>
+						<li>④ 기타 대한내과학회에서 인정하는 교육프로그램</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 7 조 (교육 평점)</dt>
+				<dd>
+					<ul>
+						<li>① (평점의 신청) 대한내과학회의 평생교육의 평점을 부여하고자 하는 교육기관의 책임자는 대한내과학회에 교육계획서를 제출하여야 한다.</li>
+						<li>② (평점의 인정) 본 학회는 평생교육으로 인정할 교육계획서의 내용을 검토하여 인정 여부를 결정 한다.</li>
+						<li>③ (평점의 공지) 교육기관의 책임자는 인정받은 평점을 교육 참가자에게 공지한다. 또한, 본 학회도 그 내용을 회원들에게 공지한다.</li>
+						<li>④ (평점의 산정) 각 교육내용에 대한 평점 산정은 평생교육 시행규칙에 의한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 8 조 (교육 이수의 관리)</dt>
+				<dd>
+					<ul>
+						<li>① 교육결과의 보고: 내과전문의는 최근 5년의 교육주기 동안 받은 평생교육인정 평점을 본 학회 에서 집계하여 평가한다.</li>
+						<li>② 평생교육 이수증의 수여: 본 학회는 교육주기 동안 80 평점을 취득한 내과전문의에게 5년 유효의 '내과전문의 평생교육 이수증'을 발급한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 9 조 (예외 규정)</dt>
+				<dd>5년 기간 동안에 해외거주, 휴-폐업, 군복무 등의 사유로 유예를 원하는 경우에는 해당 기간에 국한하여 평점취득을 유예할 수 있다.</dd>
+
+				<dt class="subTit_bl">부 칙</dt>
+				<dd>
+					<ul>
+						<li>① 본 규정에 의한 연수교육은 2010년부터 시행한다.</li>
+						<li>② 본 규정에 의한 평생교육 이수증의 교부는 이사회의 결정에 의거하여 시행한다.</li>
+						<li>③ 본 규정은 2015년 2월 26일 이사회에서 승인되어 개정됨.</li>
+					</ul>
+				</dd>
+
+			</dl>
+		</div>
+		<!-- //tabCon -->
+
+		<div class="tabCon">
+			<h3 class="hidden">시행규칙</h3>
+
+			<h4 class="boldTit_bl">제1장 총칙</h4>
+			<dl class="rule">
+				<dt class="subTit_bl">제 1 조 (목적)</dt>
+				<dd>본 규칙은 ‘내과전문의 평생교육 시행 규정’에 의거하여 전문의 자격을 취득한 내과의사가 평생에 걸쳐 지속적으로 수준 높은 의학지식과 의술을 습득하여 최선의 진료를 제공할 능력을 함양하도록 평생교육의 내용 및 교육기관의 시행 규칙을 정함을 목적으로 한다.</dd>
+
+				<dt class="subTit_bl">제 2 조 (대상)</dt>
+				<dd>평생교육의 대상은 모든 내과전문의로 한다.</dd>
+			</dl>
+
+
+			<h4 class="boldTit_bl">제 2 장 교육의 내용 및 수행 방법</h4>
+			<dl class="rule">
+				<dt class="subTit_bl">제 3 조 (교육의 내용)</dt>
+				<dd>
+					<ul class="txtIndent10">
+						<li>- 내과전문의 평생교육 내용은 내과 의사에게 필요한 의학지식의 수준을 유지하기 위한 강연, 지상 강좌 및 실습과 인터넷-온라인 교육을 대상으로 한다. 의학지식 외에도 의료정책, 의료사회학, 의료정보학, 의사윤리, 교양과목 등의 내용과 같이 일반적인 교육 내용도 20% 이내로 포함될 수 있다. 평생교육의 내용으로 인정이 불분명한 경우에는 본 학회 교육위원회에서 판단할 수 있다.</li>
+						<li>- 학술대회, 교육강좌, 워크샵, 심포지움 및 실습은 본 학회가 인정하는 기관에서 주관하여야 한다. 내용이 의학적 관점에서 객관적이어야 하며, 최신 지식이나 기술이더라도 의학적으로 증명이 부족한 경우에는 인정되지 않는다.</li>
+						<li>- 대한내과학회는 보수교육(이하 ‘평생교육 연수강좌’로 칭함)을 위한 학술 강좌를 매년 2회 이상 실시 한다.</li>
+						<li>- 인터넷-온라인 교육은 대한내과학회 내과전문의 온라인 평생교육 홈페이지에서 동영상강의와 자가학습을 수강한 경우에 인정하며 별도의 수강 규정에 따른다.</li>
+						<li>- 해외에서 개최되는 학술대회는 대한내과학회의 각 분과전문의 교육 규정에 인정된 학술대회에 한한다.</li>
+						<li>- 보수 교육의 목적으로 게재된 학술지의 교육 내용을 습득한 경우에는 교육 내용에서 제시하는 것에 대한 결과물을 제출한 경우를 인정한다.</li>
+						<li>- 인터넷 교육 프로그램은 해당 기관 웹페이지의 동영상이나 교육자료 등의 게재물에 대해 그 내용을 습득 후에 실시할 수 있는 문제를 출제하였거나 토론 주제를 제시한 경우로, 해당 학회나 대한내과 학회에 그 결과물을 제출한 경우에 인정한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 4 조 (교육 계획 제출 및 승인)</dt>
+				<dd>
+					<ul class="txtIndent10">
+						<li>- 대한내과학회의 평생교육의 평점을 부여하고자 하는 교육기관의 책임자는 대한내과학회에 평생교육 계획서를 제출하여야 한다.</li>
+						<li>- 교육의 승인 및 변경 승인은 대한내과학회 교육위원회에서 검토하여 승인한다.</li>
+						<li>- 교육은 시행 기관의 승인과 내과전문의 평생교육 내용에 대한 시행규칙에 제시된 조건을 만족할 경우에 인정한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 5 조 (교육결과보고)</dt>
+				<dd>교육기관장은 교육 실시 후 대한내과학회의 서식에 의한 결과보고서를 2주일 이내에 본 학회에 제출하여야 한다.</dd>
+
+				<dt class="subTit_bl">제 6 조 (등록대장 및 수강증 교부)</dt>
+				<dd>
+					<ul class="txtIndent10">
+						<li>- 교육기관은 교육시행에 있어 별지 서식의 교육등록대장을 비치하고 교육자의 서명을 받아야 한다. 이는 대한의사협회에 제출하는 교육등록대장으로 대치할 수 있다.</li>
+						<li>- 교육기관장은 교육을 이수한 회원에게 별지 서식의 연수교육 평점카드를 교부하여야 한다. 이는 대한의사협회의 연수교육 평점카드로 대치할 수 있다.</li>
+					</ul>
+				</dd>
+			</dl>
+
+
+			<h4 class="boldTit_bl">제 3 장 교육의 평가 방법</h4>
+			<dl class="rule">
+				<dt class="subTit_bl">제 7 조 (교육 평점의 산정)</dt>
+				<dd>
+					<p>평생교육 평점은 내과전문의 평생교육 규정 제5조에서 인정한 교육기관에서 주관하고 그 내용이 위의 조건에 합당한 경우에 한하여 인정한다. 인정 여부가 불분명한 경우에는 교육위원회에서 판단한다.</p>
+
+					<ul class="txtIndent10">
+						<li>- 대한내과학회에 교육계획서를 제출한 교육의 교육종류별 최고 평점과 1년에 취득 가능한 평점은 다음과 같다.<br />
+						(단, 1일 교육 상한 점수는 6평점으로 한다.)
+							<table class="ac tm10">
+								<colgroup>
+									<col style="width: 50%;" />
+									<col style="width: 50%;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>교육종류</th>
+										<th>평점</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="al">1. 내과학회 평생교육 연수강좌</th>
+										<td>1 평점 / 1 시간</td>
+									</tr>
+									<tr>
+										<th class="al">2. 교육강좌, 워크숍, 심포지움 및 실습</th>
+										<td>1 평점 / 1 시간</td>
+									</tr>
+									<tr>
+										<th class="al">3. 국내 학술대회</th>
+										<td>학술대회 당 6 평점</td>
+									</tr>
+									<tr>
+										<th class="al">4. 인터넷-온라인 교육 프로그램</th>
+										<td>0.5평점 / 1강좌</td>
+									</tr>
+									<tr>
+										<th class="al">5. 기타 교육위원회가 인정하는 사항</th>
+										<td>해당 교육 종목 판단에 따름</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+						<li class="tm10">- 국제 학술대회는 관련학회로 1일 1평점을 인정하며, 이를 위한 증명서를 별도로 제출해야 한다.</li>
+						<li class="tm10">- 대한내과학회와 공동으로 주최하는 임상초음파학회의 춘·추계 학술대회는 1일 4평점을 인정하고, 연 2회 개최되는 평생교육은 1일 2평점을 인정한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 8 조 (평생교육의 평가)</dt>
+				<dd>
+					<ul class="txtIndent10">
+						<li>- 평생교육은 최근 5년을 1주기로 운영하며 교육회기는 4월 1일부터 다음 해의 3월 31일을 1년으로 한다.</li>
+						<li>- 본 학회는 최근 5년 동안 80 평점을 취득한 내과전문의에게 5년 유효의 ‘평생교육 우수 내과전문의’ 인증서를 발급한다.</li>
+						<li>- 평생교육 1주기 동안 120 평점을 취득한 회원은 ‘평생교육 최우수 내과전문의’ 인증서를 발급한다.</li>
+						<li>- 평생교육 1주기 동안의 평점에서 인터넷-온라인 평생교육 평점은 총 취득 평점의 50%까지 인정한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제 9 조 (보칙)</dt>
+				<dd>본 규정에 규정되지 아니한 사항은 대한내과학회 교육위원회의 결의에 의한다.</dd>
+			</dl>
+
+
+			<h4 class="boldTit_bl">부칙 </h4>
+			<ul class="listBl_b tm0">
+				<li>본 규칙은 내과전문의 교육 시행 규정 결의와 함께 시행한다.</li>
+				<li>본 규칙은 2011년 1월부로 교육위원회 수정 및 이사회 추인으로 시행한다.</li>
+				<li>본 규칙에 의한 평생교육 이수증의 교부는 이사회의 결정에 의거하여 시행한다.</li>
+				<li>본 규칙은 2015년 2월 26일 이사회에서 승인되어 개정됨.</li>
+			</ul>
+		</div>
+		<!-- //tabCon -->
+
+		</div>
+		<!-- //tabArea -->
+</div>
+<!-- //txtCon --></div>
+		<!-- //main -->
+				</div>
+		
+
+	
+	</div>
+	<!-- //container -->
+	<hr />
+
+	<div class="footerWrap">
+		<div>
+			<p><img src="/image/common/footer_logo.jpg" alt="대한내과학회" /></p>
+
+			<dl>
+				<dt class="hidden">대한내과학회 연락처</dt>
+				<dd>
+					서울특별시 마포구 마포대로 109 롯데캐슬프레지던트 101동 2501호 (우. 04146)<br />
+					Tel. 02)793-4364, 4311  Fax. 02)790-0993  E-mail. <a href="mailto:kaim4364@kams.or.kr">kaim4364@kams.or.kr</a><br/>
+					사업자등록번호: 106-82-10554  대표자: 유철규
+				</dd>
+			</dl>
+			
+			<div class="security">
+			<!-- <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script> -->
+				<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+				<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script></div>
+				<div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a></div>
+				</div>
+			</div>
+			
+			<div class="siteInfo">
+				<ul>
+					<li><a href="/member/?sn=2">개인정보 취급 방침</a></li>
+					<li><a href="/popup/popup_email.html" onclick="window.open(this.href,'privacy','width=400, height=300, scrollbars=no'); return false;" target="_blank">이메일 무단 수집 거부</a></li>
+				</ul>
+				
+				<dl class="relSite">
+					<dt><a href="javascript:void window.open('/ebooth/ebooth_detail1.php','ebooth_detail1','width=710, height=760, left=0, top=0, scrollbars=yes, status=no');">대한내과학회 관련사이트</a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.physician.or.kr/" target="_blank">대한개원내과의사회</a></li>
+							<li><a href="http://www.kma.org" target="_blank">대한의사협회</a></li>
+							<li><a href="http://kams.or.kr/" target="_blank">대한의학회</a></li>
+							<li><a href="http://www.ksid.or.kr" target="_blank">대한감염학회</a></li>
+							<li><a href="http://www.lungkorea.org" target="_blank">대한결핵및호흡기학회</a></li>
+							<li><a href="http://www.endocrinology.or.kr" target="_blank">대한내분비학회</a></li>
+							<li><a href="http://www.diabetes.or.kr" target="_blank">대한당뇨병학회</a></li>
+							<li><a href="http://www.rheum.or.kr" target="_blank">대한류마티스학회</a></li>
+							<li><a href="http://www.gie.or.kr" target="_blank">대한소화기내시경학회</a></li>
+							<li><a href="http://www.gastrokorea.org" target="_blank">대한소화기학회</a></li>
+							<li><a href="http://www.circulation.or.kr" target="_blank">대한심장학회</a></li>
+							<li><a href="http://www.ksn.or.kr" target="_blank">대한신장학회</a></li>
+							<li><a href="http://www.allergy.or.kr" target="_blank">대한천식알레르기학회</a></li>
+							<li><a href="http://www.cancer.or.kr" target="_blank">대한암학회</a></li>
+							<li><a href="http://www.kaco.or.kr" target="_blank">대한종양내과학회</a></li>
+							<li><a href="http://www.hematology.or.kr" target="_blank">대한혈액학회</a></li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<p>Copyright © The Korean Association of Internal Medicine. All rights reserved.</p>
+			</div>
+			<!-- //siteInfo -->
+		</div>
+	</div>
+	<!-- //footerWrap -->
+
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>

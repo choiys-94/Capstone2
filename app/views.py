@@ -11,6 +11,7 @@ import os
 import requests
 import re
 import magic
+import time
 
 
 @app.route('/')
@@ -76,16 +77,21 @@ def report(num):
 
 @app.route('/search', methods=['POST'])
 def search():
-	
+	temp = 0
 	url = request.form['url']
+	if "http://" not in url and "https://" not in url:
+		url = "http://" + url
+	base_url = url.split('/')[0]+'//'+url.split('/')[2]+'/'
 	HEADER = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36'}
 	DOWNLOAD_FOLDER = "/home/choiys/am2pm/app/download/"
 
 	dlist = os.listdir(DOWNLOAD_FOLDER)
+	dnum = '1'
 	if len(dlist) != 0:
-		dlist.sort()
+		dlist.sort(key=int)
 		dstatus = dlist[-1]
-		dpath = DOWNLOAD_FOLDER+str(int(dstatus)+1)+'/'
+		dnum = str(int(dstatus)+1)
+		dpath = DOWNLOAD_FOLDER+dnum+'/'
 		os.mkdir(dpath)
 	else:
 		dpath = DOWNLOAD_FOLDER+'1/'
@@ -98,45 +104,98 @@ def search():
 		else:
 			return base_url+"/"+url
 
-	def download(s, url, file_name):
-		if file_name != "":
+	def download(s, url, file_name, temp):
+		if file_name != "" and "javascript:" not in file_name and "javascript:" not in url:
+			if len(file_name)>50:
+				file_name = file_name[:50]
+			if len(file_name.split('.')[-1]):
+				file_name = str(temp)
+				temp += 1
 			with open(dpath+file_name, "wb") as f:
-				res = s.get(url)
-				f.write(res.content)
+				try:
+					res = s.get(url, headers=HEADER, verify=False)
+					f.write(res.content)
+				except:
+					pass
+		return temp
 
 	def filter(file_name):
 		file_type = m.from_file(dpath+file_name)
-		if "HTML" in file_type:
+		if "HTML" in file_type or "empty" in file_type:
 			os.remove(dpath+file_name)
+		elif "Hangul" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".hwp")
+		elif "PDF" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".pdf")
+		elif "PowerPoint" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".pptx")
+		elif "Excel" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".xlsx")
+		elif "Word" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".docx")
+		elif "Zip" in file_type or "zip" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".zip")
+		elif "PE32" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".exe")
+		elif "ASCII" in file_type:
+			os.rename(dpath+file_name, dpath+file_name+".txt")
 
 	def split_link(type, link, base_url):
 		if type == 1:
 			link = complete_url(link, base_url)
 			file_name = link.split("/")[-1]
 		else:
-			link = complete_url(str(link).split("href=\"")[1].split("\"")[0], base_url)
+			try:
+				link = complete_url(str(link).split("href=\"")[1].split("\"")[0], base_url)
+			except:
+				link = "http://choiys.tistory.com"
 			file_name = link.split("/")[-1]
-		
+		if "javascript:" in link:
+			link = "http://choiys.tistory.com"
+			file_name = ""
+		else:
+			link = link.replace("&amp;", "&").replace("&nbsp;", " ").replace("&lt;", "<").replace("&gt;", ">")
+			file_name = file_name.replace("&amp;", "&").replace("&nbsp;", " ").replace("&lt;", "<").replace("&gt;", ">")
 		return link, file_name
 
 	m = magic.Magic()
 
 	s = requests.Session()
-	r = s.get(url, headers=HEADER)
+	r = s.get(url, headers=HEADER, verify=False)
 	soup = BeautifulSoup(r.text, 'html.parser')
 
 	all_atags = soup.find_all('a')
 	delete_queue = []
 
-	data = split_link(2, all_atags, url)
 	for atag in all_atags:
-		link, file_name = split_link(2, atag, url)
-		download(s, link, file_name)
+		link, file_name = split_link(2, atag, base_url)
+#		print link
+		temp = download(s, link, file_name, temp)
 
 	files = os.listdir(dpath)
-
+	time.sleep(1)
 	for f in files:
 		filter(f)
 
-	flash('Download is successfully done!')
-	return render_template('index.html', done=True)
+	files = os.listdir(dpath)
+	count = len(files)
+	return render_template('index.html', download=True, count=count, num=dnum)
+
+@app.route('/submit', methods=['POST'])
+def submit():
+	DOWNLOAD_FOLDER = "/home/choiys/am2pm/app/download/"
+	num = request.form['num']
+	dpath = DOWNLOAD_FOLDER+str(num)+'/'
+	dlist = os.listdir(dpath)
+	if len(dlist) != 0:
+		msg = ". /home/choiys/cuckoo/bin/activate;"
+		for f in dlist:
+			msg += "cuckoo --cwd ~/cuckoo/.cuckoo submit --timeout 60 "
+			msg += dpath+str(f)+"&&"
+		msg = msg[:-2]
+	
+		os.system(msg)
+
+		time.sleep(60)
+
+	return render_template('index.html', submit=True)

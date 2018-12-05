@@ -1,0 +1,1143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><!--<![endif]-->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>대한재활의학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.0.css" />
+<link type="text/css" rel="stylesheet" href="/css/karm.css" />
+<!--[if lt IE 8]>
+<script type="text/javascript">
+//<![CDATA[
+	var IE7_PNG_SUFFIX = ".png";
+//]]>
+</script>
+<script type="text/javascript" src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/script/jquery.min.1.7.1.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<script type="text/javascript" src="/script/flowplayer-3.2.12.min.js"></script>
+
+<!-- jquery  공통 style 및 ui 사용  //-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<!-- jquery  공통 style 및 ui 사용  //-->
+<script type="text/javascript">
+//<![CDATA[
+;jQuery(function(){
+
+	$('.contents_print').click(function(){
+			var W = $(".subCon").width()+20;
+			var H = $(".subCon").height()+100;
+			var features = "menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes,width=" + W + ",height=" + H + ",left=0,top=0";
+
+			var PrintPage = window.open("about:blank", "print", features);
+			PrintPage.document.open();
+			PrintPage.document.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
+			PrintPage.document.write('<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">\n');
+			PrintPage.document.write("<head>\n");
+			PrintPage.document.write('<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>\n');
+			PrintPage.document.write('<meta http-equiv="X-UA-Compatible" content="IE=10"/>\n');
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/common_v1.0.css'/>\n");
+			PrintPage.document.write("<link rel='stylesheet' type='text/css' href='/css/karm.css'/>\n");
+			PrintPage.document.write("<title>대한재활의학회</title>\n");
+			PrintPage.document.write("</head>\n");
+			PrintPage.document.write("<body style='background:none;'>\n");
+			PrintPage.document.write("<div style='width:98%;margin:0 auto;'>"+$(".subCon").html()+"</div>\n");
+			PrintPage.document.write("</body>\n");
+			PrintPage.document.write("</html>\n");
+			PrintPage.document.close();
+			PrintPage.document.title = document.domain;
+			// 페이지 완벽히 로딩후 프린트 호출 -송기문-
+			setTimeout( function(){
+		    	PrintPage.print();   
+		    }, 500); 
+			
+		});
+
+		var min_font = 12;
+		var max_font = 20;
+		var font_val = 12;
+		
+		$('.font_plus').click(function(){
+			if(font_val < max_font){
+				font_val++;
+			}else{
+				font_val = max_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+
+		});
+
+		$('.font_minus').click(function(){
+			if(font_val > min_font){
+				font_val--;
+			}else{
+				font_val = min_font;
+			}
+			
+			$('.subCon').css('font-size',font_val+"px");
+			$('.subCon table td, .subCon table th').css('font-size',font_val+"px");
+			
+		});
+
+		$('#sdate, #edate ,#pdate').datepicker({showMonthAfterYear:true, changeMonth: true,	changeYear: true,	dateFormat: "yy-mm-dd" ,
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+			dayNames: ['일','월','화','수','목','금','토'],
+			dayNamesShort: ['일','월','화','수','목','금','토'],
+			dayNamesMin: ['일','월','화','수','목','금','토'],
+			showMonthAfterYear: true,
+			changeMonth: true,
+			changeYear: true,
+			yearSuffix: ''	
+		});
+		
+});
+//]]>
+function twitter(){
+	window.open('https://twitter.com/share?url=http%3A%2F%2Fgastrokorea.org%2Fmember%2Fjoin_01.php%3F&text=%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C+&via=%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C','twitter','width=500, height=300, scrollbars=no')
+}
+
+function WriteComment(){
+
+		var title = '%EB%8C%80%ED%95%9C%EC%9E%AC%ED%99%9C%EC%9D%98%ED%95%99%ED%9A%8C+';
+		var summary = "";
+		var url = "http%3A%2F%2Fgastrokorea.org%2Fmember%2Fjoin_01.php%3F";
+		var imgurl = "http://gastrokorea.org/image/main/top_logo.gif";
+		var txtOption = "toolbar=0,status=0,width=1000,height=600";
+		var openURL = "http://www.facebook.com/sharer.php?s=100&p[title]="+title+"&p[url]="+url+"&p[summary]="+summary+"&p[images][0]"+imgurl;
+		window.open(openURL,"SNS",txtOption);
+	
+}
+
+function blank_popup(url){
+	window.open(url);
+}
+function blank2_popup(url){
+	window.open(url,'privacy','width=750, height=600, scrollbars=yes');
+}
+function location_href(url){
+	location.href=url;
+}
+
+/* 2016-12-29 팝업 소스가 없어 추가 함 김상훈 K*/
+function popup_getCookie( name )
+{
+		var nameOfCookie = name + "=";
+		var x = 0;
+		while ( x <= document.cookie.length )
+		{
+				var y = (x+nameOfCookie.length);
+				if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+						if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+								endOfCookie = document.cookie.length;
+						return unescape( document.cookie.substring( y, endOfCookie ) );
+				}
+				x = document.cookie.indexOf( " ", x ) + 1;
+				if ( x == 0 )
+						break;
+		}
+		return "";
+}
+
+
+var karm_win=null;
+function NewWindow(mypage,myname,w,h,scroll,pos){
+	if(pos=="random")
+		{LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100; }
+	if(pos=="center")
+		{LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;	}
+	if(pos=="imsi"){
+		LeftPosition=0;TopPosition=0;
+	} else	if(pos=="imsia"){
+		LeftPosition=450;TopPosition=0;
+	} else	if(pos=="imsib"){
+		LeftPosition=516;TopPosition=0;
+	} else	if(pos=="imsic"){
+		LeftPosition=0;TopPosition=0;
+	} 	else if((pos!="center" && pos!="random") || pos==null){	
+		LeftPosition=0;TopPosition=0;
+	}
+	settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+	karm_win=window.open(mypage,myname,settings);
+	if(karm_win.focus){karm_win.focus();}
+}
+/* 2016-12-29 팝업 소스가 없어 추가 함 김상훈 K*/
+
+
+/*추가팝업 완료*/
+</script>
+<style>
+.ui-datepicker{ font-size: 12px; }
+.ui-datepicker select.ui-datepicker-month{ width:40%; font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{ width:50%; font-size: 11px; }
+
+/*김상훈 추가 게시판에서 사용하는 클랙스 2016-12-28*/
+.addborderRed { border: 1px solid Red !important; }
+.addborderBlack { border: 1px solid Black !important; }
+.addborderGreen { border: 1px solid Green !important; }
+.addborderGray { border: 1px solid gray !important; }
+.addborderBlue { border: 1px solid Blue !important; }
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<!-- headerWrap -->
+	<div id="headerWrap">
+		<!-- skip navigation -->
+		<dl id="skipNavi">
+			<dt>바로가기 메뉴</dt>
+			<dd><a href="#containerWrap">본문내용 바로가기</a></dd>
+			<dd><a href="#footerWrap">하단내용 바로가기</a></dd>
+		</dl>
+		<!-- //skip navigation -->
+
+		<!-- header -->
+		<div class="header">
+			<h1 class="logo"><a href="/"><img src="/image/common/header_logo.png" alt="대한재활의학회" /></a></h1>
+
+
+			<div class="posTR">
+	
+				<!-- util menu -->
+				<dl id="utilMenu">
+					<dt class="hidden">유틸메뉴</dt>
+					<dd>
+						<ul class="clfix">
+							<li><a href="/">Home</a></li>
+														<li><a href="/member/login.php">LOGIN</a></li>
+							<li><a href="/member/join_01.php">JOIN</a></li>
+														<li><a href="/intro/intro7.php">CONTACT US</a></li>
+							<li><a href="/sitemap/">SITEMAP</a></li>
+													</ul>
+					</dd>
+				</dl>
+				<!-- //util menu -->
+
+				<p><a href="/eng" target="_blank" class="eng">ENGLISH</a></p>
+				<p><a href="#" class="allMenu">전체메뉴 보기</a></p>
+			</div>
+
+			<!-- gnb -->
+			<h2 class="hidden">주 메뉴</h2>
+			<div class="gnbWrap">
+				<ul id="gnbUI">
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/intro/">학회소개</a>//-->
+						<a href="#" onclick="return false;">학회소개</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/intro/index.php">인사말</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro2.php">학회 연혁</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro3.php">학회 기구도</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro4.php">학회 현황</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro5.php">수련병원현황</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro6.php">학회 회칙</a>
+																													
+									</li>
+									
+																	<li><a href="/intro/intro_index.php">연구회 안내</a>
+																			<li><a href="/intro/intro7.php">사무국 안내</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/workshop/">학회지</a>//-->
+						<a href="#" onclick="return false;">학회지</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org');">학회지 검색</a>
+																													
+									</li>
+									
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org/for/authors.html');">투고 규정</a>
+																													
+									</li>
+									
+																	<li><a href="javascript:blank_popup('http://www.e-arm.org/submission/Login.html');">온라인 논문투고</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/jounal/">학술행사</a>//-->
+						<a href="#" onclick="return false;">학술행사</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=workshop">주요 학술행사</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=schedule">국내외 행사일정</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=schedule_pds">학술대회 발표자료</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=history">역대 학술대회</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=gallery">행사 앨범</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/bbs/?code=down">공지 및 소식</a>//-->
+						<a href="#" onclick="return false;">공지 및 소식</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=notice">공지사항</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=news">학회소식</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=insure">보험공지</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=research">연구과제공모</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=mornitoring">정책 모니터링</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=mornitoring2">언론보도</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/community/">회원광장</a>//-->
+						<a href="#" onclick="return false;">회원광장</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/bbs/?code=paper">월간 소식지</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=member">회원 게시판</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=talk">전공의 특별법 토의방</a>
+																													
+									</li>
+									
+																	<li><a href="/committee/index.php">위원회 공간</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=region">각지회 소식</a>
+																													
+									</li>
+									
+																	<li><a href="/member/report.php">불법/부당 신고 및 건의</a>
+																														<ul>
+																					</ul>
+																			
+									</li>
+									
+																	<li><a href="/member/search.php">회원검색</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=case">증례 토론</a>
+																													
+									</li>
+									
+																	<li><a href="/member/spray.php">회원 분포도</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=study">전공의 학습목표</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/info/">자료실</a>//-->
+						<a href="#" onclick="return false;">자료실</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/data/term.php">용어검색</a>
+																													
+									</li>
+									
+																	<li><a href="/data/data01_1.php">상대가치점수표</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=data2">생명표</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=health">보건복지부 자료</a>
+																													
+									</li>
+									
+																	<li><a href="/data/rule.php">학회 규정</a>
+																													
+									</li>
+									
+																	<li><a href="/bbs/?code=pds">일반 자료실</a>
+																													
+									</li>
+									
+																	<li><a href="/data/site_01.php">관련사이트</a>
+																														<ul>
+																							<li class="">
+													<a href="/data/site_01.php">- 국내 사이트</a>
+												</li>
+																							<li class="">
+													<a href="/data/site_02.php">- 국외 사이트</a>
+												</li>
+																							<li class="">
+													<a href="/data/site_03.php">- 재활관련 추천사이트</a>
+												</li>
+																					</ul>
+																			
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+															<li > <!-- 기존에 5번이 class ='wide' 였으나 재활의학 건강정보가 추가되면서 없어짐 //-->
+						<!--<a href="/info/">재활의학과 건강정보</a>//-->
+						<a href="#" onclick="return false;">재활의학과 건강정보</a>
+						<div class="subWrap">
+							<ul>
+																	<li><a href="/hospital/index.php">진료병원안내</a>
+																													
+									</li>
+									
+																	<li><a href="/info/info.php">재활의학회 소개</a>
+																													
+									</li>
+									
+																	<li><a href="/info/disease.php">질병별소개</a>
+																														<ul>
+																					</ul>
+																			
+									</li>
+									
+																	<li><a href="/info/movie.php">질병별  재활 소개 동영상</a>
+																													
+									</li>
+									
+																	<li><a href="/info/list.php">발달선별검사 의뢰기관</a>
+																													
+									</li>
+									
+															</ul>
+						</div>
+					</li>
+					
+														</ul>
+				
+			</div>
+			<!-- //gnb -->
+		</div>
+		<!-- //header -->
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+
+	<!-- containerWrap -->
+
+	<div id="containerWrap">
+		<h2 class="hidden">본문내용</h2>
+		<!-- sub contents -->
+		<div class="contents">
+
+
+
+			<dl id="lnb">
+				<dt >학회소개</dt>
+				<dd>
+					<ul>
+											<li  class="">
+						<a href="/intro/index.php">인사말</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro2.php">학회 연혁</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro3.php">학회 기구도</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro4.php">학회 현황</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro5.php">수련병원현황</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro6.php">학회 회칙</a>
+													</li>
+											<li  class="">
+						<a href="/intro/intro_index.php">연구회 안내</a>
+														<ul>
+																	<li class="">
+										<a href="/intro/intro_index.php">규정 및 설립신청</a>
+									</li>
+																	<li class="">
+										<a href="/intro/intro8.php">신경근육질환연구회</a>
+									</li>
+															</ul>
+													</li>
+											<li  class="">
+						<a href="/intro/intro7.php">사무국 안내</a>
+													</li>
+										</ul>
+				</dd>
+			</dl>
+
+			<div class="titArea">
+				<h2>
+									</h2>
+
+
+				<div class="fr">
+				<dl class="pagePath">
+					<dt class="hidden">페이지 경로</dt>
+					<dd>
+						<ul>
+							<li>Home</li>
+							<li>학회소개</li>
+							<li></li>
+							<li class="current"> </li>
+						</ul>
+					</dd>
+				</dl>
+				<!-- //pagePath -->
+				
+				<div class="subUtility">
+					<ul>
+						<li class="facebook"><a href="#" onclick="WriteComment()">Facebook</a></li>
+						<li class="twitter"><a href="#" onclick="twitter()">Twitter</a></li>
+						<li class="print contents_print"><a href="#none">Print</a></li>
+					</ul>
+					<ul>
+						<li class="plus font_plus"><a href="#none">본문 글자크기 확대</a></li>
+						<li class="minus font_minus"><a href="#none">본문 글자크기 축소</a></li>
+					</ul>
+				</div>
+				<!-- //subUtility -->
+				</div>
+
+
+			</div>
+			<!-- //titArea -->
+		
+	
+
+			<div class="subCon">
+			<script>
+function agree_submit(form) {
+	var form = document.agreeform;
+
+		if(!form.private.checked) {
+            alert("개인정보취급방침에 동의하셔야 합니다.");
+            form.private.focus();
+           return false;
+        }
+
+		if(!form.agree.checked) {
+            alert("회원 약관에 동의하셔야 합니다.");
+            form.agree.focus();
+           return false;
+        }
+
+		return true;
+ }
+</script>	
+
+<div class="karmJoin">
+
+	<h3><img src="/image/sub/join_tit_01.jpg" alt="Step 1. 개인정보 수집 및 약관동의" /></h3>
+	
+	<form id="agreeform" name="agreeform" action="join_02.php" method="post" onsubmit="return agree_submit()">
+		<fieldset>
+			<legend>회원가입 : 약관동의</legend>
+			<h4 class="subTit">개인정보취급방침</h4>
+			<div class="scrollArea">
+				<dl>
+					<dt>1. 수집하는 개인정보의 항목 및 수집방법</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 고객센터, 고객상담 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+						<ul>
+							<li>• 이름, 근무처명, 이메일, 전화번호, 팩스번호, 로그인ID, 비밀번호 <br />
+							또한 서비스 이용과정이나 사업 처리 과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다.</li>
+							<li>• 서비스 이용기록, 접속 로그, 접속 IP 정보, 쿠키</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>2. 개인정보의 수집 및 이용목적</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 다음과 같은 방법으로 개인정보를 수집합니다.<br />
+						• 고객센터, 고객상담 게시판</p>
+						<p>대한재활의학회 은(는) 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+						<ul>
+							<li>• 서비스 요청 내역에 대한 처리 및 보고, 고객상담에 대한 답변</li>
+							<li>• 마케팅 및 광고에 활용<br />
+							고객상담 이용에 대한 신규 서비스(제품) 개발 정보 전달</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>3. 개인정보 제공 및 공유</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br />
+						• 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</p>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>4. 수집한 개인정보의 취급위탁</dt>
+					<dd>대한재활의학회 은(는) 고객님의 동의없이 고객님의 개인정보 취급을 외부 업체에 위탁하지 않습니다. 향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.</dd>
+				</dl>
+				
+				<dl>
+					<dt>5. 개인정보의 보유 및 이용기간</dt>
+					<dd>
+						<p>원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.</p>
+						<dl>
+							<dt class="fwBold">&lt; 내부 방침에 의한 정보보유 사유 &gt;</dt>
+							<dd>
+								로그인ID, 비밀번호, 근무처명, 이름, 이메일, 전화번호, 팩스번호<br />
+								• 보존 이유 : 고객 요청 작업에 대한 처리 및 보고 및 운영보고서 발송<br />
+								• 보존 기간 : 운영 계약 파기 시
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>6. 개인정보 파기절차 및 방법</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.</p>
+						<dl>
+							<dt class="fwBold">파기절차</dt>
+							<dd>회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다. 동 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.</dd>
+						</dl>
+						<dl>
+							<dt class="fwBold">파기방법</dt>
+							<dd>
+								• 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고<br />
+								• 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다. 
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>7.	이용자 및 법정대리인의 권리와 그 행사방법</dt>
+					<dd>
+						<p>이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.</p>
+						<p>이용자 혹은 만 14세 미만 아동의 개인정보 조회•수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정’ 등)을, 가입해지(동의철회)를 위해서는 “회원탈퇴”를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.</p>
+						<p>혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.</p>
+						<p>귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.</p>
+						<p>혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체없이 조치하겠습니다.</p>
+						<p>대한재활의학회 은(는) 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 “대한재활의학회 이(가) 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</p>
+					</dd>
+				</dl>
+				
+				<dl>
+					<dt>8. 개인정보 자동 수집 장치의 설치•운영 및 그 거부에 관한 사항</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 귀하의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’, ‘세션(session)’ 등 개인정보를 자동으로 수집하는 장치를 설치•운용합니다. 쿠키란 대한재활의학회 의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 귀하의 컴퓨터 하드디스크에 저장됩니다.<br />
+						대한재활의학회 은(는) 다음과 같은 목적을 위해 쿠키 등을 사용합니다.</p>
+						<dl>
+							<dt class="fwBold">쿠키 등 사용 목적</dt>
+							<dd>회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 방문 회수 파악 등을 통한 개인 맞춤 서비스 제공<br />
+							귀하는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 귀하는 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</dd>
+						</dl>
+						<dl>
+							<dt class="fwBold">쿠키 설정 거부 방법</dt>
+							<dd>
+								<p>예: 쿠키 설정을 거부하는 방법으로는 회원님이 사용하시는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.</p>
+								<p>설정방법 예(인터넷 익스플로어의 경우)<br />
+								: 웹 브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보 </p>
+								
+								<p>단, 귀하께서 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.</p>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+
+						
+				<dl>
+					<dt>9. 개인정보관리책임자</dt>
+					<dd>
+						<p>대한재활의학회 은(는) 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 관련 부서 및 개인정보관리책임자를 지정하고 있습니다.</p>
+						<dl>
+							<dt class="fwBold">개인정보관리책임자</dt>
+							<dd>
+								성명: 김진희<br />
+								전화번호: 070-7769-0717<br />
+								이메일: <a href="mailto:webmaster@karm.or.kr" class="underline">webmaster@karm.or.kr</a>
+							</dd>
+						</dl>
+						<p>또는</p>
+						<dl>
+							<dt class="fwBold">개인정보담당부서</dt>
+							<dd>
+								성명: 대한재활의학회 사무국<br />
+								전화번호: 070-7769-0717<br />
+								이메일: <a href="mailto:webmaster@karm.or.kr" class="underline">webmaster@karm.or.kr</a>
+							</dd>
+						</dl>
+						<p>귀하께서는 대한재활의학회 의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.</p>
+					</dd>
+				</dl>
+				
+				<ul>
+					<li>공고일자 : 2009년 07월 09일</li>
+					<li>시행일자 : 2009년 07월 09일</li>
+				</ul>
+
+			</div>
+			<!-- //scrollArea -->
+			<p class="ar"><input type="checkbox" name="private" id="private" value="Y" /><label for="private">동의합니다.</label></p>					
+			
+			<h4 class="subTit">회원 약관</h4>
+			<div class="scrollArea">
+				<h5>제 1 장 총      칙</h5>
+				<dl>
+					<dt>제1조 (명칭)</dt>
+					<dd>본 회는  의료법에 의하여 설립된  중앙회인 대한의학협회의 분과학회로서 대한재활의학회라 칭한다.</dd>
+				</dl>
+				<dl>
+					<dt>제2조 (사무소의 위치) </dt>
+					<dd>본  회의 사무소는 서울특별시에  두며 지회를 각 시도에  둘 수 있다.</dd>
+				</dl>
+				<dl>
+					<dt>제3조 (목적)</dt>
+					<dd>본 회는 재활의학의 진보 발전과  회원 상호간의 친목을 도모함을 목적으로 한다.</dd>
+				</dl>
+				
+				<h5>제 2 장 사      업</h5>
+				<dl>
+					<dt>제4조 (사업)</dt>
+					<dd>
+						<p>본 회의 목적을 달성하기 위하여 다음의 사업을 행한다.</p>
+						<ul>
+							<li>1) 재활의학의 연구 발표 및 학술강연회 개최에 관한 사항</li>
+							<li>2) 재활의학에 관한 의사 강습 및 재활의학 보급에 관한 사항</li>
+							<li>3) 재활의학과 전문의 고시 업무에 관한 사항</li>
+							<li>4) 본 학회의 회지 및 기타 간행물의 발간에 관한 사항</li>
+							<li>5) 국제학회와의 유대 강화에 관한 사항</li>
+							<li>6) 기타 본 회의 목적 달성에 필요한 사항</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<h5>제 3 장 회원</h5>
+				<dl>
+					<dt>제5조 (구성)</dt>
+					<dd>본 회는 정회원, 준회원 및 명예회원으로 구성한다.</dd>
+				</dl>
+				<dl>
+					<dt>제6조 (자격 및 입회)</dt>
+					<dd>
+						<ul>
+							<li>1) 정회원: 대한민국 의사면허증을 소지하고 재활의학과  전문의 자격을 취득한 자로서 본회의 목적에 찬동하며, 소정의 입회 등록을 필한 자로 한다.<br />
+							(단, 1984년 11월 2일까지 등록된 모든 회원은 정회원으로 인정한다.)</li>
+							<li>2) 준회원: 재활의학과 전공의  과정을 이수하였거나 이수  중인 자, 또는 본  회의 목적에 찬동하고 소정의 입회 절차를 밟아 이사회의 심사에 통과된 자.</li>
+							<li>3) 명예회원: 본 회의  발전에 공로가 현저한 이사로서  이사회의 의결로서 정해진 자.</li>
+							<li>4) 지회가 있는  지역에서는 본  회의 입회할  때, 소속  지회를 경유하여야  하며, 회원 자격을 얻음과 동시에 해당 지회의 회원이 된다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제7조 (명예회장)</dt>
+					<dd>본  학회의 발전에  공로가 현저할  뿐 아니라 학계에서 덕망이 높은 이사로서 이사회의 추천에 의하여 총회에서 인준을 받은 자</dd>
+				</dl>
+				<dl>
+					<dt>제8조 (의무)</dt>
+					<dd>
+						<ul>
+							<li>1) 회원은 의사의 윤리, 정관 및 본 회의 회칙을 준수하여야 한다.</li>
+							<li>2) 회원은 본 회의 각급 회의가 의결한 사항 및 제 규정을 준수하여야 한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제9조 (권리)</dt>
+					<dd>제 8조 1항 및 2항의 의무를 다한 회원은 선거권, 피선거권 및 기타 본 회소정의 의결권을 가진다.<br />
+					단, 준회원 및 명예회원은 선거권, 피선거권 및 기타 의결권이 없다.</dd>
+				</dl>
+				
+				<h5>제 4 장 임원 및 임기</h5>
+				<dl>
+					<dt>제10조 (임원의 구성) 본 회의 임원은 다음과 같다.</dt>
+					<dd>
+						<ul>
+							<li>1) 회      장 …………… 1명</li>
+							<li>2) 차기  회장 …………… 1명</li>
+							<li>3) 이  사  장 …………… 1명</li>
+							<li>4) 차기이사장 …………… 1명</li>
+							<li>5) 이      사 …………… 15명 이내</li>
+							<li>6) 감      사 ……………  2명</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제11조 (임원선출)</dt>
+					<dd>본 회의 임원은 현 회장 및 이사장이 지명한 5명의 전형위원이 선출 하되 총회의 인준을 받는다. <br />
+					단, 이사는 신임 이사장의 제청에 의해 회장의 동의를 얻어 이사장이 임명한다. </dd>
+				</dl>
+				<dl>
+					<dt>제12조 (임원 임기)</dt>
+					<dd>본  회의 임원의 임기는 2년으로  하되, 회장과 이사장은 연임할 수 없다.</dd>
+				</dl>
+				<dl>
+					<dt>제13조 (임원 보선)</dt>
+					<dd>궐위임원은 회장의 동의를 얻어 이사장이 보임하고 그 임기는 전임자의 잔임 기간으로 한다.</dd>
+				</dl>
+				<dl>
+					<dt>제14조 (임원의 임무)</dt>
+					<dd>
+						<p>본 회의 임원의 임무는 다음과 같다.</p>
+						<ul>
+							<li>1) 회장은 본회를 대표하고 회무를 통리하여 총회의 의장이 된다.</li>
+							<li>2) 차기 회장은 회장을 보좌하며 회장 유고시 그 임무를 대행한다.</li>
+							<li>3) 이사장은 이사회의 의장이 되며 회무를 총괄한다.</li>
+							<li>4) 차기 이사장은 이사장을 보좌하며 이사장 유고 시 그 임무를 대행한다.</li>
+							<li>5) 이사는 이사회를 구성하고 회무를 분담하여 심의 처리한다.</li>
+							<li>6) 감사는 회무와 재정을 감사하여 그 결과를 정기총회에 보고한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제15조 (자문위원회)</dt>
+					<dd>
+						<ul>
+							<li>1) 본 회에 자문위원회를 둘 수 있다.</li>
+							<li>2) 자문위원회의 구성 및 운영에 관한 사항은 따로 정한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<h5>제 5 장 회      의</h5>
+				<dl>
+					<dt>제16조 (회의)</dt>
+					<dd>본 회의 회의는 정기총회, 임시총회, 정기 이사회, 임시 이사회 및 각 위원회로 구분한다.</dd>
+				</dl>
+				<dl>
+					<dt>제17조 (의결) </dt>
+					<dd>본 회의 이사회와 위원회는 정원의  과반수 출석으로 성립하고 출석 인원 과반수와 찬성으로 의결하며, 가부 동수일 때는 의장이 결정한다.</dd>
+				</dl>
+				
+				<h5>제 6 장 총      칙</h5>
+				<dl>
+					<dt>제18조 (구성 및 소집)</dt>
+					<dd>
+						<ul>
+							<li>1) 총회는 정기총회와 임시총회로 한다.</li>
+							<li>2) 정기총회는 연  1회 연차 학술대회  기간 중에 회장이  소집하고, 임시 총회는 정회원 1/3이상의 요구가 있거나 이사회의 결의에 따라 회장이 이를 소집한다.</li>
+							<li>3) 총회소집은 정기총회는 개최 1개월 전, 임시총회는 개최 2주일 전에 각각 회의목적 및 토의사항, 일시, 장소 등을 기재 한 서면으로써 구성원에게 통보한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제19조 (성립 및 의결)</dt>
+					<dd>총회는 출석 인원으로 성립되고,  제의결은 참석 인원과반수로 결정한다. 다만, 총회의 의결사항 중 회칙의 개정은 출석인원 2/3이상의 찬성을 얻어 결의하되 총회 부위전에 그 회칙  개정안을 이사회에 재적이사 3분의 2 이상의 찬동에 의한 결의를 거쳐야 한다.</dd>
+				</dl>
+				<dl>
+					<dt>제20조 (의결사항)</dt>
+					<dd>
+						<p>총회에서는 다음의 사항을 심의 의결한다.</p>
+						<ul>
+							<li>1) 회칙 제정 및 개정에 관한 사항</li>
+							<li>2) 임원선출에 관한 사항</li>
+							<li>3) 예산 및 결산 승인에 대한 사항</li>
+							<li>4) 주요 사업계획서 수립에 관한 사항</li>
+							<li>5) 기타 이사회 또는 지회에서 부의된 사항</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<h5>제 7 장 이 사 회</h5>
+				<dl>
+					<dt>제21조 (구성 및 소집)</dt>
+					<dd>
+						<ul>
+							<li>1) 이사회는 이사장, 차기 이사장 및 이사로 구성한다.</li>
+							<li>2) 이사회는 정기 이사회와 임시 이사회로 구분한다.</li>
+							<li>3) 정기 이사회는  이사장이 회의  개최 2주전에  서면으로 구성원에게  통고하여 소집하며, 임시 이사회는 이사장이 필요하다고 인정하거나 이사 과반수의 요청이 있을 때 이사장이 이를 소집한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제22조 (이사회의 기능) </dt>
+					<dd>
+						<p>이사회의 기능은 다음과 같다.</p>
+						<ul>
+							<li>1) 총회에 제출한 제 안건의 심의</li>
+							<li>2) 제 규정의 제정 및 개정</li>
+							<li>3) 회원 자격의 심사 결정</li>
+							<li>4) 총회가 위임한 사항의 심의 결정</li>
+							<li>5) 총회 및 학술대회 개최에 관한 사항</li>
+							<li>6) 회비 및 기타 부과금의 책정</li>
+							<li>7) 예산 편성 및 결산보고에 관한 사항</li>
+							<li>8) 사무직원의 임, 면에 관한 사항</li>
+							<li>9) 기타 본회 사업 수행상 중요한 사항</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제23조 (임원의 발언)</dt>
+					<dd>회장, 차기회장은 이사회에서 의결권을 가지며, 감사는 이사회에서 발언권을 갖는다.</dd>
+				</dl>
+				
+				<h5>제 8 장 위 원 회</h5>
+				<dl>
+					<dt>제24조 (구성)</dt>
+					<dd>
+						<ul>
+							<li>1) 이사회에서는 본 회와 사업 수행을  위하여 각 위원회를 둘 수 있으며  위원의 임기는 임원의 임기와 같다.</li>
+							<li>2) 위원회의 구성, 위원회별 각 소관업무 등 운영사항은 이사회에서 따로 정한다.</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<h5>제 9 장 재      정</h5>
+				<dl>
+					<dt>제25조 (경비의 충당)</dt>
+					<dd>
+						<p>본 회의 경비는 다음의 수입금으로 충당한다.</p>
+						<ul>
+							<li>1) 입회금, 회비 및 심사료</li>
+							<li>2) 찬조금 및 기부금</li>
+							<li>3) 기타 수익금</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl>
+					<dt>제26조 (재산의 관리)</dt>
+					<dd>본 회의 재산 중 현금은 회장 명의로 금융기관에 예금하고 이사장이 이를 관리 운용한다.</dd>
+				</dl>
+				<dl>
+					<dt>제27조 (예산 집행)</dt>
+					<dd>예산집행은 정기총회에서 결의된 예산안에 따라 이사장이 집행하며, 그밖에 중요한 예산의 집행은 이사회의 의결을 거쳐 이사장이 집행한다.</dd>
+				</dl>
+				<dl>
+					<dt>제28조 (회계 연도)</dt>
+					<dd>본 회의 회계연도는 정기총회 개최일로부터 차기정기총회 개최 전일까지로 한다.</dd>
+				</dl>
+				
+				<h5>제 10 장 징      계</h5>
+				<dl>
+					<dt>제29조 (징계)</dt>
+					<dd>
+						<p>회원으로서 다음 각 호에 해당하는 자에 대하여는 이사회의 의결로써 경고 및 견책, 자격정지 또는 그 이상에 해당되는 징계 조치를 한다.</p>
+						<ul>
+							<li>1) 의사윤리를 위배한 자</li>
+							<li>2) 본 회의 명예를 훼손한 자</li>
+							<li>3) 소정의 회비를 2년간 체납한 자</li>
+							<li>4) 회원으로서 부여된 의무를 태만한 자</li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<h5>제 11 장 사 무 국</h5>
+				<dl>
+					<dt>제30조 (사무국 및 직원)</dt>
+					<dd>이사회의 사무를 집행하기 위하여 사무국을 둘 수 있으며, 유급 또는 무급의 총무와 직원을 둘 수 있다.</dd>
+				</dl>
+				
+				<h5>보      칙</h5>
+				<dl>
+					<dt>제31조 (시행세칙)</dt>
+					<dd>본 회칙 시행에 관하여 필요한 사항은 세칙으로 정한다.</dd>
+				</dl>
+				<dl>
+					<dt>제32조 (규정제정)</dt>
+					<dd>본 회의 사무를 집행하기 위하여 필요한 제 규정은 이사회에서 따로 정한다.</dd>
+				</dl>
+				<dl>
+					<dt>제33조 (준용규정) </dt>
+					<dd>본 회칙에 규정되지 아니한 사항에 대하여는 정관 및 민법의 규정 또는 일반 관례에 준한다.</dd>
+				</dl>
+				
+				<h5>부      칙</h5>
+				<dl>
+					<dt>제1조 (시행)</dt>
+					<dd>본 회칙은 공포일로부터 시행한다.</dd>
+				</dl>
+				<dl>
+					<dt>제2조 (개정회칙의 시행)</dt>
+					<dd>본 개정 회칙은 중앙회의 인준을 받은 날부터 시행한다.</dd>
+				</dl>
+			</div>
+			<!-- //scrollArea -->
+			<p class="ar"><input type="checkbox" name="agree" id="agree" value="Y"  /><label for="agree">동의합니다.</label></p>					
+			
+			<div class="btnArea">
+				<div class="btn">
+					<input type="submit" value="동의합니다." class="btnPoint" />
+					<input type="reset" value="동의하지 않습니다." class="btnGrey" />
+				</div>
+			</div>
+			<!-- //btnArea -->
+		</fieldset>
+	</form>
+
+</div>
+<!-- //karmJoin -->
+
+	
+				
+				<p id="btnGoTop"><a href="#headerWrap"><img src="/image/common/goTop.gif" alt="위로 이동" /></a></p>
+			</div>
+			<!-- //subCon -->
+
+
+		</div>
+		<!-- //sub contents -->
+	</div>
+	<!-- //containerWrap -->
+
+
+<hr />
+
+	<!-- footer -->
+	<div id="footerWrap">
+		<h2 class="hidden">하단내용</h2>
+		<div class="footer">
+			<div class="fl">
+				<ul class="links">
+					<li>
+					<a href="/pop_privacy_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=750, height=600, scrollbars=yes'); return false;">개인정보 취급 방침</a>
+					</li>
+					<li>
+					<a href="/pop_email_policy.html" title="팝업 - 새 창 열림" target="_blank" onclick="window.open(this.href,'privacy','width=500, height=340, scrollbars=no'); return false;">이메일주소 무단수집 거부</a>
+					</li>
+
+					<li><a href="/member/join_01.php">회원 가입</a></li>
+					<li><a href="/member/secession.php">회원 탈퇴</a></li>
+				</ul>
+				<div class="addressArea">
+					<address>주소 : (04376) 서울 용산구 새창로 217 (한강로2가 2-37) 토투밸리 1004호 대한재활의학회</address>
+					<ul>
+						<li>E-mail : <a href="mailto:karm@karm.or.kr">karm@karm.or.kr</a></li>
+						<li>전화 : <a href="/intro/intro7.php">[전화번호 안내]</a></li>
+						<li>팩스 : 02-3295-2014 </li>
+					</ul>
+					<p>Copyright by Korean Academy of Rehabilitation Medicine. All rights reserved.</p>
+				</div>
+			</div>
+			<!-- //fl -->
+
+			<div class="fr">
+				<dl class="otherSite">
+					<dt><a href="#" class="toggle">관련사이트</a></dt>
+					<dd class="toggleCon">
+						<ul>
+							<li><a href="http://www.kanem.or.kr" target="_blank">대한근전도전기진단의학회</a></li>
+							<li><a href="http://www.kagrm.or.kr/" target="_blank">대한노인재활의학회</a></li>
+							<li><a href="http://www.ksnr.or.kr/" target="_blank">대한뇌신경재활학회</a></li>
+							<li><a href="http://www.kslymph.or.kr/" target="_blank">대한림프부종학회</a></li>
+							<li><a href="http://footmed.org/" target="_blank">대한발의학회</a></li>
+							<li><a href="http://ksprm.or.kr/" target="_blank">대한소아재활발달의학회</a></li>
+							<li><a href="http://www.kassem.or.kr/main.html" target="_blank">대한스포츠과학∙운동의학회</a></li>
+							<li><a href="http://www.sono.or.kr/" target="_blank">대한신경근골격초음파학회</a></li>
+							<li><a href="http://www.kacprm.or.kr/" target="_blank">대한심장호흡재활의학회</a></li>
+							<li><a href="http://www.kscr.co.kr/" target="_blank">대한암재활학회</a></li>
+							<li><a href="http://www.kdys.or.kr/" target="_blank">대한연하장애학회</a></li>
+							<li><a href="http://www.painzero.or.kr/" target="_blank">대한임상통증학회</a></li>
+							<li><a href="http://www.koscos.kr/" target="_blank">대한척수학회</a></li>
+							<li><a href="http://www.ispokorea.org/" target="_blank">한국의지∙보조기학회</a></li>
+						</ul>
+					</dd>
+				</dl>	
+				
+				<ul>
+					<li><a href="https://twitter.com/karm_1972" target="_blank"><img src="/image/common/footer_btn_twitter.png" alt="트위터" /></a></li>
+					<li><a href="https://www.facebook.com/karm.or.kr" target="_blank"><img src="/image/common/footer_btn_face.png" alt="페이스북" /></a></li>
+				</ul>
+
+				<p class="app"><a href="/popup/popup_mobile.html" onclick="window.open(this.href,'privacy','width=610, height=900, scrollbars=yes'); return false;" target="_blank">모바일앱 설치안내</a></p>
+
+				<!-- SSL -->
+				<div class="ssl ">
+						<script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=gastrokorea.org&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ko"></script><br />
+<a href="https://www.symantec.com/ko/kr/ssl-certificates" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a>
+
+				</div>
+				<!-- // SSL -->
+			</div>
+			<!-- //fl -->
+		</div>
+		<!-- //footer -->
+	</div>
+	<!-- //footerWrap -->
+</div>
+</body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74236036-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 7]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie7"><![endif]-->
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie8"><![endif]-->
+<!--[if IE 9]><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>대한내과학회</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+<link type="text/css" rel="stylesheet" href="/css/common_v1.1.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim.css" />
+<link type="text/css" rel="stylesheet" href="/css/kaim_sub.css" />
+<script type="text/javascript" src="/script/jquery.js"></script>
+<script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/script/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/script/user.js"></script>
+<link type="text/css" rel="stylesheet" href="/css/unreset.css" />
+<link type="text/css" rel="stylesheet" href="/admin/button_package/button.css" />
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15291461-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98717380-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Hotjar Tracking Code for http://www.kaim.or.kr/ -->
+<!-- <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1001270,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+ -->
+<script type="text/javascript" src="/script/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(function($) {
+	$.mask.definitions['~']='[+-]';
+	$('.date_month').mask('9999-99');
+});
+</script>
+<!-- 2016-11-21 김영환추가 -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script type="text/javascript" src="/script/jquery-ui.min.js"></script>
+<link rel='stylesheet' type='text/css' href='/admin/mail/conf/jquery-flick.css'/>
+<script type="text/javascript" src="/script/kaim.js"></script>
+<link rel="stylesheet" type="text/css" href="/script/jquery.alerts.css"/>
+<SCRIPT LANGUAGE="javascript" SRC="/script/jquery.ui-jalert.js"></SCRIPT>
+<script type="text/javascript">
+	function sendTwitter(sTitle,sUrl){
+		var shref ="http://twitter.com/home?status="+encodeURIComponent(sTitle)+" "+encodeURIComponent(sUrl);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+
+	//페이스북
+	function sendFacebook(sTitle,sUrl){
+		var shref ="http://www.facebook.com/share.php?u="+encodeURIComponent(sUrl)+"&t="+encodeURIComponent(sTitle);
+		var sWindow=window.open(shref);
+		if (sWindow){
+			sWindow.focus();
+		}
+	}
+	function depart_pass_pop(){
+		var date1 = "1531818000";
+		var date2 = "1544037957";
+		if(date2 > date1){
+			window.open("/popup_main/popup_list.php","","width=1020,height=900,scrollbars=yes")
+		}else{
+			alert("금일 오후 6시부터 확인 가능합니다.");
+		}
+	}
+</script>
+
+
+</head>
+<body id="body">
+
+<div class="wrapper">
+	<div class="headerWrap">
+		<div>
+			<dl id="skipNavi">
+				<dt>Skip Navigation</dt>
+				<dd><a href="#container">Skip to contents</a></dd>
+			</dl>
+	
+			<h1><a href="/" title="홈으로 이동"><img src="/image/common/header_logo.jpg" alt="대한내과학회" /></a></h1>    
+			
+
+			<div class="utilMenu">
+				<div class="majorBtn">
+					<div>
+																													</div>
+				</div>
+
+				<ul>
+					
+										<li><a href="/">Home</a></li>
+										<li><a href="/member/?sn=3">Login</a></li>
+					<li><a href="/member/?sn=1">Join</a></li>
+										<li><a href="http://eng.kaim.or.kr/" target="_blank">English</a></li>
+				</ul>	
+			</div>
+			
+			<ul class="globalMenu">
+				<li class="facebook"><a href="https://www.facebook.com/kaim4311" target="_blank"><img src="/image/common/headerBtn_facebook.png" alt="Facebook" /></a></li>
+				<li class="viewPopup"><a class="globalSearch" href="#">전체검색</a></li>
+				<li class="viewPopup"><a class="allMenu" href="#">전체메뉴</a></li>
+			</ul>
+
+
+			<div class="globalPopup allMenu">
+				<ul class="gnb">
+										<li><a href="/about/">학회소개</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/about/">인사말 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=2">대한내과학회 약사 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=3">회칙 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=4">조직도 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=5">임원진 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=6">평의원 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=7&sn2=1">위원회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=8">지회 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=10">연구비, 학술상 </a></li>
+														<li style="font-size:11px;"><a href="/about/?sn=11">사무국 안내 및 연락처 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=schedule">학술행사</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=schedule">연간일정 </a></li>
+														<li style="font-size:11px;"><a href="/schedule/work_schedule.php">학술행사 일정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/major/">전공의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/major/?sn=1">전공의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/major/?sn=2">내과전문의 자격시험 </a></li>
+													</ul>
+					</li>
+															<li><a href="/specialist/">분과전문의</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/specialist/?sn=1">전임의 수련 </a></li>
+														<li style="font-size:11px;"><a href="/specialist/depart/info.php">분과전문의 자격인정시험 및 자격갱신 </a></li>
+													</ul>
+					</li>
+															<li><a href="/education/">평생교육</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/education/?sn=1">제도 도입 및 취지 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=2">규정 및 시행규칙 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=3">연수강좌 동영상 </a></li>
+														<li style="font-size:11px;"><a href="/education/?sn=4">이수증 발급 안내 </a></li>
+														<li style="font-size:11px;"><a href="http://cme.kaim.or.kr/" target=_blank">인터넷-온라인<br /> 평생교육 </a></li>
+													</ul>
+					</li>
+															<li><a href="/ethics/">의료윤리</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/ethics/?sn=1">내과의사 윤리선언 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=3">내과전공의 의료윤리<br /> 사례집 </a></li>
+														<li style="font-size:11px;"><a href="/ethics_mov/cp1_0.html" target="_blank"">내과전공의 사이버<br /> 윤리교육 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=2">죽음과 임종 </a></li>
+														<li style="font-size:11px;"><a href="/ethics/?sn=5">연명의료 결정 </a></li>
+													</ul>
+					</li>
+															<li><a href="/pds/?sn=1&sn2=1">자료실</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/pds/?sn=1&sn2=1">노년내과 교육목표 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=pds2">보험관련 자료 </a></li>
+														<li style="font-size:11px;"><a href="http://term.kma.org/" target="_blank"">의학용어 검색 </a></li>
+													</ul>
+					</li>
+															<li><a href="/bbs/?code=notice">회원공간</a>
+						<ul>
+														<li style="font-size:11px;"><a href="/bbs/?code=notice">공지사항/새소식 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=gallery">사진 모음 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=event">게시판 </a></li>
+														<li style="font-size:11px;"><a href="/bbs/?code=proposal">제안방 </a></li>
+														<li style="font-size:11px;"><a href="/mypage/?sn=1">My Page </a></li>
+													</ul>
+					</li>
+									</ul>
+				
+				<p class="close"><a href="#">메뉴 닫기</a></p>
+			</div>
+			
+			
+			<div class="globalPopup globalSearch">
+			
+				<dl>
+					<dt>전체검색</dt>
+					<dd>
+						<form id="total_seachF" name="total_seachF" action="/search/" method="post">
+							<fieldset>
+								<legend>대한내과학회 전체검색</legend>
+								<input type="text" name="key" id="key" placeholder="검색어를 입력하세요." class="_placeholder" />
+								<input class="btnBg" type="submit" value="검색" />
+							</fieldset>
+						</form>
+					</dd>
+				</dl>
+				
+				<p class="close"><a href="#">검색 닫기</a></p>
+			
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- //headerWrap -->
+	<hr />
+	<div id="container"  >
+
+		<div class="contents ">
+
+					<div class="titArea">
+				<h2>
+					청람연구비				</h2>
+				
+				<dl>
+					<dt class="hidden">페이지 경로</dt>
+					<dd>Home &gt; 학회소개 &gt; 연구비, 학술상<!--  &gt; 청람연구비 --></dd>
+				</dl>
+				
+				<ul class="subUtil">
+					<li><a href="javascript:view_mode_change('')" title="와이드모드"><img src="/image/sub/subUtilBtn_wide.gif" alt="" /></a></li>
+					<li><a href="javascript:sendFacebook('facebook','www.kaim.or.kr///about/?sn=10')" title="페이스북에 공유하기"><img src="/image/sub/subUtilBtn_facebook.gif" alt="" /></a></li>
+					<li><a href="javascript:sendTwitter('twitter','www.kaim.or.kr///about/?sn=10')" title="트위터에 공유하기"><img src="/image/sub/subUtilBtn_twitter.gif" alt="" /></a></li>
+					<li><a href="#" title="글자크기 키우기"><img src="/image/sub/subUtilBtn_plus.gif" alt="" class="font_size_plus"/></a></li>
+					<li><a href="#" title="글자크기 줄이기"><img src="/image/sub/subUtilBtn_minus.gif" alt="" class="font_size_minus"/></a></li>
+					<li><a href="#" title="현재페이지 프린트 하기"><img src="/image/sub/subUtilBtn_print.gif" alt="" class="contents_print"/></a></li>
+				</ul>
+			</div>
+						<dl id="lnb">
+				<dt>학회소개</dt>
+				<dd>
+					<ul class="subMenu">
+												<li ><a href="/about/">인사말</a>
+													</li>
+												<li ><a href="/about/?sn=2">대한내과학회 약사</a>
+													</li>
+												<li ><a href="/about/?sn=3">회칙</a>
+													</li>
+												<li ><a href="/about/?sn=4">조직도</a>
+													</li>
+												<li ><a href="/about/?sn=5">임원진</a>
+													</li>
+												<li ><a href="/about/?sn=6">평의원</a>
+													</li>
+												<li ><a href="/about/?sn=7&sn2=1">위원회</a>
+													</li>
+												<li ><a href="/about/?sn=8">지회</a>
+													</li>
+												<li ><a href="/about/?sn=9">대한내과학회<br /> 비전 동영상</a>
+													</li>
+												<li class="on"><a href="/about/?sn=10">연구비, 학술상</a>
+														<ul>
+																<li class="on"><a href="/about/?sn=10&sn2=1">청람연구비</a>
+																										</li>
+																<li ><a href="/about/?sn=10&sn2=2">대한내과학회연구비</a>
+																										</li>
+																<li ><a href="/about/?sn=10&sn2=3">학술상</a>
+																										</li>
+																<li ><a href="/about/?sn=10&sn2=4">우수논문상</a>
+																										</li>
+																<li ><a href="/about/?sn=10&sn2=5">우수초록연제</a>
+																										</li>
+															</ul>
+													</li>
+												<li ><a href="/about/?sn=11">사무국 안내 및 연락처</a>
+													</li>
+											</ul>
+				</dd>
+			</dl>
+							<div class="print_area"><div class="txtCon kaimFund">
+
+<!-- 청람연구비 -->
+
+	<div class="tabArea">
+		<ul class="tabMenu subMenu">
+			<li><a href="#">지급규정</a></li>
+			<li><a href="#">수혜자 명단</a></li>
+		</ul>
+
+		<div class="tabCon">
+			<h3 class="hidden">지급규정</h3>
+
+			<dl class="rule">
+				<dt class="subTit_bl">제1조 (목적)</dt>
+				<dd>본 규정은 청람 金東益선생님의 희사금을 그분의 뜻에 따라 내과학분야의 연구의욕을 고취시키기 위하여 내과학 발전에 공헌이 될 수 있는자, 또는 과제에 대한 연구비 보조에 관한 사항을 규정함 을 목적으로 한다.</dd>
+
+				<dt class="subTit_bl">제2조 (명칭)</dt>
+				<dd>본 연구비의 명칭은 대한내과학회 청람연구비라고 한다.</dd>
+
+				<dt class="subTit_bl">제3조 (지급대상)</dt>
+				<dd>지급대상은 연 1건을 원칙으로 하며, 연구과제는 대한내과학회연구비 2 과제와 연계하여 3개분과씩 순환 공모한다.</dd>
+
+				<dt class="subTit_bl">제4조 (지급대상자의 자격)</dt>
+				<dd>대한민국 국적을 가진 대한내과학회 정회원의 자격을 갖추고 5년 이상 내과학 연구에 종사한 사람으로서 학술적으로 공로가 인정 될 만한 연구계획 및 업적이 있어야 하며, 대한내과학회 영문잡지에 게재된 논문(원저, 최근 5년이내에 제1저자 또는 책임저자)이 있어야 한다. 그러나 동일한 연구과제로 이와 유사한 다른 연구비 또는 학술상을 수상한 경력이 있는 자는 제외 된다.</dd>
+
+				<dt class="subTit_bl">제5조 (지급후보자의 추천)</dt>
+				<dd>연구비를 받고자 하는 자는 지도교수 또는 종합병원의 경우는 내과과장의 추천을 받아야 한다.</dd>
+
+				<dt class="subTit_bl">제6조 (추천구비서류)</dt>
+				<dd>
+					<p>연구책임자는 다음 각호의 서류를 갖추어 따로 정하는 날까지 본 연구비 운영위원회에 제출하여야 한다. </p>
+					<ul>
+						<li>1) 신청서 1통(소정양식)</li>
+						<li>2) 추천서 1통</li>
+						<li>3) 이력서 1통</li>
+						<li>4) 사진(명함판)2매</li>
+						<li>5) 연구업적, 계획서 및 기타심사에 필요한 증빙자료(저서 및 논문등의 목록2부)</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제7조 (운영위원회)</dt>
+				<dd>
+					<ul>
+						<li>1) 위치 및 임무 : 내과학회에 청람연구비 운영위원회를 두고 본 연구비의 관리와 운영에 관한일을 담당한다.</li>
+						<li>2) 구성 : 운영위원회는 위원장 1명, 위원은 8명 내외, 간사 1명으로 구성되며 학회 이사장은 본 위원회의 당연직 위원장이 되고, 학회회장, 부회장, 부이사장은 당연직 위원이 되며, 학회 총무 이사는 간사가 된다. 위원 중 회의 연속성을 위하여 특별위원을 두되 이는 학회 이사회에서 선출한다.</li>
+						<li>3) 임기 : 위원장, 위원 및 간사의 당연직 임기는 내과학회 회칙상 임기에 따르며 특별위원의 임기는 평생으로 한다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제8조 (연구과제 심사)</dt>
+				<dd>
+					<p>연구과제 심사는 심사위원회 에서 심사한다.</p>
+					<ul>
+						<li>1) 심사위원회 : 이사회에서 위촉된 5명의 심사위원으로 구성하며 위원의 임기는 1년으로 한다.</li>
+						<li>2) 심사절차 : 운영위원회로부터 위촉된 신청과제를 심사선정하며 필요에 따라서는 전문가의 자문을 청할 수 있다.</li>
+					</ul>
+				</dd>
+
+				<dt class="subTit_bl">제9조 (연구과제 결정)</dt>
+				<dd>심사위원회에서 선정된 연구자 및 과제를 대한내과학회지(영문)에 공고한다.</dd>
+
+				<dt class="subTit_bl">제10조 (연구비 지급)</dt>
+				<dd>본 연구비는 해마다 개최되는 대한내과학회 춘계학술대회석상에서 소정의 연구비를 지급한다.</dd>
+
+				<dt class="subTit_bl">제11조 (연구비 수혜자의 의무)</dt>
+				<dd>연구결과는 2년 이내에 대한내과학회지 (또는) 영문 잡지 또는 SCI, SCIE 등재지에 청람연구비의 보조를 받았음을 밝혀서 게재하여야 한다.</dd>
+
+				<dt class="subTit_bl">제12조 (연구비 환수)</dt>
+				<dd>제4조 지급대상자의 자격 및 제11조 연구비 수혜자 의무를 위배할 경우 연구비 전액을 환수한다.</dd>
+
+				<dt class="subTit_bl">부칙</dt>
+				<dd>
+					<ul>
+						<li>1) 본 규정에 규정되지 아니한 사항은 일반 관례나 운영위원회의 결의에 따라 따로 내규로 정할 수 있다.</li>
+						<li>2) 본 규정은 대한내과학회 이사회에서 결의된 날로부터 시행한다. </li>
+					</ul>
+				</dd>
+
+			</dl>
+		</div>
+
+		<div class="tabCon">
+			<h3 class="hidden">수혜자 명단</h3>
+
+			<table class="ac">
+				<colgroup>
+					<col style="width: 10%;" />
+					<col style="width: 10%;" />
+					<col style="width: 15%;" />
+					<col style="width: 15%;" />
+					<col style="width: 50%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>년도</th>
+						<th>성명</th>
+						<th>소속</th>
+						<th>분야</th>
+						<th>제목</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>2018년</th>
+						<td>이상협</td>
+						<td>서울의대</td>
+						<td>소화기</td>
+						<td class="al">내시경적 역행성 담췌관조영술 후 급성 췌장염 발생 위험과<br />관련된 유전자의 변이 발굴을 위한 탐색 연구: 다기관, 전향적 연구</td>
+					</tr>
+					<tr>
+						<th>2017년</th>
+						<td>고유상</td>
+						<td>한림의대</td>
+						<td>호흡기</td>
+						<td class="al">비-결핵 항산균 폐질환의 숙주 감수성 인자 발굴을 위한 T세포 분화 조절 연구</td>
+					</tr>
+					<tr>
+						<th>2016년</th>
+						<td>김성규</td>
+						<td>대구가톨릭의대</td>
+						<td>류마티스</td>
+						<td class="al">과당에 의한 염증생성에서 NLRP3 inflmmasome 활성화를 조절하는 TXNIP/TRX의 역할: 통풍의 면학학적 기전의 이해</td>
+					</tr>
+					<tr>
+						<th>2015년</th>
+						<td>강혜련</td>
+						<td>서울의대</td>
+						<td>알레르기</td>
+						<td class="al">만성 염소가스 노출에 의한 선천면역 자극이 천식 발병에 미치는 영향 (The effect of stimulation of innate immunity by chronic exposure to chlorine gas on the development of asthma)</td>
+					</tr>
+					<tr>
+						<th>2014년</th>
+						<td>김성한</td>
+						<td>울산의대</td>
+						<td>감염</td>
+						<td class="al">폐포자충폐렴 환자에서 CMV에 대한 세포매개성 면역력의 측정이 CMV 폐렴을 예측하는 유용성에 대한 연구</td>
+					</tr>
+					<tr>
+						<th>2013년</th>
+						<td>김인호</td>
+						<td>서울의대</td>
+						<td>혈액종양</td>
+						<td class="al">항암제에 대한 명백한 내성이 밝혀진 급성골수성 백혈병 환자에서 골수이식에 의해 완치되는 환자군의 특성 규명</td>
+					</tr>
+					<tr>
+						<th>2012년</th>
+						<td>양재석</td>
+						<td>서울의대</td>
+						<td>신장</td>
+						<td class="al">oATP의 면역조절세포 유도를 통한 허혈-재관류 신장손상 조절</td>
+					</tr>
+					<tr>
+						<th>2011년</th>
+						<td>조영민</td>
+						<td>서울의대</td>
+						<td>순환기</td>
+						<td class="al">Metformin과 fenofibrate 병합요법이 GLP-1의 인슐린 분비 작용에 대한 감수성에 미치는 영향 연구</td>
+					</tr>
+					<tr>
+						<th>2010년</th>
+						<td>송재관</td>
+						<td>울산의대</td>
+						<td>순환기</td>
+						<td class="al">좌심실 혈류 소용돌이 분석을 통한 새로운 심장 기능 평가 지표의 개발</td>
+					</tr>
+					<tr>
+						<th>2009년</th>
+						<td>명승재</td>
+						<td>울산의대</td>
+						<td>소화기</td>
+						<td class="al">대장암 발생과정에서 Prostaglandin의 조절기전 규명 및 암 예방약제의 반응성 표지자로 15-hydroxyprostaglandin dehydrogenase의 역할</td>
+					</tr>
+					<tr>
+						<th>2008년</th>
+						<td>이승룡</td>
+						<td>고려의대</td>
+						<td>호흡기</td>
+						<td class="al">담배 흡연에 의한 기관지내 점액 생성 모델에서 상피세포 성장인자 수용체 억제제(Epidermal growth factor receptor inhibitor, gefitinib)의 기도 염증 억제효과에 대한 연구</td>
+					</tr>
+					<tr>
+						<th>2007년</th>
+						<td>류완희</td>
+						<td>전북의대</td>
+						<td>류마티스</td>
+						<td class="al">류마티스관절염에서 활막세포를 매개로 하는 관절파괴 기전 규명과 이를 응용한 치료제 개발</td>
+					</tr>
+					<tr>
+						<th>2006년</th>
+						<td>박중원</td>
+						<td>연세의대</td>
+						<td>알레르기</td>
+						<td class="al">메밀의 주 알레르겐인 16 kD과 19 kD 단백질의 특성 규명</td>
+					</tr>
+					<tr>
+						<th>2005년</th>
+						<td>배현주</td>
+						<td>한양의대</td>
+						<td>감염</td>
+						<td class="al">다약제 내성 그람음성균의 치료 전략의 개발</td>
+					</tr>
+					<tr>
+						<th>2004년</th>
+						<td>이경희</td>
+						<td>영남의대</td>
+						<td>혈액종양</td>
+						<td class="al">인체 위암 세포주에서 HGF/c-Met 신호와 uPA 유도에 의한 암전이 기전에 관한 연구</td>
+					</tr>
+					<tr>
+						<th>2003년</th>
+						<td>강덕희</td>
+						<td>이화의대</td>
+						<td>신장</td>
+						<td class="al">Insulin이 혈관 내피 성장 인자(Vascular Endothelial Growth Factor)의 합성과 복막 투과도에 미치는 영향과 관련 세포신호 전달 체계</td>
+					</tr>
+					<tr>
+						<th>2002년</th>
+						<td>박영주</td>
+						<td>시립보라매병원</td>
+						<td>내분비-대사</td>
+						<td class="al">요오드에 의한 Sodium-Iodide Symporter 조절 기전에 대한 연구</td>
+					</tr>
+					<tr>
+						<th>2001년</th>
+						<td>조명찬</td>
+						<td>충북의대</td>
+						<td>순환기</td>
+						<td class="al">심비후모델에서 cDNA Microarray를 이용한 유전자 발현의 통합적 고찰과 새로운 유전자의 발굴</td>
+					</tr>
+					<tr>
+						<th>2000년</th>
+						<td>정현채</td>
+						<td>서울의대</td>
+						<td>소화기</td>
+						<td class="al">Helicobacter pylori 감염에 의한 인체 위상피세포에서의 Cyclooxygenase-2의 발현과 Apoptosis의 조절</td>
+					</tr>
+					<tr>
+						<th>1999년</th>
+						<td>이상도</td>
+						<td>울산의대</td>
+						<td>호흡기</td>
+						<td class="al">특발성 미만성 간질성 폐섬유증 환자에서 폐 섬유모세포 증식의 클론성에 관한 연구</td>
+					</tr>
+					<tr>
+						<th>1998년</th>
+						<td>김병호</td>
+						<td>경희의대</td>
+						<td>소화기</td>
+						<td class="al">SV40 T항원의 온도조건부 변이형 유전자가 포함된 amphotropic retrovirus에 의한 사람태아 간세포의 불멸화</td>
+					</tr>
+					<tr>
+						<th>1997년</th>
+						<td>김대곤</td>
+						<td>전북의대</td>
+						<td>소화기</td>
+						<td class="al">간암에서 Differential Display Polymerase chain Reaction을 이용한 발암 및 아포토시스 관련유전자의 발굴</td>
+					</tr>
+					<tr>
+						<th>1996년</th>
+						<td>이현철</td>
+						<td>연세의대</td>
+						<td>내분비대사</td>
+						<td class="al">성인에서 발생한 인슐린 의존형 당뇨병의 임상적 및 면역유전학적 특성</td>
+					</tr>
+					<tr>
+						<th>1995년</th>
+						<td>김명재</td>
+						<td>경희의대</td>
+						<td>신장</td>
+						<td class="al">신이식 및 이식신 거부반응에서의 Cytokine 동태와 이들의내피세포에 미치는 영향</td>
+					</tr>
+					<tr>
+						<th>1994년</th>
+						<td>최기철</td>
+						<td>전남의대</td>
+						<td>신장</td>
+						<td class="al">흰쥐에서 당뇨병성신증 발생에 미치는 Nitric Oxide계의 역할</td>
+					</tr>
+					<tr>
+						<th>1993년</th>
+						<td>임창열</td>
+						<td>전북의대</td>
+						<td>혈액종양</td>
+						<td class="al">실험동물에서 Interleukin-2 치료시 Nitric Oxide 생성증가와 항암효과</td>
+					</tr>
+					<tr>
+						<th>1992년</th>
+						<td>박성광</td>
+						<td>전북의대</td>
+						<td>신장</td>
+						<td class="al">제2형 당뇨병 실험 동물에서 신기능 및 혈역동학적 연구</td>
+					</tr>
+					<tr>
+						<th>1991년</th>
+						<td>한동철</td>
+						<td>순천향의대</td>
+						<td>신장</td>
+						<td class="al">성인 미세변화 신증후군에서 B림프구 및 단구세포의 IgE수용체 발현에 IL-4가 미치는 영향</td>
+					</tr>
+					<tr>
+						<th>1990년</th>
+						<td>임천규</td>
+						<td>경희의대</td>
+						<td>신장</td>
+						<td class="al">고농도의 포도당 배양액에서 인슐린 및 기타인자의 사구체 메산지움 세포증식 및 콜라겐 합성에 미치는 효과</td>
+					</tr>
+					<tr>
+						<th>1989년</th>
+						<td>김영설</td>
+						<td>경희의대</td>
+						<td>내분비대사</td>
+						<td class="al">인슐린 비의존형 당뇨병에서 당수송체 유전자의 발현과 조절에 관한 연구</td>
+					</tr>
+					<tr>
+						<th>1988년</th>
+						<td>조보연</td>
+						<td>서울의대</td>
+						<td>내분비대사</td>
+						<td class="al">일차성 점액수종에서 갑상선기능저하증과 갑상선 위축에 대한 차단형 TSH 수용체 항체의 역할</td>
+					</tr>
+					<tr>
+						<th>1987년</th>
+						<td>조경삼</td>
+						<td>경희의대</td>
+						<td>혈액종양</td>
+						<td class="al">림포윤활성살세포(LAK)와 산화미토겐활성살세포(OMAK)의 세포증식반응 및 세포독성의 비교연구</td>
+					</tr>
+					<tr>
+						<th>1986년</th>
+						<td>이홍규</td>
+						<td>서울의대</td>
+						<td>내분비대사</td>
+						<td class="al">한국인 인슐린의존형 당뇨병에서 HLAD/DR좌의 Restriction fragment length polymorphism</td>
+					</tr>
+					<tr>
+						<th>1985년</th>
+						<td>박실무</td>
+						<td>중앙의대</td>
+						<td>소화기</td>
+						<td class="al">건강인과 만성소화성 궤양 환자의 Gastrin, Gastrin Releasing Peptine 및 Somatostatin 동태에 관한 비교관찰 -혈액과 조직내의 Gastrin, Gastrin Releasing Peptide 및 Somatostatin 치의 동태와 조직내 G-cell 가 D-cell의 분포 양상에 관한 비교관찰</td>
+					</tr>
+					<tr>
+						<th>1984년</th>
+						<td>정환국</td>
+						<td>가톨릭의대</td>
+						<td>소화기</td>
+						<td class="al">비A, 비B형 바이러스 간염에 대한 전자현미경적 연구</td>
+					</tr>
+					<tr>
+						<th>1983년</th>
+						<td>강성귀</td>
+						<td>전북의대</td>
+						<td>신장</td>
+						<td class="al">여러 가지 Immunomodulators가 세포성 및 체액성 면역반응에 미치는 영향</td>
+					</tr>
+					<tr>
+						<th>1982년</th>
+						<td>허갑범</td>
+						<td>연세의대</td>
+						<td>내분비대사</td>
+						<td class="al">한국인 자가면역성 갑상선 질환에 있어서의 HLA 항원 분포에 관한 연구</td>
+					</tr>
+					<tr>
+						<th>1981년</th>
+						<td>민병석</td>
+						<td>가톨릭의대</td>
+						<td>신장</td>
+						<td class="al">신동종이식후 거부반응의 면역학적 예측</td>
+					</tr>
+					<tr>
+						<th rowspan="2">1980년</th>
+						<td>김동집</td>
+						<td>가톨릭의대</td>
+						<td>혈액종양</td>
+						<td class="al">1. 타가골수이식에 관한 연구</td>
+					</tr>
+					<tr>
+						<td class="bdLeft">이태희</td>
+						<td>전남의대</td>
+						<td>내분비대사</td>
+						<td class="al">2. 췌장관류법을 이용한 RH-787 당뇨병 발생기전에 관한 연구</td>
+					</tr>
+					
+					
+	<!-- 
+					<tr>
+						<th></th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="al"></td>
+					</tr>
+	 -->			
+				</tbody>
+			</table>
+		</div>
+	</div>
+<!--  //tabARea -->
+</div></div>
+		<!-- //main -->
+				</div>
+		
+
+	
+	</div>
+	<!-- //container -->
+	<hr />
+
+	<div class="footerWrap">
+		<div>
+			<p><img src="/image/common/footer_logo.jpg" alt="대한내과학회" /></p>
+
+			<dl>
+				<dt class="hidden">대한내과학회 연락처</dt>
+				<dd>
+					서울특별시 마포구 마포대로 109 롯데캐슬프레지던트 101동 2501호 (우. 04146)<br />
+					Tel. 02)793-4364, 4311  Fax. 02)790-0993  E-mail. <a href="mailto:kaim4364@kams.or.kr">kaim4364@kams.or.kr</a><br/>
+					사업자등록번호: 106-82-10554  대표자: 유철규
+				</dd>
+			</dl>
+			
+			<div class="security">
+			<!-- <script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script> -->
+				<div id="thawteseal" style="text-align:center;" title="Click to Verify - This site chose Thawte SSL for secure e-commerce and confidential communications.">
+				<div><script type="text/javascript" src="https://seal.thawte.com/getthawteseal?host_name=www.kaim.or.kr&amp;size=M&amp;lang=ko"></script></div>
+				<div><a href="http://www.thawte.com/ssl-certificates/" target="_blank" style="color:#000000; text-decoration:none; font:bold 10px arial,sans-serif; margin:0px; padding:0px;">SSL &#51064;&#51613;&#49436; &#51221;&#48372;</a></div>
+				</div>
+			</div>
+			
+			<div class="siteInfo">
+				<ul>
+					<li><a href="/member/?sn=2">개인정보 취급 방침</a></li>
+					<li><a href="/popup/popup_email.html" onclick="window.open(this.href,'privacy','width=400, height=300, scrollbars=no'); return false;" target="_blank">이메일 무단 수집 거부</a></li>
+				</ul>
+				
+				<dl class="relSite">
+					<dt><a href="javascript:void window.open('/ebooth/ebooth_detail1.php','ebooth_detail1','width=710, height=760, left=0, top=0, scrollbars=yes, status=no');">대한내과학회 관련사이트</a></dt>
+					<dd>
+						<ul>
+							<li><a href="http://www.physician.or.kr/" target="_blank">대한개원내과의사회</a></li>
+							<li><a href="http://www.kma.org" target="_blank">대한의사협회</a></li>
+							<li><a href="http://kams.or.kr/" target="_blank">대한의학회</a></li>
+							<li><a href="http://www.ksid.or.kr" target="_blank">대한감염학회</a></li>
+							<li><a href="http://www.lungkorea.org" target="_blank">대한결핵및호흡기학회</a></li>
+							<li><a href="http://www.endocrinology.or.kr" target="_blank">대한내분비학회</a></li>
+							<li><a href="http://www.diabetes.or.kr" target="_blank">대한당뇨병학회</a></li>
+							<li><a href="http://www.rheum.or.kr" target="_blank">대한류마티스학회</a></li>
+							<li><a href="http://www.gie.or.kr" target="_blank">대한소화기내시경학회</a></li>
+							<li><a href="http://www.gastrokorea.org" target="_blank">대한소화기학회</a></li>
+							<li><a href="http://www.circulation.or.kr" target="_blank">대한심장학회</a></li>
+							<li><a href="http://www.ksn.or.kr" target="_blank">대한신장학회</a></li>
+							<li><a href="http://www.allergy.or.kr" target="_blank">대한천식알레르기학회</a></li>
+							<li><a href="http://www.cancer.or.kr" target="_blank">대한암학회</a></li>
+							<li><a href="http://www.kaco.or.kr" target="_blank">대한종양내과학회</a></li>
+							<li><a href="http://www.hematology.or.kr" target="_blank">대한혈액학회</a></li>
+						</ul>
+					</dd>
+				</dl>
+				
+				<p>Copyright © The Korean Association of Internal Medicine. All rights reserved.</p>
+			</div>
+			<!-- //siteInfo -->
+		</div>
+	</div>
+	<!-- //footerWrap -->
+
+
+</div>
+<!-- //wrapper -->
+</body>
+</html>
