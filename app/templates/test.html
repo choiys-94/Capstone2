@@ -86,7 +86,7 @@
 	</thead>
 	<tbody class="text-body">
 	{% for k in data[key].keys() %}
-	  {% if (k != 'count') and (k != 'total') and (k != 'url') and (k != 'score') and (k != 'num') %}
+	  {% if (k != 'count') and (k != 'total') and (k != 'url') and (k != 'score') and (k != 'num') and (k != 'risk') %}
       <tr class="table-info">
         <td class="align-middle"><strong>{{ k }}</strong></td>		
         <td class="align-middle"><strong>{{ data[key][k] }}</strong></td>

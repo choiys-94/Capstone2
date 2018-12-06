@@ -7,6 +7,7 @@ from flask import flash
 from app import app
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import os
 import requests
 import re
@@ -16,10 +17,18 @@ import json
 import sys
 import pickle
 
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 @app.route('/')
 def main():
-	return render_template('index.html')
+	stat_path = "/home/choiys/am2pm/app/statistics"
+	stat = []
+	with open(stat_path, "rb") as f:
+		try:
+			stat = pickle.load(f)
+		except:
+			pass
+	return render_template('index.html', stat = stat)
 
 @app.route('/about')
 def about():
@@ -73,7 +82,7 @@ def test(passed_num):
 
 	dpath = "/home/choiys/cuckoo/.cuckoo/storage/analyses/"
 	dnum = len(os.listdir(dpath))-1
-
+	risk_cnt = 0
 	for i in range(dnum-count_num+1, dnum+1):
 		with open("/home/choiys/cuckoo/.cuckoo/storage/analyses/"+str(i)+"/reports/report.html", "r") as f:
 			lines = f.read()
@@ -88,7 +97,6 @@ def test(passed_num):
 						data[fname]['score'] = float(score)
 			data[fname]['num'] = i
 		
-		risk_cnt = 0
 			   
 		if (data[fname]['score'] >= 4 and (float(data[fname]['count'])/data[fname]['total'])*100 >= 40) or (data[fname]['score'] >= 10) or ((float(data[fname]['count'])/data[fname]['total'])*100 >= 60):
 			risk_cnt += 1
@@ -103,13 +111,13 @@ def test(passed_num):
 
 		data[fname]['risk'] = risk
 
-	stat_temp = {'url': data['url'], 'risk': risk_cnt}
-	if len(stat) == 7:
+	stat_temp = {'url': data['url'].split('/')[2], 'risk': risk_cnt}
+	if len(stat) == 6:
 		del stat[0]
 
 	flag = True
 	for i in range(len(stat)):
-		if stat[i]['url'] == data['url']:
+		if stat[i]['url'] == data['url'].split('/')[2]:
 			flag = False
 	if flag:
 		stat.append(stat_temp)
@@ -128,6 +136,14 @@ def report(num):
 
 @app.route('/search', methods=['POST'])
 def search():
+	stat_path = "/home/choiys/am2pm/app/statistics"
+	stat = []
+	with open(stat_path, "rb") as f:
+		try:
+			stat = pickle.load(f)
+		except:
+			pass
+
 	temp = 0
 	url = request.form['url']
 	if "http://" not in url and "https://" not in url:
@@ -157,6 +173,11 @@ def search():
 			return base_url+url
 
 	def download(s, url, file_name, temp, links):
+		ht = url.split('/')[0]+'//'
+		ur = url.split(ht)[1]
+		while(len(ur.split('//'))>1):
+			ur = ur.replace('//', '/')
+		url = ht+ur
 		if file_name != "" and "javascript:" not in file_name and "javascript:" not in url:
 			if len(file_name)>50:
 				file_name = file_name[:50]
@@ -258,10 +279,18 @@ def search():
 	files = os.listdir(dpath)
 	count = len(files)
 	
-	return render_template('index.html', download=True, count=count, num=dnum)
+	return render_template('index.html', download=True, count=count, num=dnum, stat = stat)
 
 @app.route('/submit', methods=['POST'])
 def submit():
+	stat_path = "/home/choiys/am2pm/app/statistics"
+	stat = []
+	with open(stat_path, "rb") as f:
+		try:
+			stat = pickle.load(f)
+		except:
+			pass
+
 	DOWNLOAD_FOLDER = "/home/choiys/am2pm/app/download/"
 	num = request.form['num']
 	with open("/home/choiys/am2pm/app/linkdata", "r") as fd:
@@ -299,7 +328,7 @@ def submit():
 			print response.text
 			vt_json['response_code'] = -2
 		if vt_json['response_code'] == -2:
-			for i in range(3):
+			for i in range(5):
 				if vt_json['response_code'] == -2:
 					time.sleep(5)
 					response = requests.get(vt_report_url, params=params)
@@ -307,6 +336,9 @@ def submit():
 						vt_json = response.json()
 					except:
 						vt_json['response_code'] = -2
+				else:
+					break
+					 
 		vt_av_json = {}
 		vt_total = vt_json['total']
 		vt_av_list = vt_json['scans']
@@ -332,4 +364,4 @@ def submit():
 	with open(av_path, "w") as f:
 		f.write(json.dumps(vt_result))
 
-	return render_template('index.html', submit=True)
+	return render_template('index.html', submit=True, stat = stat)

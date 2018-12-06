@@ -58,417 +58,62 @@
 		<div class="container">
 			<div class="row">
 				<div class="col magic_fade_in">
-					<div class="section_title text-center"><h2>How to get started</h2></div>
+					<div class="section_title text-center"><h2>Statistics</h2></div>
 				</div>
 			</div>
 			<div class="row intro_row">
-				<div class="intro_dots magic_fade_in" style="background-image:url({{ url_for('static', filename='images/dots.png') }})"></div>
-				
-				<!-- Intro Item -->
-				<div class="col-lg-4 intro_col magic_fade_in">
-					<div class="intro_item d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="intro_icon_container d-flex flex-column align-items-center justify-content-center">
-							<div class="intro_icon"><img src="{{ url_for('static', filename='images/icon_1.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						</div>
-						<div class="intro_item_content">
-							<div class="intro_item_title">Buy your Domain</div>
-							<div class="intro_item_text">
-								<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Intro Item -->
-				<div class="col-lg-4 intro_col magic_fade_in">
-					<div class="intro_item d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="intro_icon_container d-flex flex-column align-items-center justify-content-center">
-							<div class="intro_icon"><img src="{{ url_for('static', filename='images/icon_2.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						</div>
-						<div class="intro_item_content">
-							<div class="intro_item_title">Get your Hosting</div>
-							<div class="intro_item_text">
-								<p>Ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Intro Item -->
-				<div class="col-lg-4 intro_col magic_fade_in">
-					<div class="intro_item d-flex flex-column align-items-center justify-content-start text-center">
-						<div class="intro_icon_container d-flex flex-column align-items-center justify-content-center">
-							<div class="intro_icon"><img src="{{ url_for('static', filename='images/icon_3.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						</div>
-						<div class="intro_item_content">
-							<div class="intro_item_title">Set your Website</div>
-							<div class="intro_item_text">
-								<p>Suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Proin ac urna at lectus volutpat lobortis.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<div class="row">
-				<div class="col text-center">
-					<div class="intro_button text-center trans_200 ml-auto mr-auto"><a href="#">Start from $9.90/month</a></div>
-				</div>
+<canvas id="myChart" width="200" height="100"></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: [
+		{% for s in stat %}
+			"{{ s['url'] }}",
+		{% endfor %}
+		],
+        datasets: [{
+            label: 'Risks(over medium)',
+            data: [
+			{% for s in stat %}
+				{{ s['risk'] }},
+			{% endfor %}
+			],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)',
+                'rgba(153, 102, 255, 0.5)',
+                'rgba(255, 159, 64, 0.5)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
 			</div>
 		</div>
 	</div>
-
-	<!-- Services -->
-
-	<div class="services">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='images/services.jpg') }}" data-speed="0.8"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col magic_fade_in">
-					<div class="section_title text-center"><h2>Our Services</h2></div>
-				</div>
-			</div>
-			<div class="row services_row">
-				
-				<!-- Service -->
-				<div class="col-lg-4 service_col magic_fade_in">
-					<div class="service d-flex flex-column align-items-center justify-content-start text-center trans_200">
-						<div class="service_icon"><img class="svg" src="{{ url_for('static', filename='images/icon_4.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						<div class="service_title"><h3>Cloud Backup</h3></div>
-						<div class="service_text">
-							<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis ege.</p>
-						</div>
-						<div class="service_button trans_200"><a href="#">Read More</a></div>
-					</div>
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 service_col magic_fade_in">
-					<div class="service d-flex flex-column align-items-center justify-content-start text-center trans_200">
-						<div class="service_icon"><img class="svg" src="{{ url_for('static', filename='images/icon_5.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						<div class="service_title"><h3>Data Migration</h3></div>
-						<div class="service_text">
-							<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis ege.</p>
-						</div>
-						<div class="service_button trans_200"><a href="#">Read More</a></div>
-					</div>
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 service_col magic_fade_in">
-					<div class="service d-flex flex-column align-items-center justify-content-start text-center trans_200">
-						<div class="service_icon"><img class="svg" src="{{ url_for('static', filename='images/icon_6.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-						<div class="service_title"><h3>VPS Hosting</h3></div>
-						<div class="service_text">
-							<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis ege.</p>
-						</div>
-						<div class="service_button trans_200"><a href="#">Read More</a></div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Pricing -->
-
-	<div class="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="pricing_container d-flex flex-row align-items-start justify-content-start flex-wrap">
-						
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Starter Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 9.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>50 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>1 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>5 E-mail Accounts</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/x.png') }}" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/x.png') }}" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Basic Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 19.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>70 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>3 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>7 E-mail Accounts</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/x.png') }}" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/x.png') }}" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Premium Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 39.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>90 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>5 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>10 E-mail Accounts</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/x.png') }}" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-						<!-- Pricing Item -->
-						<div class="pricing_item text-center magic_fade_in">
-							<div class="pricing_title">Pro Pack</div>
-							<div class="pricing_content">
-								<div class="package_price">$ 59.90<span>/Month</span></div>
-								<div class="pricing_list">
-									<ul>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>120 GB Disk Space</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>7 sub-domain</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>15 E-mail Accounts</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>24/7 Support</span>
-										</li>
-										<li class="pack_ok d-flex flex-row align-items-center justify-content-center">
-											<img src="{{ url_for('static', filename='images/ok.png') }}" alt="">
-											<span>Control Panel</span>
-										</li>
-									</ul>
-								</div>
-								<div class="pricing_button ml-auto mr-auto"><a href="#">Buy Now</a></div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Why Choose Us -->
-
-	<div class="choice">
-		<div class="container">
-			<div class="row row-lg-eq-height">
-				
-				<!-- Choice Image -->
-				<div class="col-lg-6 choice_col magic_fade_in">
-					<div class="choice_image"><img src="{{ url_for('static', filename='images/choice.png') }}" alt=""></div>
-				</div>
-
-				<!-- Choice Content -->
-				<div class="col-lg-6 choice_col magic_fade_in">
-					<div class="choice_content">
-						<div class="section_title magic_fade_in"><h2>Why Choose us?</h2></div>
-						<div class="choice_text">
-							<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.</p>
-						</div>
-						<div class="choice_list">
-							<ul class="d-flex flex-row align-items-start justify-content-between">
-								<li class="d-flex flex-column align-items-center justify-content-center magic_fade_in">
-									<div class="choice_icon"><img src="{{ url_for('static', filename='images/icon_7.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-									<div class="choice_title">Marketing</div>
-								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center magic_fade_in">
-									<div class="choice_icon"><img src="{{ url_for('static', filename='images/icon_8.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-									<div class="choice_title">Stats</div>
-								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center magic_fade_in">
-									<div class="choice_icon"><img src="{{ url_for('static', filename='images/icon_9.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-									<div class="choice_title">Servers</div>
-								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center magic_fade_in">
-									<div class="choice_icon"><img src="{{ url_for('static', filename='images/icon_10.svg') }}" alt="https://www.flaticon.com/authors/freepik"></div>
-									<div class="choice_title">Quality</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- CTA -->
-
-	<div class="cta">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="cta_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-between justify-content-center magic_fade_in">
-						<div class="cta_title">Start building your website now!</div>
-						<div class="cta_price"><span>from</span>$9.90<span>/month</span></div>
-						<div class="cta_button"><a href="#">Start Now</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Footer -->
-
-	<footer class="footer magic_fade_in">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-6 footer_col magic_fade_in">
-					<div class="footer_about">
-						<div class="footer_logo">Host<span>Space</span></div>
-						<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
-						<div class="footer_text">
-							<p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis. Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium turpis eget nibh laoreet iaculis.</p>
-						</div>
-						<div class="contact_container">
-							<form action="#" id="contact_form" class="contact_form">
-								<div class="row">
-									<div class="col-md-6">
-										<input type="text" class="contact_input" placeholder="Your Name" required="required">
-									</div>
-									<div class="col-md-6">
-										<input type="email" class="contact_input" placeholder="Your e-mail" required="required">
-									</div>
-								</div>
-								<div>
-									<textarea class="contact_input contact_textarea" placeholder="Message" required="required"></textarea>
-								</div>
-								<button class="contact_button">Send</button>
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6 footer_col">
-					<div class="footer_links">
-						<div class="row">
-							<div class="col-sm-6 footer_list_col magic_fade_in">
-								<div class="footer_list_container">
-									<div class="footer_list_title">Hosting Options</div>
-									<ul class="footer_list">
-										<li><a href="#">Web Hosting</a></li>
-										<li><a href="#">WordPress Hosting</a></li>
-										<li><a href="#">VPS Hosting</a></li>
-										<li><a href="#">Cloud Server</a></li>
-										<li><a href="#">Reseller Package</a></li>
-										<li><a href="#">Dedicated Hosting</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-sm-6 footer_list_col magic_fade_in">
-								<div class="footer_list_container">
-									<div class="footer_list_title">Domains</div>
-									<ul class="footer_list">
-										<li><a href="#">Buy a Domain</a></li>
-										<li><a href="#">Premium Domain Names</a></li>
-										<li><a href="#">Web Hosting</a></li>
-										<li><a href="#">Transfer Your Domain</a></li>
-										<li><a href="#">Domain Marketplace</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-sm-6 footer_list_col magic_fade_in">
-								<div class="footer_list_container">
-									<div class="footer_list_title">Resellers</div>
-									<ul class="footer_list">
-										<li><a href="#">VPS Hosting</a></li>
-										<li><a href="#">Cloud Server</a></li>
-										<li><a href="#">Reseller Package</a></li>
-										<li><a href="#">Dedicated Hosting</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-sm-6 footer_list_col magic_fade_in">
-								<div class="footer_list_container">
-									<div class="footer_list_title">Support</div>
-									<ul class="footer_list">
-										<li><a href="#">Buy a Domain</a></li>
-										<li><a href="#">Premium Domain Names</a></li>
-										<li><a href="#">Web Hosting</a></li>
-									</ul>
-								</div>	
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</footer>
-</div>
-
 
 <!--<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>-->
 <script src="{{ url_for('static', filename='css/bootstrap-4.1.2/popper.js') }}"></script>
