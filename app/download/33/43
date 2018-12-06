@@ -1,0 +1,1272 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/> 
+<meta name="keywords" content="조선대학교" />
+<meta name="subject" content="조선대학교" />
+<meta name="description" content="조선대학교" />
+<meta name="robots" content="조선대학교" />
+<meta name="copyright" content="COPYRIGHT ⓒ CHOSUN UNIVERSITY. ALL RIGHTS RESERVED." />
+<title>찾아오시는길&gt;캠퍼스안내&gt;대학소개&gt;홈</title>
+<link rel="icon" href="/mbs/chosun/images/main/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/mbs/chosun/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/mbs/chosun/css/sub.css" />
+<script src="/mbs/chosun/js/jquery-1.8.3.min.js" type="text/javascript"></script> 
+<script src="/mbs/chosun/js/menuTab.js" type="text/javascript"></script>
+<script src="/mbs/chosun/js/sub.js" type="text/javascript"></script>
+<script type='text/javascript'>//try { document.domain="chosun.ac.kr"; } catch(e){}</script>
+
+<script type="text/javascript">
+var ua = window.navigator.userAgent.toLowerCase();
+var url = "이동하실 모바일페이지 주소를 넣어주세요.";
+if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua)) {
+	//document.location.replace(url);
+}
+</script>
+
+
+</head>
+
+<body class="bodybg">
+<div id="wrap">
+
+<!-- Skip Navi -->
+<div title="스킵 메뉴" class="skipMenu">
+<a href="#page_title_wrap">본문 내용 바로가기</a>
+<a href="#aside">퀵존 바로가기</a>
+<a href="#footer">사이트이용안내 바로가기</a>
+</div>
+<!-- Skip Navi End -->
+<!-- header -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42373110-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+    
+  
+<!-- header -->
+<div id="header">
+<h1><a href="/mbs/chosun/"><img src="/mbs/chosun/images/main/logo.png" alt="조선대학교" class="png24" /></a></h1>
+<p class="slogan"><img src="/mbs/chosun/images/main/logo_sl.png" alt="혁신하는 조선, 행복한대학" class="png24" title="조선대학교 슬로건" /></p>
+
+<!-- topInfo -->
+<ul class="topInfo" style="width:340px;">
+
+		<li><a href="/mbs/chosun/jsp/member/chosun_login.jsp?id=chosun_090200000000">로그인</a></li>
+
+
+<li><a href="http://portal.chosun.ac.kr/" target="_blank" title="새창">포털시스템</a></li>
+<li><a href="/mbs/chosun/sitemap.jsp?id=chosun_080500000000">사이트맵</a></li>
+<li><a href="http://m.chosun.ac.kr/" target="_blank" title="새창"><span>모바일</span></a></li>
+<li><a href="http://eng.chosun.ac.kr/" target="_blank" title="새창"><span>ENGLISH</span></a></li>
+<li><a href="http://chi.chosun.ac.kr/" target="_blank" title="새창"><span>中國語</span></a></li>
+</ul>
+
+<!-- TotalSearch -->
+<div class="searchInfo">
+<h3>통합검색</h3>
+<form name="search_form"  method="post" action="/mbs/chosun/search/search_.jsp" >
+<fieldset>
+<legend>통합검색어를 입력하세요</legend>
+<input type="hidden" name="id" value="chosun_100000000000" />
+<input type="hidden" name="collection" id="select" value="ALL" />
+<input type="text" id="searchInfo" name="query" class="searchInfo_bg" title="통합검색어를 입력하세요!" />
+<input type="image" src="/mbs/chosun/images/main/search_btn.gif" title="검색" alt="검색" class="btnSearch" />
+</fieldset>
+</form>
+</div>
+
+
+<!-- Navi -->
+<div id="MenuWrap">
+<h2>주 메뉴</h2>
+<ul id="navigation">
+<!-- 대학/대학원 -->
+<li><a href="/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000" class="btnPullDown"><img src="/mbs/chosun/images/main/header_navi_btn.png" alt="대학/대학원" class="png24" /></a>
+<div id="navigation_box1" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s1bg -->
+   <div id="navigation_s1bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title.gif" alt="대학/대학원" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle.gif" alt="67년 전통의 민립(民立)대학! 비전과 희망을 선도하는 조선대학교" /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s1">
+		<li class="mrbom52"><a href="/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000">단과대학</a>
+			<ul class="s1_1_list">
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#311871">인문과학대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#48860">자연과학대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#48871">법과대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#311950">사회과학대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#311963">경상대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#311972">공과대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312004">IT융합대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312040">사범대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312071">외국어대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312082">체육대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312091">의과대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312217">치과대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312220">약학대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#312234">미술대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#48841">기초교육대학</a></li>
+			<li><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#3876887">보건과학대학</a></li>
+			<li class="bgnone"><a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000#98593849">미래사회융합대학</a></li>
+			</ul>
+		</li>
+		<li class="mrbom26" style="margin-left:5px;">대학원
+			<ul class="s1_2_list">
+			<li><a href="http://www.chosun.ac.kr/grad/" target="_blank" title="새창">대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/edu/" target="_blank" title="새창">교육대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/gi/" target="_blank" title="새창">산업기술융합대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ehs14/" target="_blank" title="새창">보건대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/gsba/" target="_blank" title="새창">경영대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/gsp/" target="_blank" title="새창">정책대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/gsd/" target="_blank" title="새창">디자인대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/clinicalpharm/" target="_blank" title="새창">임상약학대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/medical/" target="_blank" title="새창">의학전문대학원<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/dentistry/" target="_blank" title="새창">치의학전문대학원<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="http://www.chosun.ac.kr/lei/" target="_blank" title="새창">언어교육원<span class="blnakIcon"></span></a>
+			<ul class="s1_4_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25387771&siteId=lei" target="_blank" title="새창">외국어프로그램<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25127222&siteId=lei" target="_blank" title="새창">한국어학당<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25127229&siteId=lei" target="_blank" title="새창">모의토익<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="http://www.chosun.ac.kr/lifelong/" target="_blank" title="새창">평생교육원<span class="blnakIcon"></span></a>
+			<ul class="s1_5_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25275229&siteId=lifelong" target="_blank" title="새창">일반교양강좌<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25275231&siteId=lifelong" target="_blank" title="새창">학점은행제<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=25275232&siteId=lifelong" target="_blank" title="새창">민간경비교육<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_010603000000">온라인교육/인증</a>
+			<ul class="s1_6_list">
+			<li><a href="http://clc.chosun.ac.kr/" target="_blank" title="새창">사이버강좌<span class="blnakIcon"></span></a></li>
+			<li><a href="http://cusp.chosun.ac.kr/Sys000.do" target="_blank" title="새창">문화마일리지<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_010603000000">공학교육인증</a></li>
+			<li class="bgnone"><a href="http://safetylabs.chosun.ac.kr/" target="_blank" title="새창">실험실안전교육<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="http://library.chosun.ac.kr/" target="_blank" title="새창">중앙도서관<span class="blnakIcon"></span></a>
+			<ul class="s1_7_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_010701000000">이용안내</a></li>
+			<li><a href="http://chosun-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=82CHOSUN&vl(55683163UI1)=all_items" target="_blank" title="새창">자료검색<span class="blnakIcon"></span></a></li>
+			<li><a href="http://library.chosun.ac.kr/main/sub.php?mno=20" target="_blank" title="새창">도서관이용교육신청<span class="blnakIcon"></span></a></li>
+			<li><a href="http://library.chosun.ac.kr/main/sub.php?mno=53" target="_blank" title="새창">그룹스터디실예약<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://dcollection.chosun.ac.kr/dcollection/" target="_blank" title="새창">학위논문제출<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>대학/대학원 <span>Q</span>uick</h3>
+<ul>
+<li><a href="http://www.chosun.ac.kr/lei/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s11_n.gif" class="ImgRollOver" alt="언어교육원 수강생모집&amp;모의토익 접수안내" /></a></li>
+<li><a href="http://www.chosun.ac.kr/lifelong/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s12_n.gif" class="ImgRollOver" alt="평생교육원 수강생모집" /></a></li>
+<li class="pb0"><a href="/mbs/chosun/subview.jsp?id=chosun_010701000000"><img src="/mbs/chosun/images/main/header_qnavi_s13_n.gif" class="ImgRollOver" alt="중앙도서관 이용안내 " /></a></li>
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+</li>
+<!-- 교육 끝 -->
+
+<!-- 입학 -->
+<li><a href="http://ibhak.chosun.ac.kr/"  target="_blank" title="새창" class="btnPullDown"><img src="/mbs/chosun/images/main/header_navi_btn2.png" alt="입학" class="png24" /></a>
+<!-- navigation_box2 -->
+<div id="navigation_box2" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s2bg -->
+   <div id="navigation_s2bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title2.gif" alt="입학" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle2.gif" alt="젊음이 숨 쉬는! 희망이 샘솟는! 모두가 행복한 대학 조선대학교" /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s2">
+		<li class="mrbom26"><a href="http://ibhak.chosun.ac.kr/" target="_blank" title="새창">대학입학<span class="blnakIcon"></span></a>
+			<ul class="s2_1_list">
+			<li><a href="http://ibhak.chosun.ac.kr/contents.php?mc=9" target="_blank" title="새창">수시모집<span class="blnakIcon"></span></a></li>
+			<li><a href="http://ibhak.chosun.ac.kr/contents.php?mc=11" target="_blank" title="새창">학생부종합전형<span class="blnakIcon"></span></a></li>
+			<li><a href="http://ibhak.chosun.ac.kr/contents.php?mc=15" target="_blank" title="새창">정시모집<span class="blnakIcon"></span></a></li>
+			<li><a href="http://ibhak.chosun.ac.kr/contents.php?mc=20" target="_blank" title="새창">편입학모집<span class="blnakIcon"></span></a></li>			
+			<li><a href="http://ibhak.chosun.ac.kr/board/board.php?b_id=medical&mc=57" target="_blank" title="새창">의·치대 학사편입<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://ibhak.chosun.ac.kr/board/board.php?b_id=pharmacy&mc=58" target="_blank" title="새창">약학대학(2 + 4)<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://ibhak.chosun.ac.kr/board/board.php?b_id=qna&mc=40" target="_blank" title="새창">입학상담<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li><a href="http://www.chosun.ac.kr/grad/" target="_blank" title="새창">대학원입학<span class="blnakIcon"></span></a>
+			<ul class="s2_2_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=368215&siteId=grad" target="_blank" title="새창">일반대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=422479&siteId=edu" target="_blank" title="새창">교육대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=247619&siteId=gi" target="_blank" title="새창">산업기술융합대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=247684&siteId=ehs14" target="_blank" title="새창">보건대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=247769&siteId=gsba" target="_blank" title="새창">경영대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=247872&siteId=gsp" target="_blank" title="새창">정책대학원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=396228&siteId=gsd" target="_blank" title="새창">디자인대학원<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=247969&siteId=clinicalpharm" target="_blank" title="새창">임상약학대학원<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>입학 <span>Q</span>uick</h3>
+<ul>
+<!-- <li><a href="http://ibhak.chosun.ac.kr/_2007/html/sub831.php" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s21_n.gif" class="ImgRollOver" alt="입학홈페이지 회원가입이벤트" /></a></li> -->
+<li class="pb0"><a href="http://ibhak.chosun.ac.kr/board/board.php?b_id=qna&mc=40" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s22_n.gif" class="ImgRollOver" alt="온라인 입학상담 바로가기" /></a></li>
+<!-- <li class="pb0"><a href="http://www.chosun.ac.kr/www/grad_general_admission.html" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s23_n.gif" class="ImgRollOver" alt="2014 대학원 신입생 모집" /></a></li>-->
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+</li>
+<!-- 입학 끝 -->
+
+<!-- 대학생활 -->
+<li><a href="http://www.chosun.ac.kr/sukang/" class="btnPullDown" target="_blank"><img src="/mbs/chosun/images/main/header_navi_btn3.png" alt="대학생활" class="png24" /></a>
+<!-- navigation_box3 -->
+<div id="navigation_box3" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s3bg -->
+   <div id="navigation_s3bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title3.gif" alt="대학생활" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle33.gif" alt="지역민에게 받은 사랑을 인재 양성으로 보답합니다.사람을 귀하게 여기는 대학, GREAT CHOSUN HUMAN UNIVERSITY" /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s3">
+		<li class=""><a href="http://www.chosun.ac.kr/sukang/" target="_blank" title="새창">학사<span class="blnakIcon"></span></a>
+			<ul class="s3_1_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=322274&siteId=sukang" target="_blank" title="새창">학사공지<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/jsp/academic_calender/academic_calender.jsp?academicIdx=25846&amp;id=chosun_030102000000">학사일정</a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=322493&siteId=sukang" target="_blank" title="새창">학사상담<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=322466&siteId=sukang" target="_blank" title="새창">학적<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=322444&siteId=sukang" target="_blank" title="새창">수강신청<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030105000000">증명서발급</a></li>
+			<li><a href="http://www.chosun.ac.kr/teach/" target="_blank" title="새창">교직안내<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_030107000000">예비군</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030204000000">장학/등록</a>
+			<ul class="s3_2_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=339003&siteId=scho" target="_blank" title="새창">장학제도<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=339005&siteId=scho" target="_blank" title="새창">학자금대출<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=339007&siteId=scho" target="_blank" title="새창">국가근로<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030204000000">등록안내</a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=339008&siteId=scho"target="_blank" title="새창">한국장학재단 광주센터<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030301000000">학생교류</a>
+			<ul class="s3_3_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030301000000">국내교류</a></li>
+			<li class="bgnone"><a href="http://global.chosun.ac.kr/" target="_blank" title="새창">국제교류<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030401010000">편의/복지</a>
+			<ul class="s3_4_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030401010000">기숙사</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030402080000">문화/체육시설예약</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030403000000">여학생휴게실</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030404010000">박물관/미술관</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030405000000">학생군사교육단</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_030406000000">체육관</a></li>
+			<!-- 생협 -->
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030501000000">보건</a>
+			<ul class="s3_5_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030501000000">보건진료소</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030502000000">학생의료공제조합</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030503010000">병원/치과병원</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_030504000000">헌혈의집</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030601000000">학생증/신분증</a>
+			<ul class="s3_6_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030601000000">스마트카드</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/isic.jsp" target="_blank" title="새창">국제학생증<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030701000000">학생활동</a>
+			<ul class="s3_7_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030701000000">학생회</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030702000000">동아리</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030703000000">대학언론사</a></li>
+			<li><a href="http://www.chosun.ac.kr/chnews" target="_blank" title="새창">조대신문<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/cueb/" target="_blank" title="새창">교육방송국<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030802000000">IT서비스</a>
+			<ul class="s3_8_list">
+			<li><a href="http://wifi.chosun.ac.kr/" target="_blank" title="새창">무선인터넷<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=31849651&siteId=itc" target="_blank" title="새창">이메일신청<span class="blnakIcon"></span></a></li>
+			<li><a href="http://file.chosun.ac.kr/" target="_blank" title="새창">소프트웨어설치<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_030804000000">PC클리닉</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=46400&amp;id=chosun_030805000000">전광판신청</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/board/list.jsp?boardId=46408&amp;id=chosun_030806000000">홈페이지문의</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_030901000000">대학발전</a>
+			<ul class="s3_9_list">
+			<!-- <li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25965&amp;id=chosun_030901000000">제안공모</a></li> -->
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=120237694&id=chosun_030901010000">제안공모</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=126786627&id=chosun_030905010000">예산절감 제안</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25973&amp;id=chosun_030902000000">대학발전협의회</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25981&amp;id=chosun_030903000000">등록금심의위원회</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/board/list.jsp?boardId=120202694&id=chosun_030904000000">대학평의원회</a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>대학생활 <span>Q</span>uick</h3>
+<ul>
+<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=422898&siteId=health" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s31_n.gif" class="ImgRollOver" alt="학생의료공제 조합이란?" /></a></li>
+<li><a href="http://wifi.chosun.ac.kr/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s32_n.gif" class="ImgRollOver" alt="WIFI/MAC 인증 무선인터넷 사용 안내 " /></a></li>
+<li class="pb0"><a href="http://smart.chosun.ac.kr/smmnm01c.fnd" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s33_n.gif" class="ImgRollOver" alt="SMART CARD(학생증)재발급 안내 " /></a></li>
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+</li>
+<!-- 대학생활 끝 -->
+
+<!-- 취업 -->
+<li><a href="http://job.chosun.ac.kr/" class="btnPullDown" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_navi_btn5.png" alt="취업" class="png24" /></a>
+<!-- navigation_box4 -->
+<div id="navigation_box4" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s4bg -->
+   <div id="navigation_s4bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title4.gif" alt="취업" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle8.gif" alt="백악인을 위한 구인구직 네트워크 준비하는 현재! 행복한 미래! 희망의 조선!" /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s4">
+		<li class=""><a href="http://job.chosun.ac.kr/JobS0000.do" target="_blank" title="새창">취업포털<span class="blnakIcon"></span></a>
+			<ul class="s4_1_list">
+			<li class="bgnone"><a href="http://job.chosun.ac.kr/JobS0000.do" target="_blank" title="새창">조선대학교 취업포털<span class="blnakIcon"></span></a></li>
+			<!-- <li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">내 이력서 관심기업<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">채용정보<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">취업프로그램신청<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://job.chosun.ac.kr" target="_blank" title="새창">취업경력관리<span class="blnakIcon"></span></a></li> -->
+			</ul>
+		</li>
+		<!-- <li class="mrbom26"><a href="http://job.chosun.ac.kr" target="_blank" title="새창">기업<span class="blnakIcon"></span></a>
+			<ul class="s4_2_list">
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">구인정보등록<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">스카우트제의현황<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">이력서검색<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">직종별인재검색<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://job.chosun.ac.kr" target="_blank" title="새창">스크랩된인재정보<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="http://job.chosun.ac.kr" target="_blank" title="새창">교직원<span class="blnakIcon"></span></a>
+			<ul class="s4_3_list">
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">이력서검색<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">기업회원검색<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">채용정보<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">취업출장<span class="blnakIcon"></span></a></li>
+			<li><a href="http://job.chosun.ac.kr" target="_blank" title="새창">취업프로그램<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://jobstar.chosun.ac.kr/jobs/" target="_blank" title="새창">취업통계관리시스템<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li> -->
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>취업 <span>Q</span>uick</h3>
+<ul>
+<li><a href="https://job.chosun.ac.kr/JobA0480.do?MENU=40020000" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s41_n.gif" class="ImgRollOver" alt="취업공지사항" /></a></li>
+<li><a href="http://jobstar.chosun.ac.kr/jobs/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s42_n.gif" class="ImgRollOver" alt="취업통계관리시스템" /></a></li>
+<li class="pb0"><a href="https://job.chosun.ac.kr/JobA0540.do?MENU=40070000" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s43_n.gif" class="ImgRollOver" alt="채용설명회" /></a></li>
+</ul>
+</div>
+<!-- Quick Menu End -->
+</div>
+</div>
+</li>
+<!-- 취업 끝 -->
+
+<!-- 커뮤니티 -->
+<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25989&amp;id=chosun_050101000000" class="btnPullDown"><img src="/mbs/chosun/images/main/header_navi_btn4.png" alt="커뮤니티" class="png24" /></a>
+<!-- navigation_box5 -->
+<div id="navigation_box5" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s5bg -->
+   <div id="navigation_s5bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title5.gif" alt="커뮤니티" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle4.gif" alt="막는 것 산이거든 무느곤 못가랴 조선대학교의 진취적 기상은 21세기에 더욱 빛납니다." /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s5">
+		<li class=""><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25989&amp;id=chosun_050101000000">공지사항</a>
+			<ul class="s5_1_list">
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25989&amp;id=chosun_050101000000">일반공지</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25997&amp;id=chosun_050102000000">행사소식</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26005&amp;id=chosun_050103000000">교내채용</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=11566800&amp;id=chosun_050107000000">개인정보보호공시</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/board/list.jsp?boardId=69745434&id=chosun_050109000000">청탁금지법</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26013&amp;id=chosun_050201000000">프리톡톡</a>
+			<ul class="s5_2_list">
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26013&amp;id=chosun_050201000000">자유마당</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26021&amp;id=chosun_050202000000">학생불편사항신고</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26029&amp;id=chosun_050203000000">동아리소개</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26037&amp;id=chosun_050204000000">스터디모임</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/album/gallery.jsp?boardType=02&amp;boardId=26045&amp;listType=02&amp;mcategoryId=&amp;id=chosun_050205000000">캠퍼스갤러리</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26378&id=chosun_050301000000">라이프</a>
+			<ul class="s5_3_list">
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26378&amp;id=chosun_050301000000">공모전,전시,행사</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26386&amp;id=chosun_050302000000">주거정보</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26394&amp;id=chosun_050303000000">알뜰장터</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26403&amp;id=chosun_050304000000">알바정보</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26411&amp;id=chosun_050305000000">분실물센터</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_050400000000">학생상담/지원</a>
+			<ul class="s5_4_list">
+			<li><a href="http://www.chosun.ac.kr/counsel/" target="_blank" title="새창">학생상담센터(심리검사)<span class="blnakIcon"></span></a></li>
+            <li><a href="http://mentor.chosun.ac.kr/" target="_blank" title="새창">원스톱상담시스템<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ctl/" target="_blank" title="새창">교수학습지원센터<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/equal/" target="_blank" title="새창">양성평등상담<span class="blnakIcon"></span></a></li>
+			<li class="bgnone"><a href="http://www.chosun.ac.kr/disable/" target="_blank" title="새창">장애학생지원센터<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>커뮤니티 <span>Q</span>uick</h3>
+<ul>
+<li><a href="http://www.chosun.ac.kr/ctl/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s51_n.gif" class="ImgRollOver" alt="튜터링/그룹스터디" /></a></li>
+<li><a href="https://counsel.chosun.ac.kr/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s52_n.gif" class="ImgRollOver" alt="심리검사 안내/신청 " /></a></li>
+<li class="pb0"><a href="http://www.chosun.ac.kr/disable/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s53_n.gif" class="ImgRollOver" alt="장애학생도우미제도 알아보기" /></a></li>
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+
+</li>
+<!-- 커뮤니티 끝 -->
+
+<!-- 산학/연구 -->
+<li><a href="http://iacf.chosun.ac.kr/" class="btnPullDown" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_navi_btn6.png" alt="산학/연구" class="png24" /></a>
+<!-- navigation_box6 -->
+<div id="navigation_box6" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s6bg -->
+   <div id="navigation_s6bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title6.gif" alt="산학/연구" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle6.gif" alt="지역혁신의 중심, 지역발전의 견인차 조선대학교는 지역의 빛나는 얼굴입니다." /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s6">
+		<li><a href="http://iacf.chosun.ac.kr/" target="_blank" title="새창">산학협력단/연구처</a>
+			<ul class="s6_1_list">
+			<li class="bgnone"></li>
+			</ul>
+		</li>
+		<li class="mrbom26 pl5_1">연구기관
+			<ul class="s6_2_list">
+			<li><a href="http://www.chosun.ac.kr/ih/" target="_blank" title="새창">인문학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/medres" target="_blank" title="새창">의학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ricns/" target="_blank" title="새창">기초과학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/education/" target="_blank" title="새창">교과교육연구소<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/law/" target="_blank" title="새창">법학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/obri/" target="_blank" title="새창">치의학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/isscu" target="_blank" title="새창">사회과학연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/jpr/" target="_blank" title="새창">약학연구소<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/kbr/" target="_blank" title="새창">지식경영연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/riet/" target="_blank" title="새창">공학기술연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ssi/" target="_blank" title="새창">스포츠과학연구소<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ici" target="_blank" title="새창">국제문화연구원<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/military/" target="_blank" title="새창">군사학연구소<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/riit/" target="_blank" title="새창">IT연구소<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/ifrc" target="_blank" title="새창">IT융합신기술연구센터<span class="blnakIcon"></span></a></li>
+            <li><a href="http://www.chosun.ac.kr/thearts" target="_blank" title="새창">문화예술산업연구소<span class="blnakIcon"></span></a></li>
+            <li><a href="http://www.chosun.ac.kr/foin" target="_blank" title="새창">4차산업융합연구소 <span class="blnakIcon"></span></a></li>
+			
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>산학/연구 <span>Q</span>uick</h3>
+<ul>
+<li><a href="https://iacf.chosun.ac.kr/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s63_n.gif" class="ImgRollOver" alt="연구지원사업안내" /></a></li>
+<li class="pb0"><a href="http://linc.chosun.ac.kr/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s61_n.gif" class="ImgRollOver" alt="가족회사제도 안내" /></a></li>
+<!-- <li class="pb0"><a href="http://iacf.chosun.ac.kr/mycodyimages/2011_IACF_brochure.pdf" target="_blank" title="새창"><img src="/mbs/chosun/images/main/header_qnavi_s62_n.gif" class="ImgRollOver" alt="IACF MEDIA 브로슈어" /></a></li>-->
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+
+</li>
+<!-- 산학/연구 끝 -->
+
+<!-- 대학소개 -->
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070101000000" class="btnPullDown"><img src="/mbs/chosun/images/main/header_navi_btn7.png" alt="대학소개" class="png24" /></a>
+<!-- navigation_box7 -->
+<div id="navigation_box7" class="pullDown">
+<span class="arrow"><img src="/mbs/chosun/images/main/header_navi_point.png" alt="" /></span>
+<!-- navigation_s7bg -->
+   <div id="navigation_s7bg">
+	<h3><img src="/mbs/chosun/images/main/header_navi_title7.gif" alt="대학소개" /></h3>
+	<p><img src="/mbs/chosun/images/main/header_navi_stitle7.gif" alt="우리나라 최초의 민립(民立)대학! 세계로 뻗어 나가는 조선대학교" /></p>
+	<div class="navigation_list_wrap">
+	<ul id="navigation_s7">
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_070101000000">총장실</a>
+			<ul class="s7_1_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070101000000">인사말</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070102000000">총장에게 바란다</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_070103000000">역대총장</a></li>
+			</ul>
+		</li>
+	    <li class=""><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=25845&amp;id=chosun_070201010100">역사와비전</a>
+			<ul class="s7_2_list">
+			<li><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=25845&amp;id=chosun_070201010100">연혁</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070202000000">설립정신</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070203000000">건학이념</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070204000000">교육목표</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070205000000">상징물</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070206000000">교가</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_070207000000">발전계획</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_070301000000">UI</a>
+			<ul class="s7_3_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070301000000">기본시스템</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070302000000">슬로건&amp;엠블럼</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_070303000000">슬로건&amp;엠블럼 변천사</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_070400000000">조직도</a>
+			<ul class="s7_4_list">
+			<li class="bgnone">
+				<a href="/mbs/chosun/subview.jsp?id=chosun_070400000000">조직도</a>
+			</li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26419&amp;id=chosun_070501000000">미디어조선</a>
+			<ul class="s7_5_list">
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26419&amp;id=chosun_070501000000">보도자료</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070502000000">언론이본조선대</a></li>
+			<li><a href="/mbs/chosun/jsp/newspaper/newspaper_list.jsp?id=chosun_070503000000">소식지</a></li>
+			<li><a href="/mbs/chosun/jsp/album/gallery.jsp?boardType=02&amp;boardId=26428&amp;listType=02&amp;mcategoryId=&amp;id=chosun_070504000000">행사사진</a></li>
+			<li><a href="/mbs/chosun/jsp/album/gallery.jsp?boardType=02&amp;boardId=26429&amp;listType=02&amp;mcategoryId=&amp;id=chosun_070505000000">전경사진</a></li>
+			<li><a href="/mbs/chosun/jsp/brochure/list.jsp?id=chosun_070506000000">브로슈어</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/movie/gallery.jsp?boardType=04&amp;boardId=26430&amp;listType=04&amp;id=chosun_070507000000">홍보동영상</a></li>
+			<!--<li class="bgnone"><a href="/mbs/chosun/jsp/album/gallery.jsp?boardType=02&amp;boardId=26432&amp;listType=02&amp;mcategoryId=&amp;id=chosun_070508000000">광고디자인</a></li>-->
+			</ul>
+		</li>
+		<li class=""><a href="http://www.chosun.ac.kr/fund/" target="_blank" title="새창">발전기금<span class="blnakIcon"></span></a>
+			<ul class="s7_6_list">
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=182192639&siteId=fund" target="_blank" title="새창">참여방법<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=167586973&siteId=fund" target="_blank" title="새창">약정서다운<span class="blnakIcon"></span></a></li>
+			<li><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=166562773&siteId=fund" target="_blank" title="새창">기부현황<span class="blnakIcon"></span></a></li>
+			<!--<li><a href="/mbs/chosun/jsp/proud/list.jsp?spage=1&amp;mstSeq=37933&amp;id=chosun_070604000000">자랑스런동문</a></li>-->
+            <li class="bgnone"><a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=335017&siteId=fund" target="_blank" title="새창">기부소식<span class="blnakIcon"></span></a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/subview.jsp?id=chosun_070701000000">현황/규정</a>
+			<ul class="s7_7_list">
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070701000000">현황</a></li>
+			<li><a href="http://www.academyinfo.go.kr/UIPISA/uipnh/unt/ipsrch/UntUnvAcdtSrchPupExtrn.do?schlId=0000172" target="_blank" title="새창">대학정보공시<span class="blnakIcon"></span></a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26457&amp;id=chosun_070704000000">예결산공고</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/rules/rules.jsp?configIdx=26490&amp;id=chosun_070705000000">규정집</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000">캠퍼스안내</a>
+			<ul class="s7_8_list">
+			<li><a href="/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000">캠퍼스맵</a></li>
+			<li><a href="/mbs/chosun/jsp/hotPlace/list.jsp?id=chosun_070802000000">학내명소안내</a></li>
+			<li><a href="/mbs/chosun/jsp/university/university_tel_list.jsp?id=chosun_070803000000">교내홈페이지&amp;전화번호</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070804000000">찾아오시는길</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070805000000">교내버스안내</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/subview.jsp?id=chosun_070806000000">주차안내</a></li>
+			</ul>
+		</li>
+		<li class=""><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=47273&amp;id=chosun_070901000000">법인소개</a>
+			<ul class="s7_9_list">
+			<li><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=47273&amp;id=chosun_070901000000">법인소개</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070902000000">법인조직도</a></li>
+			<li><a href="/mbs/chosun/subview.jsp?id=chosun_070903000000">법인이사회 임원현황</a></li>
+			<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26474&amp;id=chosun_070904000000">이사회회의록</a></li>
+			<li class="bgnone"><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26482&amp;id=chosun_070905000000">자료실</a></li>
+			</ul>
+		</li>
+		</ul>
+	</div>
+
+<!-- Quick Menu -->
+<div class="navi_Quick">
+<h3>대학소개 <span>Q</span>uick</h3>
+<ul>
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070102000000"><img src="/mbs/chosun/images/main/header_qnavi_s71_n.gif" class="ImgRollOver" alt="총장에게 바란다" /></a></li>
+<li><a href="/mbs/chosun/jsp/hotPlace/list.jsp?id=chosun_070802000000"><img src="/mbs/chosun/images/main/header_qnavi_s72_n.gif" class="ImgRollOver" alt="조선대학교 명소 Best 10" /></a></li>
+<li class="pb0"><a href="/mbs/chosun/subview.jsp?id=chosun_070602000000"><img src="/mbs/chosun/images/main/header_qnavi_s73_n.gif" class="ImgRollOver" alt="발전기금 참여방법 / 약정서 다운로드" /></a></li>
+</ul>
+</div>
+<!-- Quick Menu End -->
+
+</div>
+</div>
+</li>
+<!-- 대학소개 끝 -->
+
+</ul>
+</div>
+<!-- Navi End -->
+
+</div>
+<!-- header end -->
+
+<!-- header end -->
+<hr />
+
+<!-- weblocation -->
+
+
+<div class="weblocation">
+<div class="weblocation_box">
+<h3>현재페이지 경로 정보입니다. 뎁스 메뉴리스트를 이용하여 페이지를 이동하실 수 있습니다.</h3>
+<ul class="location">
+<li class="home"><a href="/mbs/chosun/"><span><img src="/mbs/chosun/images/sub/m_bg_home.gif" alt="홈으로 가기" /></span></a></li>
+
+<li class="mn"><a href="/" class="location_dept_a"><span>대학소개</span></a>
+<!-- 뎁스1 -->
+<ul class="location_dept">
+
+<li><a href="/mbs/chosun/jsp/university/university_list.jsp?id=chosun_010100000000" ><span>대학/대학원</span></a></li>
+
+<li><a href="http://ibhak.chosun.ac.kr/" target="_blank" title="새창"><span>입학</span><span class="blnakIcon3"></span></a></li>
+
+<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25666&id=chosun_030101000000" ><span>대학생활</span></a></li>
+
+<li><a href="http://job.chosun.ac.kr/" target="_blank" title="새창"><span>취업</span><span class="blnakIcon3"></span></a></li>
+
+<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=25989&id=chosun_050101000000" ><span>커뮤니티</span></a></li>
+
+<li><a href="http://iacf.chosun.ac.kr/" target="_blank" title="새창"><span>산학/연구</span><span class="blnakIcon3"></span></a></li>
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070101000000" class="location_dept_on"><span>대학소개</span></a></li>
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_080200000000" ><span>이용안내</span></a></li>
+
+</ul>
+<!-- 뎁스1 End -->
+</li>
+
+<li class="mn"><a href="/" class="location_dept2_a"><span>캠퍼스안내</span></a>
+<!-- 뎁스2 -->
+<ul class="location_dept2">
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070101000000" ><span>총장실</span></a></li>
+
+<li><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=25845&id=chosun_070201010100" ><span>역사와비전</span></a></li>
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070301000000" ><span>UI</span></a></li>
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070400000000" ><span>조직도</span></a></li>
+
+<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=26419&id=chosun_070501000000" ><span>미디어조선</span></a></li>
+
+<li><a href="http://www.chosun.ac.kr/fund/" target="_blank" title="새창"><span>발전기금</span><span class="blnakIcon3"></span></a></li>
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070701000000" ><span>현황/규정</span></a></li>
+
+<li><a href="/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000" class="location_dept_on"><span>캠퍼스안내</span></a></li>
+
+<li><a href="/mbs/chosun/jsp/history/history.jsp?hisIdx=47273&id=chosun_070901000000" ><span>법인소개</span></a></li>
+
+</ul>
+<!-- 뎁스2 End -->
+</li>
+
+
+<li class="mn last"><a href="/" class="location_dept3_a"><span>찾아오시는길</span></a>
+<!-- 뎁스3 -->
+<ul class="location_dept3">
+
+
+
+<li><a href="/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000" ><span>캠퍼스맵</span></a></li>
+
+
+
+<li><a href="/mbs/chosun/jsp/hotPlace/list.jsp?id=chosun_070802000000" ><span>학내명소안내</span></a></li>
+
+
+
+<li><a href="/mbs/chosun/jsp/university/university_tel_list.jsp?id=chosun_070803000000" ><span>교내홈페이지&amp;전화번호</span></a></li>
+
+
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070804000000" class="location_dept_on"><span>찾아오시는길</span></a></li>
+
+
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070805000000" ><span>교내.시내 버스안내</span></a></li>
+
+
+
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070806000000" ><span>주차안내</span></a></li>
+
+</ul>
+<!-- 뎁스3 End -->
+</li>
+
+</ul>
+<!--
+<div class="location_dept_wrap">
+<h4></h4>
+</div>
+-->
+
+<!-- 출력버튼 -->
+
+<span class="btn_print"><a href="/mbs/chosun/html/print_contents.html" onclick="javascript:window.open(this.href,'_blank','width=800, height= 550, scrollbars=yes');return false;" title="새창열림">이 페이지를 출력합니다.</a></span>
+</div>
+
+</div>
+
+
+<!--
+<form name="printForm">
+ <input type=hidden name="pZone">
+</form>
+<script>
+function print_info(){
+	document.printForm.pZone.value = content.innerHTML;
+
+	window.open("/mbs/chosun/html/print_contents.html", 
+		        "print_open",
+		        "width=800,height=550,top=0,left=0,noresizable,toolbar=no,status=no,scrollbars=yes,directory=no");
+}
+</script>
+
+<span class="btn_print"><a href="javascript:print_info();">이 페이지를 출력합니다.</a></span>
+-->
+<!-- weblocation End -->
+
+
+
+<!-- contents -->
+<div id="contents_wrap">
+
+
+<!-- title -->
+<div id="page_title_wrap">
+	<div id="page_title" class="page_title_07">
+		<h1>찾아오시는길</h1>
+		<p>우리나라 최초의 민립(民立)대학! 세계로 뻗어 나가는 조선대학교</p>
+	</div>
+</div>
+<!-- title End -->
+<div id="container">
+	<div id="content">
+
+
+
+
+<div class="s7_8_4_titlebtn">
+<h3 class="butt">우] 501-759 광주광역시 동구 필문대로 309번지 조선대학교 </h3>
+<a href="/mbs/chosun/images/download/pdf_chosununi_map.pdf" target="_blank" title="새창" class="btn">찾아오시는길 다운로드 PDF</a> <a href="/mbs/chosun/images/download/jpeg_chosununi_map.zip" target="_blank" title="새창" class="btn2">찾아오시는길 다운로드 JPG</a>
+<input type="button" class="re_btn"value="조선대학교 현재위치 돌아가기" onclick="revertPanning();"/>
+</div>
+<div class="s7_8_4_mapbox">
+<style>v\:* { behavior: url(#default#VML); }
+.box {display:none}
+</style>
+<!-- prevent IE6 flickering -->
+<script type="text/javascript">
+try {document.execCommand('BackgroundImageCache', false, true);} catch(e) {}
+</script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=eRw4Gi22_wersFqjulo3"></script>
+
+
+
+
+<script>
+$(document).ready(function() {
+
+	$(".box").eq(0).css("display","block");
+	$(".tab02 > li").click(function() {
+
+		$(".tab02 > li").removeClass("on");
+
+		var curr_idx = $(".tab02 > li").index(this);
+		$(".tab02 > li").eq(curr_idx).addClass("on");
+		$(".box").hide();
+		$(".box").eq(curr_idx).show();
+
+		return false;
+	});
+
+});
+
+
+//지도를 삽입할 HTML 엘리먼트 또는 HTML 엘리먼트의 id를 지정합니다.
+var mapDiv = document.getElementById('map'); // 'map' 으로 선언해도 동일
+
+//옵션 없이 지도 객체를 생성하면 서울시청을 중심으로 하는 11레벨의 지도가 생성됩니다.
+var map = new naver.maps.Map(mapDiv);
+
+</script>
+ 
+<div id="map" style="width:100%;height:400px;">
+	<style type="text/css">
+    #wrap .buttons { position:absolute;top:0;left:0;z-index:1000;padding:5px; }
+    #wrap .buttons .control-btn { 
+		margin: 0;
+		color: #555;
+		padding: 2px 6px;
+		background: #fff;
+		border: solid 1px #333;
+		cursor: pointer;
+		-webkit-border-radius: 5px;
+		outline: 0 none;
+		border-radius: 5px;
+		box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5) !important;
+	}
+	#wrap .buttons .control-on { 
+	    background-color: #2780E3;
+		color: #FFF;
+	}
+</style>
+<div class="section">
+    <h2>지도 유형 설정하기</h2>
+    <div style="width:100%;height:600px;">
+        <div class="buttons">
+            <input id="NORMAL" type="button" value="일반지도" class="control-btn control-on" />
+            <input id="TERRAIN" type="button" value="지형도" class="control-btn" />
+            <input id="SATELLITE" type="button" value="위성지도" class="control-btn" />
+            <input id="HYBRID" type="button" value="겹쳐보기" class="control-btn" />
+        </div>
+    </div>
+    <code id="snippet" class="snippet"></code>
+</div>
+</div>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(35.1428823, 126.9346255),
+    zoom: 10,
+	zoomControl: true, //줌 컨트롤의 표시 여부
+    zoomControlOptions: { //줌 컨트롤의 옵션
+		position: naver.maps.Position.TOP_RIGHT
+    }
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+var position = new naver.maps.LatLng(35.1428823, 126.9346255);
+var marker = new naver.maps.Marker({
+    position: position,
+    map: map
+});
+
+var btns = $(".buttons > input");
+btns.on("click", function(e) {
+    e.preventDefault();
+
+    var mapTypeId = this.id;
+
+    if (map.getMapTypeId() !== naver.maps.MapTypeId[mapTypeId]) {
+        map.setMapTypeId(naver.maps.MapTypeId[mapTypeId]); // 지도 유형 변경하기
+
+        btns.removeClass("control-on");
+        $(this).addClass("control-on");
+    }
+});
+
+
+</script>
+</div>
+
+<div class="s7_8_4_listwrap">
+<ul class="tab02">
+	<li class="on"><a href="/">자가용</a></li>
+	<li><a href="/">고속버스,철도,비행기</a></li>
+	<li><a href="/">지하철</a></li>
+	<li><a href="/">시내버스</a></li>
+</ul>
+
+
+<!-- 자가용 -->
+<div class="box">
+<h3>자가용으로 오시는길</h3>
+<dl>
+	<dt>서울에서 오시는길</dt>
+	<dd>서울 - 경부1번고속도로 - 대전/안성 방면으로 직진 - 천안논산25번 고속도로 천안분기점에서 우측방향 - 광주/익산 방면으로 직진 - 호남25번 고속도로 - 익산분기점에서 직진 - 장성분기점에서 직진 - 동광주IC에서 우측고속도로 출구 - 두암교차로 - 두암지구 입구에서 화순 / 산수오거리 방면으로 좌회전 후 직진 - <strong class="blue">조선대학교</strong></dd>
+	<dt>부산에서 오시는길</dt>
+	<dd>부산 - 남해 제2고속도로지선 104번 고속도로 - 남해고속도로 10번 고속도로 - 마산외곽고속도로 10번 고속도로 창원분기점에서 진주,대구,북창원,창원 방면 - 두암지구 입구에서 화순.산수오거리 방면으로 좌회전 후 직진 - <strong class="blue">조선대학교</strong></dd>
+</dl>
+</div>
+
+<!-- 고속버스,철도,비행기 -->
+<div class="box">
+<h3>고속버스,철도,비행기으로 오시는길</h3>
+<dl class="type2">
+	<dt>고속버스 : 광주 유스퀘어 광천터미널 하차</dt>
+	<dd>버스안내 : 공항버스, <strong class="red">[급]</strong>순환01, <strong class="red">[급]</strong>금호36</dd>
+	<dt>철도 : 광주역</dt>
+	<dd>버스안내 : <strong class="green">[지]</strong>금남55, <strong class="green">[지]</strong>송정98</dd>
+	<dt>철도 : 송정리역</dt>
+	<dd>버스안내 : <strong class="green">[지]</strong>송정98</dd>
+	<dt>비행기 : 광주공항</dt>
+	<dd>버스안내 : 공항버스 1000</dd>
+</dl>
+</div>
+
+<!-- 지하철 -->
+<div class="box">
+<h3>지하철으로 오시는길</h3>
+<p class="map"><img src="/mbs/chosun/images/sub/s7_8_4_subwaymap.gif" alt="평동-도산-송정리-공항-김대중컨벤션센터-상무-운천-쌍촌-화정-농성-돌고개-양동시장-금남로5가-금남로4가-문화전당-남광주(남광주역 하차:도보10분)-학동,증심사입구-소태-녹동" title="지하철노선도 이미지입니다" /></p>
+</div>
+
+<!-- 시내버스 -->
+<div class="box">
+<h3>시내버스로 오시는길</h3>
+<table class="subDataTable" summary="시내버스로 오시는길 노선번호,노선,배차간격,내리실곳 안내표입니다.">
+  <caption>
+  시내버스로 오시는길 안내표
+  </caption>
+  <colgroup>
+  <col width="15%" />
+  <col />
+  <col width="15%" />
+  <col width="15%" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col" class="leftCell">노선번호</th>
+      <th scope="col">노선</th>
+      <th scope="col">배차간격</th>
+      <th scope="col" class="rightCell">내리실곳</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" class="leftCell">[급]순환01</td>
+      <td>상무지구 - 상무지구</td>
+      <td align="center">10분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]지원15</td>
+      <td>월남동 - 태령</td>
+      <td align="center">18분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]진월17</td>
+      <td>서광주역 - 장등동</td>
+      <td align="center">11분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]봉선27</td>
+      <td>용산지구 - 첨단종점</td>
+      <td align="center">9분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]일곡28</td>
+      <td>살레시오고 - 매월동(북)</td>
+      <td align="center">10분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]운림35</td>
+      <td>무등산국립공원(증심사) - 장등동</td>
+      <td align="center">16분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[간]금호36</td>
+      <td>서광주역 - 장등동</td>
+      <td align="center">12분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[지]금남55</td>
+      <td>장등동 - 빛고을노인건강타운</td>
+      <td align="center">20분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+    <tr>
+      <td align="center" class="leftCell">[지]문흥80</td>
+      <td>장등동 - 충장로5가입구</td>
+      <td align="center">23분</td>
+      <td align="center" class="rightCell">조선대</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="tit2">광주광역시 시내버스 교내 운행 안내</h3>
+<dl>
+	<dt>&nbsp;&nbsp;&nbsp;광주광역시 시내버스 교내 운행 안내</dt>
+    </dl>
+    
+    
+<table class="subDataTable" summary="시내버스로 오시는길 노선번호,노선,배차간격,내리실곳 안내표입니다.">
+  <caption>
+  시내버스로 오시는길 안내표
+  </caption>
+  <colgroup>
+  <col width="15%" />
+  <col width="15%" />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col" class="leftCell">구  분</th>
+      <th scope="col">노선명</th>
+      <th scope="col" class="rightCell">운 행 시 간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" class="leftCell">419번</td>
+      <td>419번</td>
+      <td align="left" class="rightCell">1. 운행시간: 06:00- 22:20<br>
+        2. 운행구간: 조선대학교 해오름관 -살레시오고등학교</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="left" class="rightCell leftCell">
+        <strong>버스노선 자세한 설명</strong> <br>
+          <strong class="blue">조선대해오름관</strong>-조선대장미원-서남동주민센터-문화전당역-국립아시아문화전당(구.도청)-예술의거리입구-대인시장(동)-광주고-계림사거리-서방시장(서)-향토문화거리입구-동부교육청-중흥2동주민센터-북구보건소-전남대후문(북)-전남대후문위-성산맨션-도로교통공단 대신파크-용봉한화꿈에그린-삼원맨션-용봉우미아파트-유창허니문-유창허니문입구-용주초교-오치초교-광주공고입구-고려고-삼각그린타운-국제고-향토음식박물관-일동중-일동초교-일신초교-일곡대림2차아파트-유격훈련장-교통연수원입구-<strong class="blue">살레시오고</strong></td>
+      </tr>
+          <tr>
+      <td align="center" class="leftCell">57번</td>
+      <td>금남57</td>
+      <td align="left" class="rightCell">1. 운행시간: 06:00- 22:20<br />
+        2. 운행구간: 조선대학교 해오름관 -살레시오고등학교</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="left" class="rightCell leftCell">
+        <strong>버스노선 자세한 설명</strong> <br>
+          <strong class="blue">조선대해오름관</strong>-조선대장미원-서남동주민센터-문화전당역-국립아시아문화전당(구.도청)-금남로4가역-금남로5가역-롯데백화점-대인광장(동)-중흥1동주민센터-순복음교회-광주역-신안사거리-전남대-전대치과병원-용봉2휴먼시아아파트-신안교입구-유창아파트-용주초교-오치초교-광주공고입구-고려고-삼각그린타운-국제고-향토음식박물관-오비맥주-코카콜라-롯데칠성-KT&amp;G광주제조창-양산호수공원-신흥택시-광주은행양산동지점-양산택지사거리-양산호반2차-지산중-건국동파출소▶건국동주민센터-호남권역재활병원-대원정사-지산초교-지산입구-용전사거리(남)-지산마을-생룡▶우치공원-명상의집-교통연수원입구-<strong class="blue">살레시오고</strong></td>
+      </tr>
+                <tr>
+      <td align="center" class="leftCell">61번</td>
+      <td>매월61</td>
+      <td align="left" class="rightCell">1. 운행시간: 06:00- 22:20<br />
+        2. 운행구간: 조선대학교 해오름관 -살레시오고등학교</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="left" class="rightCell leftCell">
+        <strong>버스노선 자세한 설명</strong> <br>
+          <strong class="blue">조선대해오름관</strong>-조선대장미원-서남동주민센터-문화전당역-국립아시아문화전당(구.도청)-금남로4가역-금남로5가역-롯데백화점-대인광장(동)-중흥1동주민센터-순복음교회-광주역-신안사거리-전남대-전대치과병원-용봉2휴먼시아아파트-신안교입구-유창아파트-용주초교-오치초교-광주공고입구-고려고-삼각그린타운-국제고-향토음식박물관-오비맥주-코카콜라-롯데칠성-KT&amp;G광주제조창-양산호수공원-신흥택시-광주은행양산동지점-양산택지사거리-양산호반2차-지산중-건국동파출소-건국동주민센터-호남권역재활병원-대원정사-지산초교-지산입구-용전사거리(남)-지산마을-생룡-우치공원-명상의집-교통연수원입구-<strong class="blue">살레시오고</strong></td>
+      </tr>
+                <tr>
+      <td align="center" class="leftCell">87번</td>
+      <td>석곡87</td>
+      <td align="left" class="rightCell">1. 운행시간: 06:00- 22:20<br />
+        2. 운행구간: 조선대학교 해오름관 -청풍학생야영장</td>
+    </tr>
+    <tr>
+      <td colspan="3" align="left" class="rightCell leftCell">
+        <strong>버스노선 자세한 설명</strong> <br>
+          <strong class="blue">조선대해오름관</strong>-조선대장미원-서남동주민센터-동구청-전남여고-대인시장(동)-광주고-계림사거리-서방시장(남)-동강대-말바우시장(동)-무등도서관-광주병원-동광주진입로-농산물공판장-문흥지구입구(남)-문흥지구입구(동)-도동고개-도선사-중소기업진흥공단호남연수원-용호(북구)-석곡동주민센터-월산(석곡)-동초교-죽곡(북)-죽곡(남)-분토(북구)-신촌 윗길(4수원지)-신촌 아랫길(4수원지)-등촌-<strong class="blue">청풍학생야영장</strong></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+</div>
+<!-- quick bar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////  -->
+<div class="aside">
+	<h4>서브 퀵존</h4>
+	<ul>
+	
+	
+			
+	
+	
+			
+	
+</ul>
+<span class="btn_top"><a href="#wrap"><img src="/mbs/chosun/images/sub/quick_btn_top.gif" alt="TOP" title="페이지 최상위 이동" /></a></span>
+</div>
+	
+
+
+
+<!-- contents End -->
+<div id="sub_footer_wrap">
+
+
+
+<!-- footer -->
+<div id="footer">
+<div class="footer_box">
+<div class="infolist">
+<h2>사이트 이용안내</h2>
+<ul>
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_080300000000">정보보호윤리규약</a><span>|</span></li>
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_080200000000" style="font-weight:700;color:#36c;background:none;">개인정보처리방침</a><span>|</span></li>
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_080400000000">이메일무단수집거부</a><span>|</span></li>
+<!-- <li><a href="http://www.academyinfo.go.kr/UIPISA/uipnh/unt/ipsrch/UntUnvAcdtSrchPupInr.do?schlId=0000172&amp;svyYr=2013&amp;schlDivCd=02" target="_blank" title="새창">대학정보공시</a><span>|</span></li> -->
+<li><a href="/mbs/chosun/jsp/university/university_tel_list.jsp?id=chosun_070803000000">교내홈페이지&amp;전화번호</a><span>|</span></li>
+<li><a href="mailto:webmaster@chosun.ac.kr">운영자이메일</a><span>|</span></li>
+<li><a href="/mbs/chosun/jsp/board/list.jsp?boardId=46408&id=chosun_030806000000">홈페이지문의</a><span>|</span></li>
+<li><a href="/mbs/chosun/subview.jsp?id=chosun_070804000000">오시는길</a><span>|</span></li>
+<li><a href="/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000">캠퍼스안내</a></li>
+</ul>
+
+</div>
+
+<div class="mobile_wrap">
+<h3><a href="#"><img src="/mbs/chosun/images/main/footer_mobile_title.gif" alt="QR CODE" /></a></h3>
+<div class="mobile_box">
+<dl>
+	<dt><img src="/mbs/chosun/images/main/qrcode_title.gif" alt="CHOSUN MOBLIE QR CODE" /></dt>
+	<dd><img src="/mbs/chosun/images/main/qrcode_stitle.gif" alt="스마트폰으로 해당 QR코드를 이용하시면 빠르고 편리하게 모바일 사이트를 접속하실 수 있습니다." /></dd>
+</dl>
+<ul>
+	<li><a href="http://m.chosun.ac.kr/" target="_blank"><img src="/mbs/chosun/images/main/qrcode_list.gif" alt="조선대학교 본교 모바일 QR Code http://m.chosun.ac.kr/" /></a></li>
+	<li><a href="http://eng.chosun.ac.kr/" target="_blank"><img src="/mbs/chosun/images/main/qrcode_list2.gif" alt="조선대학교 영문 QR Code http://eng.chosun.ac.kr/" /></a></li>
+	<!-- <li><a href="http://mbs.chosun.ac.kr/mbs/mobile/" target="_blank"><img src="/mbs/chosun/images/main/qrcode_list3.gif" alt="조선대학교 중문 모바일 QR Code http://mbs.chosun.ac.kr/mbs/mobile/" /></a></li> -->
+	<li><a href="http://chi.chosun.ac.kr/" target="_blank"><img src="/mbs/chosun/images/main/qrcode_list4.gif" alt="조선대학교 중문 QR Code http://chi.chosun.ac.kr/" /></a></li>
+</ul>
+<a class="qr_close"><img src="/mbs/chosun/images/main/qrcode_btn_close.gif" alt="닫기" /></a>
+</div>
+</div>
+
+<div class="qlink">
+<h4>온라인서비스 바로가기</h4>
+<ul>
+<li><a href="https://www.instagram.com/chosununiversity/" target="_blank" title="새창"><img src="/mbs/chosun/images/main/footer_icon_i.gif" alt="조선대학교 인스타그램" /></a></li>
+<li><a href="http://twitter.com/chosun_univ" target="_blank" title="새창"><img src="/mbs/chosun/images/main/footer_icon_t.gif" alt="조선대학교 트위터" /></a></li>
+<li><a href="http://www.facebook.com/chosununi" target="_blank" title="새창"><img src="/mbs/chosun/images/main/footer_icon_f.gif" alt="조선대학교 페이스북" /></a></li>
+<li><a href="http://blog.naver.com/chosununi" target="_blank" title="새창"><img src="/mbs/chosun/images/main/footer_icon_b.gif" alt="조선대학교 블로그" /></a></li>
+</ul>
+</div>
+
+<address>
+<span class="addr">[우] 61452 광주광역시 동구 필문대로 309(서석동,조선대학교)</span> 
+<span class="tel">대표전화 : 062.230.7114</span> 
+<span class="fax">팩스 : 062.232.8834</span> 
+<span class="copyright">COPYRIGHT(C) CHOSUN UNIVERSITY. ALL RIGHTS RESERVED</span>
+</address>
+
+</div>
+</div>
+<!-- footer End --> 
+
+</div>
+
+</div>
+
+
+</body>
+</html>
+
+ 
+
+
+
+
+<script type="text/javascript">
+$.ajax({
+	type:"POST",
+	url:"/manager/weblog.mbs",
+	data:{
+		"logUrl":"http://www2.chosun.ac.kr/mbs/chosun/subview.jsp",
+		"menuId":"chosun_070804000000",
+		"pageTitle":"찾아오시는길",
+		"getIp":"183.105.31.44",
+		"siteId":"chosun"
+	},
+	async:false,
+	cache:false
+});
+</script>
+
+

@@ -44,10 +44,8 @@
 				</div>
 			</div>
 			<div style="text-align: center;">
-{% for i in range(num) %}
-	<button class="btn btn-default">
-	<a href="/test/{{ i+1 }}">{{ i+1 }}</a>
-	</button>
+{% for i in range(end_num, end_num-count_num, -1) %}
+	<a href="/test/{{ i }}"><button type="button" class="btn btn-outline-info">{{ end_num - i + 1 }}</button></a>
 {% endfor %}
 			<br><br>
 			</div>

@@ -19,7 +19,7 @@
 							{% if submit %}
 								<div class="alert alert-success">
 									<strong>Success!</strong> Submit is successfully done! Please confirm the report.
-									<a href="test"><button type="button" class="btn btn-outline-info">View report!</button></a>
+									<a href="/test"><button type="button" class="btn btn-outline-info">View report!</button></a>
 								</div>
 							{% endif %}
 							<div></div>
@@ -469,7 +469,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 </div>
 
-<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+
+<!--<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>-->
 <script src="{{ url_for('static', filename='css/bootstrap-4.1.2/popper.js') }}"></script>
 <script src="{{ url_for('static', filename='css/bootstrap-4.1.2/bootstrap.min.js') }}"></script>
 <script src="{{ url_for('static', filename='plugins/greensock/TweenMax.min.js') }}"></script>

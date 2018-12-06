@@ -1,0 +1,5280 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko"><head>	<meta http-equiv="x-ua-compatible" content="IE=edge" />	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=1300" />	<meta name ="Generator" content="k2webtech"/>	<title>조선대학교 학사안내</title>	<script type="text/javascript" src="/Web-home/wizUI/js/jquery-1.7.min.js"></script>	<script type="text/javascript" src="/Web-home/addons/contentsbuilder/js/jquery.form.js"></script><!-- 	<style>		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);			</style> -->	<link rel="stylesheet" href="/style/goonanumgothic.css"/>	<script src="/Web-home/wizUI/js/ui/1.11.0/jquery-ui.js"></script>		<link rel="stylesheet" href="/Web-home/frame/css/frame_common.css"/>	<link rel="stylesheet" href="/Web-home/frame/css/wizard_widget.css"/>		<link rel="stylesheet" href="/user/sukang/style/css/style.css"/>	<link rel="stylesheet" href="/user/sukang/style/css/site_function.css"/>		<link rel="stylesheet" href="/Web-home/addons/css/style.css"/>
+
+
+    <!--[if IE 6]>
+    <script src="/Web-home/common/js/DD_belatedPNG_0.0.8a-min.js"></script>
+    <script>
+    DD_belatedPNG.fix('.png');
+    DD_belatedPNG.fix('.pngFix');
+    DD_belatedPNG.fix('a.pngA');
+    </script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <![endif]-->
+    <!--[if IE 8]><![endif]-->
+    <!--[if IE 9]><![endif]-->
+    <!--[if IE 10]><![endif]-->
+    <!--[if !IE]><!--><!--<![endif]-->
+	<script type="text/javascript"> 		function getPageTitle() {		try {		//top.parent.document.title="조선대학교 학사안내";		} catch (e) {}	}	</script>	<script  type='text/javascript'>  		var wizard_login = 0;		var site_member = 0;		var wizard_site = "sukang";			var menu_pos_1 = '0';
+var menu_pos_2 = '0';
+var menu_pos_3 = '0';
+var menu_pos_1 = '0';
+var menu_pos_2 = '0';
+var menu_pos_3 = '0';
+var menu_pos_4 = '0';
+	</script>	<script type='text/javascript'>		function winOpen(url){			var PopName = window.open(url,'bgSet','width=1000,height=1000');  			window.open(url,'bgSet','width=1000,height=1000');			PopName.focus();			return false;		}	</script>		<script type='text/javascript'>	/* <![CDATA[ */	function onTopEdit()     {             var URL = "https://www.chosun.ac.kr/common/codyMain.do?menuFile=top.html";             URL = URL+"&siteId=sukang";			 URL = URL.replace("https://","http://");             window.open(URL,'_blank','      width=920,height=,scrollbars=no,resizable=yes');     }	function onLeftEdit()    {    	 	var URL = "https://www.chosun.ac.kr/common/codyMain.do?menuFile=left.html";            URL = URL+"&siteId=sukang";			URL = URL.replace("https://","http://");            window.open(URL,'_blank','      width=920,height=600,scrollbars=no,resizable=yes');    }    function onBottomEdit()    {       	var URL = "https://www.chosun.ac.kr/common/codyMain.do?menuFile=bottom.html";            URL = URL+"&siteId=sukang";			URL = URL.replace("https://","http://");            window.open(URL,'_blank','width=920,height=600,scrollbars=no,resizable=yes');    }	function onRightEdit()    {             var URL = "https://www.chosun.ac.kr/common/codyMain.do";                                                URL = URL+"?codyMenuSeq=322493";            URL = URL+"&siteId=sukang";                         			URL = URL.replace("https://","http://");            window.open(URL,'_blank','      width=920,height=600,scrollbars=no,resizable=yes');    }	/* ]]> */	</script>	
+
+<script  type='text/javascript'>
+/* <![CDATA[ */
+
+function init() {
+	
+	/*
+	pageLeft = document.getElementById('left-container');
+	pageRight = document.getElementById('content-container');
+	mid = document.getElementById('mid-container');
+	
+
+	if(mid.scrollHeight > pageRight.scrollHeight){
+		htR = (mid.scrollHeight) + 'px';
+	}else{
+		htR = (pageRight.scrollHeight) + 'px';
+	}
+
+	
+	if(pageLeft.style.height != htR)
+		pageLeft.style.height = htR;
+	if(pageRight.style.height != htR)
+		pageRight.style.height = htR;
+	
+
+	pageBottom = document.getElementById('footer-container');
+	htB = (pageBottom.scrollHeight) + 'px';
+	if(pageBottom.style.height != htB)
+		pageBottom.style.height = htB;
+	*/
+
+
+	/*안함
+	var obj = document.getElementById('content-container');
+	var obj1 = document.getElementById('pageLeftT');
+	var obj2 = document.getElementById('pageRightT');
+	var ht = ((obj1.scrollHeight>obj2.scrollHeight ?  obj1.scrollHeight : obj2.scrollHeight)) + 'px';
+	if(obj2.style.height != ht)
+		obj2.style.height = ht;
+	if(obj1.style.height != ht)
+		obj1.style.height = ht;
+	if(obj.style.height != ht)
+		obj.style.height = ht;
+	obj1.style.overflow = 'hidden';
+	obj2.style.overflow = 'hidden';
+	*/
+	
+	//게시판 이미지 리사이즈
+	try{resize_image();}catch(e){}
+
+	//신규메뉴 오픈 스크립트
+	try{jf_menuUIOpenInit();}catch(e){}
+
+	//페이지 타이틀
+	getPageTitle();
+
+	
+	//서브메뉴 리사이즈 333
+	//jf_subMenuResize();
+
+	//iframe 사이즈 변경 + 컨텐츠 영역 크기 변경
+	jf_iframeOnload();
+	
+	 
+	//담당자 영역 크기 지정 3
+	var conW = $("#content-container").attr("scrollWidth");
+	$("#damdangWrap").css("width",conW+"px");
+	$("#damdangWrap").show();
+
+	//조직도 크기 늘림
+	try{jf_deptResize();}catch(e){}
+
+
+}
+
+var midH;
+var conH;
+var leftH;
+var subH;
+function jf_subMenuResize(){
+	var footerH = $("#footer-container").prop("scrollHeight");
+	$("#footer-container").css("height",footerH+"px");
+
+	midH = 	$("#mid-container").prop("scrollHeight");
+	conH = 	$("#content-container").prop("scrollHeight");
+	leftH = $("#left-container").prop("scrollHeight");
+	subH = 	$("#menuSubUI").prop("scrollHeight")+50;
+
+	if($("#menuSubUI").size() == 0 && $("#menuTopUI").size() > 0){
+		subH = $("#menuTopUI").prop("scrollHeight");
+		//alert(subH);
+	}
+	
+	//alert("midH : "+midH+" // leftH : "+leftH+" // conH : "+conH+" // subH : "+subH);
+	
+
+	var hr;
+	if(midH > conH){
+		hr = midH;
+	}else{
+		hr = conH;
+	}
+	
+	//담당자 영역이 있을때 +70
+	if($(".chargeOfficer").size() > 0){
+		hr = hr+70;
+	}
+	//ie11일때 +40
+	var ieUserAgent = window.navigator.userAgent;
+	if(ieUserAgent.indexOf("rv:11.0") > -1){
+		hr = hr+40;
+	}
+	$("#content-container").css("height",(hr)+"px");
+	$("#left-container").css("height",(hr)+"px");
+
+
+	if(subH > hr){
+		$("#content-container").css("height",(subH)+"px");
+		$("#left-container").css("height",(subH)+"px");
+	}
+
+	
+}
+
+$(function(){
+	$("iframe").each(function(i){
+		if($(this).attr("src") != null && $(this).attr("src").indexOf("jspPageGubun=1") > -1){
+			$("iframe").eq(i).load(function(){
+				//iframe 변경시 리사이즈 이벤트 설정
+				jf_iframeOnload();
+			});
+			
+		}
+	});
+});
+
+function jf_iframeResize(){
+	if($("iframe").size() > 0){
+		$("iframe").each(function(){
+			if($(this).attr("src") != null && $(this).attr("src").indexOf("jspPageGubun=1") > -1){
+				var h = $(this).contents().find("body").prop("scrollHeight");
+				h = parseInt(h)+10;
+				$(this).css("height",h+"px");
+			}
+		});
+	}
+}
+
+function jf_iframeOnload(){
+	jf_iframeResize();
+	jf_subMenuResize();
+}
+
+/* ]]> */
+</script>
+
+
+<style type="text/css">
+body{
+	background: url('/user/sukang/mycodyimages/s_bg.png') center top no-repeat #FFF;
+}
+#wrap-container{
+	background:url()  repeat;;
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	min-height: 500px;
+}
+#header-container{
+	width:1000px;
+	height:112px;
+}
+#mid-container{
+	width:1000px;
+	overflow: hidden;
+}
+#left-container{
+	width:230px;
+	float: left;
+}
+#content-container{
+	width:770px;
+	float:right;
+}
+</style>
+
+<!--[if lt IE 8]><link rel="stylesheet" href="/Web-home/frame/css/ie7.css" type="text/css" /><![endif]-->
+</head>
+
+<body  onload="init()">
+<ul id="skipnavi">
+	<li><a href="#content-container">본문바로가기</a></li>
+	<li><a href="#menuTopUI">주메뉴바로가기</a></li>
+	<li><a href="#menuSubUI">부메뉴바로가기</a></li>
+</ul>
+<div id="wrap-container">
+	<div id="header-container" >
+		
+		
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/user/sukang/style/css/site_function.css"/>
+ <!--header--><div id="header"><div class="util"><ul><li class="frist"><a href="/user/indexMain.do?home=&amp;siteId=sukang">처음으로</a></li><script src="/join/js/login.js" type="text/javascript"></script><li class="end"><a href="/user/indexSub.do?codyMenuSeq=322276&amp;siteId=sukang">사이트맵</a></li><li class="color01 noLine"><a href="http://ibhak.chosun.ac.kr/" target="_blank">입학안내</a></li><li class="end"></li><li><a title="새창" href="http://www2.chosun.ac.kr/mbs/chosun/" target="_blank">조선대학교</a></li></li></ul></div><div class="gnbWrap"><div class="logo"><a href="/user/indexMain.do?home=&amp;siteId=sukang"><img alt="조선대학교" src="/user/sukang/mycodyimages/logo.png" /></a></div><div id="siteFunction_top_1540966275388100" class="wizard_func_area">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/user/sukang/style/css/menu_ui.css?t=1544080692782" />
+<script type="text/javascript" src="/user/sukang/style/js/menu_ui.js"></script>
+
+	
+    <input type="hidden" id="menuDepth" value="7_3_0_0_0_0"/>
+	
+    <input type="hidden" id="choiceTopMenuSeq" value="322493"/>
+    
+	<div id="menuTopUI">
+		
+						<div id="top_div" class="div_1">
+						<ul id="top_k2wiz_GNB"  class="ul_1" >
+					
+					<li class="li_1">
+					
+					<a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/academic_calender/academic_calender.jsp?academicIdx=25846&amp;id=chosun_030102000000"  
+						id="top_k2wiz_GNB_322494" 
+						class="a_1 k2wiz_GNB_0  menu_1_0_0_0_0_0"  
+						target="_blank"
+						>
+						학사일정
+						<input type="hidden" id="menuTitle_322494" value=""/>
+					</a>				
+				
+						<div id="top_div_322494" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_322494"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="http://www2.chosun.ac.kr/mbs/chosun/jsp/academic_calender/academic_calender.jsp?academicIdx=25846&amp;id=chosun_030102000000"  
+						id="top_k2wiz_GNB_333121" 
+						class="a_2 k2wiz_GNB_322494  menu_1_1_0_0_0_0"  
+						target="_blank"
+						>
+						학사일정
+						<input type="hidden" id="menuTitle_333121" value=""/>
+					</a>
+				
+							</li>
+						</ul>
+					</div>
+					
+					</li>
+					<li class="li_1">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322262&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322259" 
+						class="a_1 k2wiz_GNB_0  menu_2_0_0_0_0_0"  
+						target="_self"
+						>
+						학사정보
+						<input type="hidden" id="menuTitle_322259" value=""/>
+					</a>				
+				
+						<div id="top_div_322259" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_322259"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322262&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322260" 
+						class="a_2 k2wiz_GNB_322259  menu_2_1_0_0_0_0"  
+						target="_self"
+						>
+						수강전필수체크
+						<input type="hidden" id="menuTitle_322260" value=""/>
+					</a>				
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322444&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322265" 
+						class="a_2 k2wiz_GNB_322259  menu_2_2_0_0_0_0"  
+						target="_self"
+						>
+						수강신청
+						<input type="hidden" id="menuTitle_322265" value=""/>
+					</a>				
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322459&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322454" 
+						class="a_2 k2wiz_GNB_322259  menu_2_3_0_0_0_0"  
+						target="_self"
+						>
+						수업/성적/수업평가
+						<input type="hidden" id="menuTitle_322454" value=""/>
+					</a>				
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322464&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322464" 
+						class="a_2 k2wiz_GNB_322259  menu_2_4_0_0_0_0"  
+						target="_self"
+						>
+						특별학점인정
+						<input type="hidden" id="menuTitle_322464" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322466&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322465" 
+						class="a_2 k2wiz_GNB_322259  menu_2_5_0_0_0_0"  
+						target="_self"
+						>
+						학적
+						<input type="hidden" id="menuTitle_322465" value=""/>
+					</a>				
+				
+							</li>
+						</ul>
+					</div>
+					
+					</li>
+					<li class="li_1">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322268&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322267" 
+						class="a_1 k2wiz_GNB_0  menu_3_0_0_0_0_0"  
+						target="_self"
+						>
+						교육과정
+						<input type="hidden" id="menuTitle_322267" value=""/>
+					</a>				
+				
+						<div id="top_div_322267" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_322267"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322268&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322268" 
+						class="a_2 k2wiz_GNB_322267  menu_3_1_0_0_0_0"  
+						target="_self"
+						>
+						연계전공
+						<input type="hidden" id="menuTitle_322268" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322472&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322472" 
+						class="a_2 k2wiz_GNB_322267  menu_3_2_0_0_0_0"  
+						target="_self"
+						>
+						학과별 교육과정 조회
+						<input type="hidden" id="menuTitle_322472" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="http://www.chosun.ac.kr/user/indexSub.do?codyMenuSeq=419194&amp;siteId=liberaledu"  
+						id="top_k2wiz_GNB_322473" 
+						class="a_2 k2wiz_GNB_322267  menu_3_3_0_0_0_0"  
+						target="_blank"
+						>
+						교양과목
+						<input type="hidden" id="menuTitle_322473" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322474&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322474" 
+						class="a_2 k2wiz_GNB_322267  menu_3_4_0_0_0_0"  
+						target="_blank"
+						>
+						교양과목 영역별 조회
+						<input type="hidden" id="menuTitle_322474" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322475&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322475" 
+						class="a_2 k2wiz_GNB_322267  menu_3_5_0_0_0_0"  
+						target="_self"
+						>
+						교양과목 상한학점
+						<input type="hidden" id="menuTitle_322475" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/teach/index.jsp"  
+						id="top_k2wiz_GNB_322476" 
+						class="a_2 k2wiz_GNB_322267  menu_3_6_0_0_0_0"  
+						target="_blank"
+						>
+						교직이수
+						<input type="hidden" id="menuTitle_322476" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="http://www.chosun.ac.kr/icee/"  
+						id="top_k2wiz_GNB_322477" 
+						class="a_2 k2wiz_GNB_322267  menu_3_7_0_0_0_0"  
+						target="_blank"
+						>
+						공학교육인증 교과목 이수
+						<input type="hidden" id="menuTitle_322477" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322483&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322483" 
+						class="a_2 k2wiz_GNB_322267  menu_3_8_0_0_0_0"  
+						target="_self"
+						>
+						편입생 학점이수
+						<input type="hidden" id="menuTitle_322483" value=""/>
+					</a>
+				
+							</li>
+						</ul>
+					</div>
+					
+					</li>
+					<li class="li_1">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=33838579&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_33838579" 
+						class="a_1 k2wiz_GNB_0  menu_4_0_0_0_0_0"  
+						target="_self"
+						>
+						융복합교육센터 &amp; 교육평가관리센터
+						<input type="hidden" id="menuTitle_33838579" value=""/>
+					</a>
+				
+						<div id="top_div_33838579" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_33838579"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=33845449&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_33845449" 
+						class="a_2 k2wiz_GNB_33838579  menu_4_1_0_0_0_0"  
+						target="_self"
+						>
+						융복합교육센터
+						<input type="hidden" id="menuTitle_33845449" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=33847530&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_33847530" 
+						class="a_2 k2wiz_GNB_33838579  menu_4_2_0_0_0_0"  
+						target="_self"
+						>
+						교육평가관리센터
+						<input type="hidden" id="menuTitle_33847530" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=33847813&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_33847813" 
+						class="a_2 k2wiz_GNB_33838579  menu_4_3_0_0_0_0"  
+						target="_self"
+						>
+						함께형 문화인재 &amp; 3C역량
+						<input type="hidden" id="menuTitle_33847813" value=""/>
+					</a>
+				
+							</li>
+						</ul>
+					</div>
+					
+					</li>
+					<li class="li_1">
+					
+					<a href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_030105000000"  
+						id="top_k2wiz_GNB_322269" 
+						class="a_1 k2wiz_GNB_0  menu_6_0_0_0_0_0"  
+						target="_blank"
+						>
+						증명발급안내
+						<input type="hidden" id="menuTitle_322269" value=""/>
+					</a>				
+				
+						<div id="top_div_322269" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_322269"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_030105000000"  
+						id="top_k2wiz_GNB_322270" 
+						class="a_2 k2wiz_GNB_322269  menu_6_1_0_0_0_0"  
+						target="_blank"
+						>
+						증명발급안내
+						<input type="hidden" id="menuTitle_322270" value=""/>
+					</a>
+				
+							</li>
+						</ul>
+					</div>
+					
+					</li>
+					<li class="li_1">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322274&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322273" 
+						class="a_1 k2wiz_GNB_0  menu_7_0_0_0_0_0"  
+						target="_self"
+						>
+						커뮤니티
+						<input type="hidden" id="menuTitle_322273" value=""/>
+					</a>				
+				
+						<div id="top_div_322273" class="div_2">
+						<ul id="top_k2wiz_GNB_ul_322273"  class="ul_2">
+					
+					<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322274&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322274" 
+						class="a_2 k2wiz_GNB_322273  menu_7_1_0_0_0_0"  
+						target="_self"
+						>
+						공지사항
+						<input type="hidden" id="menuTitle_322274" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322492&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322492" 
+						class="a_2 k2wiz_GNB_322273  menu_7_2_0_0_0_0"  
+						target="_self"
+						>
+						자주하는 질문
+						<input type="hidden" id="menuTitle_322492" value=""/>
+					</a>
+					
+					</li>
+				
+						<li class="li_2">
+					
+					<a href="/user/indexSub.do?codyMenuSeq=322493&amp;siteId=sukang"  
+						id="top_k2wiz_GNB_322493" 
+						class="a_2 k2wiz_GNB_322273 active menu_7_3_0_0_0_0"  
+						target="_self"
+						>
+						학사상담
+						<input type="hidden" id="menuTitle_322493" value=""/>
+					</a>
+				
+						</li>
+					</ul>
+					</div><!-- 222 -->
+					
+				</li>
+			</ul>
+			</div>
+			
+	</div>    </div> </div></div><!--//header-->
+	</div>
+	<div id="mid-container">
+		<div id="left-container" >
+	    	
+	    	
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/user/sukang/style/css/site_function.css"/>
+ <div id="siteFunction_left_1540966275374100" class="wizard_func_area">
+
+
+
+
+
+
+
+
+
+
+
+ 		<input type="hidden" id="choiceSubMenuSeq" value="322493"/>
+		<div id="menuSubUI">
+			
+			<div id="menuSubTitleUI_322273" class="menuSubTitle menuSubTitleUI_0_1 png" >
+				커뮤니티
+			</div>
+			
+			
+						<div id="sub_div_322273" class="div_1">
+						
+							<ul id="sub_k2wiz_GNB"  class="ul_1" >
+						
+							<li class="li_1">
+					
+						<a href="/user/indexSub.do?codyMenuSeq=322274&amp;siteId=sukang"  
+							id="sub_k2wiz_GNB_322274" 
+							class="a_1 k2wiz_GNB_322273  menu_7_1_0_0_0_0"  
+							target="_self"
+							>
+							공지사항
+						</a>
+					
+						</li>
+						<li class="li_1">
+					
+						<a href="/user/indexSub.do?codyMenuSeq=322492&amp;siteId=sukang"  
+							id="sub_k2wiz_GNB_322492" 
+							class="a_1 k2wiz_GNB_322273  menu_7_2_0_0_0_0"  
+							target="_self"
+							>
+							자주하는 질문
+						</a>
+					
+						</li>
+						<li class="li_1">
+					
+						<a href="/user/indexSub.do?codyMenuSeq=322493&amp;siteId=sukang"  
+							id="sub_k2wiz_GNB_322493" 
+							class="a_1 k2wiz_GNB_322273 active menu_7_3_0_0_0_0"  
+							target="_self"
+							>
+							학사상담
+						</a>
+					
+					</li>
+				</ul>
+				</div>
+				
+		</div></div> 
+	    </div>
+	    <div id="content-container" >
+	    	
+	    	
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/user/sukang/style/css/site_function.css"/>
+ <div id="siteFunction_menu_5_3_1540966275297100" class="wizard_func_area">
+
+
+
+
+
+
+
+
+
+
+ 
+	<div id="pageNavi">
+		<div class="pLocation">
+			<span><img src="/Web-home/addons/images/home.gif" alt="HOME" /></span> &gt; 
+			
+				
+					
+					
+					
+						<span>커뮤니티</span> &gt; 
+					
+					
+				
+			
+				
+					
+					
+						<strong>학사상담</strong>
+					
+					
+					
+				
+			
+		</div>
+	</div>
+
+</div> <h2 class="h2Title"><span>학사상담</span> </h2><div id="siteFunction_menu_5_3_1540966275297101" class="wizard_func_area">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/Web-home/user/board/css/skin_001/kr.css" rel="stylesheet" type="text/css"/>
+
+
+
+<script type="text/javascript" src="/Web-home/user/board/js/select.js"></script><noscript></noscript>
+<script type="text/javascript" src="/Web-home/user/board/js/board_common.js"></script><noscript></noscript>
+<link rel="stylesheet" href="/Web-home/common/css/ui.datepicker.css" type="text/css" media="screen" title="core css file" charset="utf-8" />
+<script src="/Web-home/common/js/datepicker/ui.datepicker.js" type="text/javascript" charset="utf-8"></script><noscript></noscript>
+<script src="/Web-home/common/js/datepicker/ui.datepicker-ko.js" type="text/javascript" charset="utf-8"></script><noscript></noscript>
+
+<script type='text/javascript'>
+<!--
+	$(function(){
+		$("#searchDate1").datepicker();
+		$("#searchDate2").datepicker();
+	}); 
+	function war_alert(){
+		alert('해당 게시판에 대한 게시물 보기 권한이 없습니다.');
+	}
+	function selectAll(){
+	}
+	function selectAll(e){
+		var len = document.frm.chkAll.length;
+		if (e.checked) {
+			for(i = 0; i < len; i++){
+					document.frm.chkAll[i].checked = true;
+			}
+		}else{
+		   for(i = 0; i < len; i++){
+					document.frm.chkAll[i].checked = false;
+			}
+		}
+	}
+		
+	function jf_manage(){
+		var site_id = document.frm.siteId.value;
+		var board_id = document.frm.boardId.value;
+		
+		var url = "/jwma/boardWrite.do?siteId="+site_id+"&boardId="+board_id;
+		window.open(url,'board_manager','width=1000, height=700'); 
+	}
+	function delete_board() {
+		var chk = 0;
+		for(i = 1; i < document.frm.chkAll.length;i++) {
+			if(document.frm.chkAll[i].checked == true) {
+				if(document.frm.chkAll[i].value != ''){
+					chk = 1;
+					var arr = document.frm.chkAll[i].value.split("/");
+					document.frm.chkBoxSeq.value = document.frm.chkBoxSeq.value+"/"+arr[1];
+				}
+			}
+		}
+		if(chk == 0) {
+			alert("삭제할 게시물을 선택하세요");
+			return;
+		}
+		if(confirm('삭제 후 복구할 수 없습니다. 해당 게시물을 삭제하시겠습니까?')){
+			document.frm.command.value = "delete";
+			document.frm.action= "/user/boardList.do";
+			document.frm.submit();
+		}
+	}
+	function move_board() {
+		var chk = 0;
+		for(i = 1; i < document.frm.chkAll.length;i++) {
+			if(document.frm.chkAll[i].checked == true) {
+				if(document.frm.chkAll[i].value != ''){
+					chk = 1;
+					var arr = document.frm.chkAll[i].value.split("/");
+					document.frm.chkBoxSeq.value = document.frm.chkBoxSeq.value+"/"+arr[1];
+				}
+			}
+		}
+		if(chk == 0) {
+			alert("게시물을 선택해 주세요");
+			return;
+		}
+		
+		if($("#boardList_fromBoardId option:selected").val()==""){
+			alert("게시판을 선택해 주세요");
+			return;
+		}
+		if($("#boardList_moveYn option:selected").val()==""){
+			alert("이동/복사를 선택해 주세요");
+			return;
+		}
+		
+		if(confirm('해당 게시물을 (이동/복사) 하시겠습니까?')){
+			document.frm.targetBoardId.value = $("#boardList_fromBoardId option:selected").val();
+			document.frm.moveWork.value = $("#boardList_moveYn option:selected").val();
+			document.frm.command.value = "move";
+			document.frm.action= "/user/boardList.do";
+			document.frm.submit();
+		}
+	}
+	function jf_list_type(type) {
+		load1.style.display = 'none';
+		load2.style.display = '';
+		document.searchform.list_type.value = type;
+		document.form_list.command.value = "list";
+		document.searchform.action= "/k2web/servlet/kr.co.k2web.jwizard.contents.board.boardUser.servlet.userMainServlet";
+		document.searchform.submit();
+	}
+	function page_link(page){
+		document.form_list.page.value = page;
+		document.form_list.command.value = "list";
+		document.form_list.action= "boardList.do";
+		document.form_list.submit();
+	}
+	function preSubmit(){
+		var form = document.searchform;
+		var chkValue = document.searchform.search.value;
+		var searchDate1 = "";
+		var searchDate2 = "";
+		
+		if($("#searchDate1").size() > 0 && $("#searchDate2").size() > 0){
+			searchDate1 = document.searchform.searchDate1.value;
+			searchDate2 = document.searchform.searchDate2.value;
+		}
+		
+		/* if(form.column.selectedIndex==0){
+			 alert("검색할 항목을 선택하여 주세요");
+			 return false;
+		} */
+		
+		if(searchDate1 != '' && searchDate2 != '' && searchDate1 > searchDate2){
+			alert("시작일이 종료일보다 클수 없습니다.");
+			return false;
+		}
+
+		//if(chkValue ==''){
+			//alert('<s:property value="getText('contents.board.user.021.'+boardConfig.language,'검색어를 입력하세요')"/>');
+			//form.search.focus();
+			//return false;
+	   // }
+	    return true;
+	}
+	function jf_write(){
+	
+		
+		return true;
+		//document.form_list.command.value = "write";
+		//document.form_list.action= "boardList.do";
+		//document.form_list.submit();
+	}
+	function jf_view(site_id, boardId, boardSeq,secret_yn,secret_num,userId,replyUserId,sessionUserId,hideChk){
+		 //슈퍼관리자, 사이트관리자, 게시판 관리자는 비밀글로 설정되어 있어도 비번을 묻지 않음
+		 
+		  //글 비밀번호가 있을시 비밀 번호를 물어봄
+		 if(sessionUserId  != userId || sessionUserId != replyUserId || sessionUserId==null || sessionUserId==""){
+		  	if ((secret_yn == "Y" || hideChk == "Y" )&& secret_num == "Y" ){
+		        jf_passwd(boardSeq);
+		        return;
+		     }
+		  }
+		  
+		 
+	    document.form_list.siteId.value =site_id;
+		document.form_list.boardId.value = boardId;
+		document.form_list.boardSeq.value = boardSeq;
+		
+		
+		
+		document.form_list.command.value = "view";
+		
+		
+		document.form_list.action= "boardList.do";
+		document.form_list.submit();
+	}
+	function jf_passwd(boardSeq) {
+		var strPath  = "boardList.do";
+		strPath += "?siteId=sukang&boardId=8475";
+		strPath += "&command=pwd_popup&pwdProc=view&page=1&boardSeq=" + boardSeq;
+		strPath += "&boardType=01";
+		strPath += "&column=";
+		strPath += "&search=";
+		strPath += "&listType=";
+		strPath += "&id=";
+		strPath += "&parent=%2Fuser%2FindexSub.do%3FcodyMenuSeq%3D322493%26siteId%3Dsukang";
+		window.open(strPath,'pwdchk','left=200,top=200,width=500,height=200,toolbar=no,location=no');
+	}
+	function f_setPageSize(){
+		return;
+		if((obj=MM_findObj('pageBottom'))==null) return;
+		pageBottom.style.display = 'none';
+		left = f_getMaxHeight(pageLeftT);
+		right = f_getMaxHeight(pageRightT);
+		pageRight.height = (left > right ? left : right);
+		pageBottom.style.display = 'block';
+		bottom = pageTop.offsetHeight + pageRight.offsetHeight + f_getMaxHeight(pageBottomT);
+		if(bottom < document.body.clientHeight){
+			pageRight.height = pageRight.offsetHeight + document.body.clientHeight - bottom;
+		}
+	}
+	//function send_mail_k2web( targetMail )
+	//{
+	//	if( targetMail.replace(/\s/g, "") == "" )
+	//	{
+	//		alert( "메일 주소가 없습니다." );
+	//		return false;
+	//	}
+	//	document.location.href = "mailto:" + targetMail;
+	//}
+	function jf_modify(site_id, boardId){
+		var url = "../jwma/boardWrite.do?siteId="+site_id+"&boardId="+boardId;
+		window.open(url,'itemModiPopup','width=800,height=600,resizable=yes,scrollbars=yes');
+	}
+	//클립보드 복사(IE, FF 호환)
+	function copy_clip(meintext){
+		if (window.clipboardData) {
+			// the IE-manier
+			window.clipboardData.setData("Text", meintext);
+		// waarschijnlijk niet de beste manier om Moz/NS te detecteren;
+		// het is mij echter onbekend vanaf welke versie dit precies werkt:
+		} else if (window.netscape) {
+			// dit is belangrijk maar staat nergens duidelijk vermeld:
+			// you have to sign the code to enable this, or see notes below
+			netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect');
+			// maak een interface naar het clipboard
+			var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+			if (!clip) return;
+			// maak een transferable
+			var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+			if (!trans) return;
+			// specificeer wat voor soort data we op willen halen; text in dit geval
+			trans.addDataFlavor('text/unicode');
+			// om de data uit de transferable te halen hebben we 2 nieuwe objecten nodig om het in op te slaan
+			var str = new Object();
+			var len = new Object();
+			var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+			var copytext=meintext;
+			str.data=copytext;
+			trans.setTransferData("text/unicode",str,copytext.length*2);
+			var clipid=Components.interfaces.nsIClipboard;
+			if (!clip) return false;
+			clip.setData(trans,null,clipid.kGlobalClipboard);
+		}
+		alert("아래주소가 클립보드에 복사되었습니다. Ctrl+V로 붙여넣기해서 사용하세요.\n" + meintext);
+	}
+	//FAQ내용보기
+	var px = 1000;
+	var strpx = px + "px";
+	var hide = 0; 
+	function viewHide(id){ 
+		if($("#"+id).attr("class")=="conHide"){
+			$("#"+id).removeClass();
+			hide = 1;
+		}else{  
+			$("#"+id).addClass("conHide");
+			hide = 0; 
+		}
+ 
+		contentsResize(parent, id); 
+	}
+	 
+	//faq게시판 내용출력시 container 크기조정
+	function contentsResize(parent,div_id){
+
+		if(parent != null){ 
+			var ch = $(parent.document).find("#content-container").attr("ScrollHeight");
+			$(parent.document).find("#content-container").css("height",ch+"px");
+			if (hide == 1)
+			{
+				px += 100;
+	
+			} else { 
+				px -= 100;
+			}			 
+			strpx = px + "px";
+			$("#content-container").css("height", strpx); 
+		}
+	}
+	
+	//G-PIN 로그인창
+	function gpinLogin() {
+
+	    wWidth = 360;
+	    wHight = 120;
+
+	    wX = (window.screen.width - wWidth) / 2;
+	    wY = (window.screen.height - wHight) / 2;
+
+	    var w = window.open("http://cms1.chosun.ac.kr/G-PIN/Sample-AuthRequest3.jsp", "gPinLoginWin", "directories=no,toolbar=no,left="+wX+",top="+wY+",width="+wWidth+",height="+wHight);
+	}
+	
+	function gpinLoginOk(name, dupInfo, virtualNo){
+		if(name!=null && "" != name){
+			document.form_list.gpinVal.value = dupInfo;
+			document.form_list.realName.value = name;
+			document.form_list.submit();
+		}
+	}
+	
+	//phone
+	function jsSubmit(){
+		window.open("", "auth_popup", "width=430,height=590,scrollbar=yes");
+
+		var form1 = document.form1;
+		form1.target = "auth_popup";
+		form1.submit();
+	}
+	
+	//*** 제목,작성자,작성일,조회수 정렬관련 *******************//
+	function jf_orderType(col, orderType){
+		if(col == "boardSeq"){
+			col = "refSeq";
+			orderType = orderType.replace("boardSeq","refSeq");
+		}
+		var order = "";
+		if(orderType == ""){
+			order = col+" DESC";
+		}else{
+			if(orderType.indexOf(col) != -1){
+				if(orderType.indexOf("DESC") != -1){
+					order = orderType.replace("DESC","ASC");
+				}else{
+					order = orderType.replace("ASC","DESC");
+				}
+			}else{
+				order = col+" DESC";
+			}
+		}
+		
+		$("#orderType").val(order);
+		$("#list_frm").submit();
+	}
+	
+	function my_list(chk){
+		var form = document.form_list;
+		form.myList.value = chk;
+		form.command.value = "list";
+		form.submit();
+	}
+
+	//본인인증 체크
+
+	function form_list_submit(){
+		document.form_list.submit();
+	}
+	 
+	function pre_confirm_chk(){
+
+		var returnUrl = "/user/boardList.do";
+ 
+		returnUrl +="?boardId=8475"
+				  +	"&siteId=sukang"
+				  +	"&page=1" 
+				  +	"&command=write";
+ 
+		$.ajax({
+			type:"post",
+			url:"/join/preConfirmChk.jsp", 
+			async: false, 
+			cache:false, 
+			data:{
+				"returnUrl":returnUrl, 
+			},
+			success:function(r){
+				r = r.replace( /(^\s*)|(\s*$)/g, "" );
+
+				if(r == "false"){
+					alert('본인인증 후 이용가능합니다.');
+					var siteUrl = "/join/login2.jsp?siteId=sukang";
+					location.href = siteUrl;
+				}else{ 
+					form_list_submit(); 
+				} 
+			},
+			error:function(){
+				alert("error!");
+			} 
+		});
+	}
+	/* $(function(){
+		if($("#orderType").val() != ""){
+			var ot = $("#orderType").val().split(" ");
+			var col = ot[0];
+			var order = ot[1];
+			
+			
+			if(col == "refSeq"){
+				col = "boardSeq";
+			}
+			var txt = $("#orderType_"+col).text();
+			if(order == "DESC"){
+				txt += "▼";
+			}else if(order == "ASC"){
+				txt += "▲";
+			}
+			$("#orderType_"+col).text(txt);
+		}
+	}); */
+	//*** 제목,작성자,작성일,조회수 정렬관련 *******************//
+	
+	
+//-->
+</script><noscript></noscript>
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' >
+	document.oncontextmenu=new Function('return false');
+	document.onselectstart=new Function('return false');
+	document.ondragstart=new Function('return false');  
+</script><noscript></noscript>
+
+
+
+<div id="board-container" class="wizUser box_board8475">
+
+
+
+
+
+
+
+
+
+
+
+<script  type='text/javascript'>
+	var obj;
+	/*
+	if(document.location == parent.document.location){
+		obj = document.getElementById("board_title_div");
+		if (obj) {
+			obj.style.display = "";
+		}
+	}
+*/
+</script><noscript></noscript>
+
+
+
+
+
+
+<p class="topBtn">
+		
+		
+			<a href="http://www.chosun.ac.kr/rssList.jsp?siteId=sukang&amp;boardId=8475" onclick="copy_clip(this.href); return false;"><img src="/Web-home/user/board/images/rss.gif" alt="rss" class="rss" /></a>
+		
+</p>
+		
+<form name="searchform" method="post" action="/user/boardList.do" onsubmit="return preSubmit()">
+	<div align="right" style="margin-bottom:5px">
+		
+	</div>
+	<div class="listTop">
+		<div class="listTopSearch">
+	      	<!-- 검색 시작 -->
+	  
+				<input name="boardId" value="8475" type="hidden"/>
+				<input name="siteId" value="sukang" type="hidden"/>
+				<input name="id" value="" type="hidden"/>
+				<input name="parent" value="%2Fuser%2FindexSub.do%3FcodyMenuSeq%3D322493%26siteId%3Dsukang" type="hidden"/>
+				<input name="page" value="1" type="hidden"/>
+				<input name="listType" value="" type="hidden"/>
+				<input name="myList" value="" type="hidden"/>
+				
+				
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+	 			<select name="column" title="게시판 검색 항목설정">
+					<option value="">전체 검색</option>
+					
+						
+					
+						
+							<option value="title"  >제목</option>
+						
+					
+						
+							<option value="userName"  >작성자</option>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<option value="contents"  >내용</option>
+						
+					
+
+
+				</select>
+				<input type="text" name="search" class="inp" value="" title="검색어 입력" style="height:15px" />
+				<input type="image" src="/Web-home/user/board/images/skin_001/kr/btn_search.gif" class="img" alt="검색 "/>
+
+			 <!-- 검색 끝 -->
+		</div>
+	</div>
+</form>
+
+
+<div class="list">
+    <!--리스트시작 -->
+    <!--실명인증폼  -->
+    <form name="form1" action="/okname/auth/board_name.jsp" method="post">
+	<input type="hidden" name="in_tp_bit" value="0"/>
+	</form>
+	<!--실명인증폼  -->
+
+    <form name="frm" id="list_frm" method="post" action="/user/boardList.do">
+    <input name="codyMenuSeq" value="322493" type="hidden"/>
+	<input name="parent" value="%2Fuser%2FindexSub.do%3FcodyMenuSeq%3D322493%26siteId%3Dsukang" type="hidden"/>
+	<input name="boardId" value="8475" type="hidden"/>
+	<input name="siteId" value="sukang" type="hidden"/>
+	<input name="page" value="1" type="hidden"/>
+	<input name="search" value="" type="hidden"/>
+	<input name="column" value="" type="hidden"/>
+	<input name="boardType" value="01" type="hidden"/>
+	<input name="listType" value="" type="hidden"/>
+	<input name="categoryDepth" value="" type="hidden"/>
+	<input name="categoryId" value="" type="hidden"/>
+	<input name="boardSeq" value="" type="hidden"/>
+	<input type = "hidden" name = "myList" value = ""/>
+	<input type = "hidden" name = "selColumn" value = ""/>
+	<input type = "hidden" name = "searchDate1" value = ""/>
+	<input type = "hidden" name = "searchDate2" value = ""/>
+	<input name="id" value="" type="hidden"/>
+	<input name="command" type="hidden"/>
+	<input name="chkBoxSeq" type="hidden"/>
+	<input name="chkBoxId" type="hidden"/>
+	<input name="chkBoxPos" type="hidden"/>
+	<input name="chkBoxDepth" type="hidden"/>
+	<input name="chkBoxFam_Seq" type="hidden"/>
+	<input name="targetBoardId" type="hidden"/>
+	<input name="moveWork" type="hidden"/>
+	<input name="warningYn" value="N" type="hidden"/>
+	<input type="submit" value="이동" style="display:none;"/>
+	
+	<input name="orderType" id="orderType" type="hidden" value=""/>
+
+
+
+
+
+
+	<table summary="이 테이블은
+커뮤니티 - 학사상담게시판의 
+
+
+      	번호,
+
+      	제목,
+
+      	작성자,
+
+      	작성일,
+
+      	조회,
+
+      	파일,
+
+      	내용,
+
+목록입니다.
+	">
+		<caption>커뮤니티 - 학사상담 게시판 목록</caption>
+		<colgroup>
+
+
+	
+	<col width="50"></col>
+	 
+
+	
+	<col width=""></col>
+	 
+
+	
+	<col width="70"></col>
+	 
+
+	
+	<col width="80"></col>
+	 
+
+	
+	<col width="60"></col>
+	 
+
+	
+	<col width="50"></col>
+	 
+
+	 
+
+		</colgroup>
+	<thead>
+		<tr>
+
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			번호
+      		
+      		
+      	</th>
+	
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			제목
+      		
+      		
+      	</th>
+	
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			작성자
+      		
+      		
+      	</th>
+	
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			작성일
+      		
+      		
+      	</th>
+	
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			조회
+      		
+      		
+      	</th>
+	
+
+	
+      	<th scope="col" class="title_bg"  >
+      		
+      		
+      		
+      			파일
+      		
+      		
+      	</th>
+	
+
+	
+
+       	</tr>
+	</thead>
+	<tbody>
+
+		<tr>
+
+
+	
+		
+		
+		
+		
+		
+		 <td class="no"><img src='/Web-home/user/board/images/skin_001/icon_notice.gif' alt='공지'/></td>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		 <td class="title">
+		 	
+		 		<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=281930&amp;id='>
+		 	
+		 	2019학년도 학과(부)별 전과 및 복수전공 승인 기준 안내 
+			
+		 	
+		 		</a>
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+					
+					
+						
+					
+				
+			
+		
+		<td title="박재성">
+			박재성
+		</td>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		 <td>2018-11-26</td>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 <td>2420</td>
+		
+		
+	
+
+	
+		
+		
+		
+		 <td>
+		 	
+		 	
+		 		
+		 		
+		 		<img src="/Web-home/common/images/filetype/hwp.gif" alt="hwp" onerror="this.src=/Web-home/user/board/images/skin_001/icon_file.gif"/>
+		 		
+			 	
+		 	
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+		</tr>
+
+		<tr>
+
+
+	
+		
+		
+		
+		
+		
+		 <td class="no"><img src='/Web-home/user/board/images/skin_001/icon_notice.gif' alt='공지'/></td>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		 <td class="title">
+		 	
+		 		<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=261719&amp;id='>
+		 	
+		 	학적변동관련양식 모음
+			
+		 	
+		 		</a>
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+					
+					
+						
+					
+				
+			
+		
+		<td title="최보해">
+			최보해
+		</td>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		 <td>2018-04-05</td>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 <td>10027</td>
+		
+		
+	
+
+	
+		
+		
+		
+		 <td>
+		 	
+		 	
+		 		
+		 		
+		 		<img src="/Web-home/common/images/filetype/hwp.gif" alt="hwp" onerror="this.src=/Web-home/user/board/images/skin_001/icon_file.gif"/>
+		 		
+			 	
+		 	
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+		</tr>
+
+		<tr>
+
+
+	
+		
+		
+		
+		
+		
+		 <td class="no"><img src='/Web-home/user/board/images/skin_001/icon_notice.gif' alt='공지'/></td>
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		 <td class="title">
+		 	
+		 		<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=258546&amp;id='>
+		 	
+		 	공결처리 변경 및 자격증특별학점 변경 안내
+			
+		 	
+		 		</a>
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+					
+					
+						
+					
+				
+			
+		
+		<td title="박재성">
+			박재성
+		</td>
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		 <td>2018-02-28</td>
+		
+		
+		
+		
+		
+	
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 <td>26996</td>
+		
+		
+	
+
+	
+		
+		
+		
+		 <td>
+		 	
+		 	
+		 		
+		 		
+		 		<img src="/Web-home/common/images/filetype/hwp.gif" alt="hwp" onerror="this.src=/Web-home/user/board/images/skin_001/icon_file.gif"/>
+		 		
+			 	
+		 	
+		 	
+		 	
+		 </td>
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4734</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282967&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								수료 후 졸업
+								
+								&nbsp;
+								
+									
+								<img src="/Web-home/user/board/images/new0_01.gif" alt="새글 표시 아이콘" />
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="서민지">
+		서민지
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-06
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			6
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4733</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282958&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								수강신청 최소학점
+								
+								&nbsp;
+								
+									
+								<img src="/Web-home/user/board/images/new0_01.gif" alt="새글 표시 아이콘" />
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="윤창현">
+		윤창현
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-06
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			5
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4732</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282866&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								계절학기 신청문의
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+									
+								<img src="/Web-home/user/board/images/new0_01.gif" alt="새글 표시 아이콘" />
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="소순규">
+		소순규
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-05
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			45
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4731</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282780&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								계절학기 문의
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+									
+								<img src="/Web-home/user/board/images/new0_01.gif" alt="새글 표시 아이콘" />
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="김경화">
+		김경화
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-05
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			35
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4730</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282773&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								졸업유보관련
+								
+								
+									<font color="#8CABBD">&nbsp;[2]</font>
+								&nbsp;
+								
+									
+								<img src="/Web-home/user/board/images/new0_01.gif" alt="새글 표시 아이콘" />
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="박민주">
+		박민주
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			34
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4729</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282772&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								2019 예비수강신청
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="이미지">
+		이미지
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			31
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4728</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282750&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								수료 증명서
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="유혁">
+		유혁
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			31
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4727</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282709&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								계절학기 관련 문의드립니다.
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="최선웅">
+		최선웅
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			35
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4726</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282704&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								교양 교직 기말고사 시간표
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="정모경">
+		정모경
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			19
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4725</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282703&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								2학년 수료증명서
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="유혁">
+		유혁
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			22
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4724</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282690&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								중앙도서관
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="김정훈">
+		김정훈
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-04
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			23
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4723</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282594&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								전과
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="이서영">
+		이서영
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-03
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			44
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4722</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282587&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								취업계관련질문입니다.
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="라원준">
+		라원준
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-03
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			62
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4721</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282575&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								교양상한학점
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="고진희">
+		고진희
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-03
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			31
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+
+
+	<tr>
+		
+	
+		
+			
+				
+				
+	
+		
+		 <td class="no">
+		 4720</td>
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+		 			<td class="title">
+		 				
+						 	
+							
+								
+									
+									
+										
+									
+									
+									<a href='boardList.do?command=view&amp;page=1&amp;boardId=8475&amp;boardSeq=282543&amp;id='>
+								
+								
+								
+								
+								
+								
+								
+								연계전공
+								
+								
+									<font color="#8CABBD">&nbsp;[1]</font>
+								&nbsp;
+								
+								</a>
+									
+								
+				<!-- 비공개 게시물 이미지 -->
+				
+				<!-- FAQ수정버튼 -->
+				
+
+				
+				
+			
+			
+			
+			<!-- FAQ -->
+			
+		 </td>
+		
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+		
+		
+		
+		
+			
+			
+				
+				
+				
+				
+					
+				
+			
+		
+	
+	<td title="노건하">
+		노건하
+	</td>
+	
+	
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 	
+
+
+	 		
+				
+				
+					2018-12-03
+				
+			
+
+
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+				
+	
+		
+	
+		
+		
+	
+	 <td>
+	 	
+	 	
+	 	
+	 		
+	 		
+	 			17
+	 		
+	 		
+	 		
+	 	
+	 	
+	 	
+	 	
+	 	
+
+	 	
+
+	 </td>
+	
+	
+
+	
+
+		
+			
+				
+		 			<td>
+		 				
+		 					
+		 					-
+		 				
+		 			</td>
+				
+				
+	
+		
+	
+		
+		
+	
+	
+
+	
+
+		
+
+		</tr>
+
+
+
+
+	</tbody>
+	</table>
+</form>
+<form name="form_list" method="post" action="https://www.chosun.ac.kr/user/boardList.do" onsubmit="return jf_write()">
+	<input name="realName" id="realName" value="" type="hidden"/>
+	<input name="gpinVal" id="gpinVal" value="" type="hidden"/>
+	<input name="boardId" value="8475" type="hidden"/>
+	<input name="siteId" value="sukang" type="hidden"/>
+	<input name="page" value="1" type="hidden"/>
+	<input name="search" value="" type="hidden"/>
+	<input name="column" value="" type="hidden"/>
+	<input name="categoryDepth" value="" type="hidden"/>
+	<input name="categoryId" value="" type="hidden"/>
+	<input name="boardType" value="01" type="hidden"/>
+	<input name="listType" value="" type="hidden"/>
+	<input name="id" value="" type="hidden"/>
+	<input name="parent" value="%2Fuser%2FindexSub.do%3FcodyMenuSeq%3D322493%26siteId%3Dsukang" type="hidden"/>
+	<input type = "hidden" name = "myList" value = ""/>
+	<input type = "hidden" name = "selColumn" value = ""/>
+	<input type = "hidden" name = "searchDate1" value = ""/>
+	<input type = "hidden" name = "searchDate2" value = ""/>
+	<input name="boardSeq" value="" type="hidden"/>
+	<input name="command" type="hidden" value="write"/>
+	<input name="chkBoxSeq" type="hidden"/>
+	<input name="chkBoxId" type="hidden"/>
+	<input name="chkBoxPos" type="hidden"/>
+	<input name="chkBoxDepth" type="hidden"/>
+	<input name="chkBoxFamSeq" type="hidden"/>
+	<input name="warningYn" value="N" type="hidden"/>
+	<input type="submit" value="이동" style="display:none;"/>
+	<!--리스트끝 -->
+
+	<div class="paging">
+		<a href="javascript:page_link('1')"><img src="/Web-home/user/board/images/skin_001/arrow_begin.gif" alt="처음" /></a>
+		<img src="/Web-home/user/board/images/skin_001/arrow_left.gif" alt="이전" />
+		<ul>
+			
+				
+					
+						<li class="on"><strong>1</strong></li>
+					
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('2')">2</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('3')">3</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('4')">4</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('5')">5</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('6')">6</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('7')">7</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('8')">8</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('9')">9</a></li>
+					
+				
+			
+				
+					
+					
+						<li><a href="javascript:page_link('10')">10</a></li>
+					
+				
+			
+		</ul>
+		<a href="javascript:page_link('11')"><img src="/Web-home/user/board/images/skin_001/arrow_right.gif" alt="다음" /></a>
+		<a href="javascript:page_link('316')"><img src="/Web-home/user/board/images/skin_001/arrow_last.gif" alt="끝" /></a>
+	</div>
+<div class="listBtn"> 
+	<div class="leftBtn">
+		
+	</div>
+
+	<div class="rightBtn">
+		
+		
+			 
+				
+			
+
+		
+	</div>
+</div>
+
+
+
+</form>
+</div>
+</div>
+
+
+
+
+
+</div> 
+	    </div>	
+		
+
+
+		<div id="damdangWrap" style="float:right; position:relative;display:none; "><!-- width값 사용자설정 -->
+			<div style="position:absolute; bottom:24px; width:100%;">
+				
+			</div>
+		</div>
+
+
+	</div>
+	<div id="footer-container" >
+		
+		
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/user/sukang/style/css/site_function.css"/>
+ <div id="footer">     <div class="footerArea">         <div class="fLink">             <div class="fTtile">바로가기</div><ul>                <li><a title="새창으로" href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_080300000000" target="_blank">정보화윤리규약</a></li><li><a title="새창으로" class="txt_blue" href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_080200000000" target="_blank">개인정보처리방침</a></li><li><a title="새창으로" href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_080400000000" target="_blank">이메일무단수집거부</a></li><li><a title="새창으로" href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/university_tel_list.jsp?id=chosun_070803000000" target="_blank">교내홈페이지&amp;전화번호</a></li><li><a title="새창으로" href="http://www2.chosun.ac.kr/mbs/chosun/subview.jsp?id=chosun_070804000000" target="_blank">오시는 길</a></li><li class="noBgimg"><a title="새창으로" href="http://www2.chosun.ac.kr/mbs/chosun/jsp/university/campus_map.jsp?id=chosun_070801000000" target="_blank">캠퍼스안내</a></li></ul><div class="menu_select">                <label>주요사이트</label>            <select class="htc">                       <option selected="selected" value="#">:::바로가기:::</option><option value="http://www2.chosun.ac.kr/mbs/chosun/">조선대학교</option><option value="http://ibhak.chosun.ac.kr/">조선대학교 입학사이트</option><option value="/user/disable/index.jsp">장애학생지원센터</option><option value="/user/students/index.jsp">학생복지팀</option><option value="/user/purchase/index.jsp">입찰공고</option><option value="/user/dorm/index.jsp">기숙사</option><option value="/user/fund/index.jsp">발전기금</option><option value="/user/eval/index.jsp">평가분석팀</option><option value="/user/health/index.jsp">보건진료소</option><option value="/user/teach/index.jsp">교직정보</option><option value="/user/scho/index.jsp">장학안내</option><option value="/user/itc/index.jsp">정보전산원</option><option value="/user/equal/index.jsp">양성평등센터</option>            </select><a title="새창열림" id="link01" href="#"><img alt="바로가기" src="/user/sukang/mycodyimages/btn_go.png"></a></div><script language="javascript" type="text/javascript">function changeHref(selObj, anchorId) {/*링크 url값*/var selectedOptionVal = selObj.options[selObj.selectedIndex].value;/*[GO]버튼의 anchor태그 href값을 변경시켜준다.*/document.getElementById(anchorId).href = selectedOptionVal;}function popupLink(anchorObj) {if (anchorObj.href != '#') {window.open(anchorObj.href,'_blank','')}return false;}</script></div><p>[우] 61452 광주광역시 동구 필문대로 309(서석동,조선대학교) 본관 남쪽 1층 학사운영팀 / 대표전화 : 062)230-6064 / 팩스 : 062)232-9219<br>COPYRIGHT(C) CHOSUN UNIVERSITY. ALL RIGHTS RESERVED</p></div></div>
+	</div>
+	
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ///// weblog ///////////////////////////////////// -->
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+$.ajax({
+	type:"POST",        //POST GET
+	url:"/user/weblogPost.do",     //PAGEURL 
+	data : {
+		"pageKey":"322493",
+		"siteId":"sukang",
+		"pageUrl":"/user/indexSub.do?codyMenuSeq=322493&amp;siteId=sukang",
+		"referer":"null"
+	}, 
+	cache : false,        //true, false
+	async: false,
+	success: function (args){
+		///alert(args);
+	} 
+});
+}); 
+</script>
+<!-- ///// weblog ///////////////////////////////////// -->
+<div id="bottomBackgroundWrap" style="position:relative; width:100%;">
+	<div id="bottomBackground" style="position:absolute; bottom:0; width:100%;"><span style="display:none;">하단배경영역</span></div>
+</div>
+</body>
+</html>
