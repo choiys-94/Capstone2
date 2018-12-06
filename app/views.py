@@ -14,6 +14,7 @@ import magic
 import time
 import json
 import sys
+import pickle
 
 
 @app.route('/')
@@ -30,9 +31,24 @@ def contact():
 
 @app.route('/test/')
 def test_origin():
+	dpath = "/home/choiys/cuckoo/.cuckoo/storage/analyses/"
+	dnum = len(os.listdir(dpath))-1
+	if dnum < 0:
+		dnum = 0
+
+	return redirect('/test/'+str(dnum))
+
+@app.route('/test/<passed_num>')
+def test(passed_num):
+	stat_path = "/home/choiys/am2pm/app/statistics"
+	stat = []
+	with open(stat_path, "rb") as f:
+		try:
+			stat = pickle.load(f)
+		except:
+			pass
 	report_list = os.listdir('/home/choiys/cuckoo/.cuckoo/storage/analyses/')
 	report_temp = os.listdir('/home/choiys/am2pm/app/templates/reports/')
-	print(len(report_list))
 	report_list.sort()
 	report_list = report_list[0:-1]
 	report_list.sort(key=int)
@@ -40,6 +56,8 @@ def test_origin():
 		end_num = int(f.readline())
 		count_num = int(f.readline())
 		links = json.loads(f.readline())
+	with open("/home/choiys/am2pm/app/av", "r") as f:
+		data = json.loads(f.readline())
 	try:
 		num = report_list[-1]
 	except:
@@ -53,37 +71,53 @@ def test_origin():
 			except:
 				print("symlink Failed!", str(i))
 
-	dpath = "/home/choiys/am2pm/app/download/"
+	dpath = "/home/choiys/cuckoo/.cuckoo/storage/analyses/"
 	dnum = len(os.listdir(dpath))-1
-	dlist = os.listdir(dpath+str(dnum))
 
-	return render_template('test.html', num = int(num), end_num = end_num, count_num = count_num, links = links)
-	
+	for i in range(dnum-count_num+1, dnum+1):
+		with open("/home/choiys/cuckoo/.cuckoo/storage/analyses/"+str(i)+"/reports/report.html", "r") as f:
+			lines = f.read()
+			ok = re.findall("<strong>name: </strong> (.*?)</li>", lines[400000:450000])
+			if ok:
+				fname = ok[0]
+				with open("/home/choiys/cuckoo/.cuckoo/storage/analyses/"+str(i)+"/reports/report.json", "r") as f2:
+					jsonline = f2.read(1024)
+					ok2 = re.findall("\"score\": (.*?),", jsonline)
+					if ok2:
+						score = ok2[0]
+						data[fname]['score'] = float(score)
+			data[fname]['num'] = i
+		
+		risk_cnt = 0
+			   
+		if (data[fname]['score'] >= 4 and (float(data[fname]['count'])/data[fname]['total'])*100 >= 40) or (data[fname]['score'] >= 10) or ((float(data[fname]['count'])/data[fname]['total'])*100 >= 60):
+			risk_cnt += 1
+			risk = 3
+		elif (data[fname]['score'] >= 2 and (float(data[fname]['count'])/data[fname]['total'])*100 >= 20) or (data[fname]['score'] >= 5) or ((float(data[fname]['count'])/data[fname]['total'])*100 >= 40):
+			risk_cnt += 1
+			risk = 2
+		elif (data[fname]['score'] >= 1 or (float(data[fname]['count'])/data[fname]['total'])*100 >= 10):
+			risk = 1
+		else:
+			risk = 0
 
-@app.route('/test/<passed_num>')
-def test(passed_num):
-#	report_list = os.listdir('/home/choiys/cuckoo/.cuckoo/storage/analyses/')
-#	report_temp = os.listdir('/home/choiys/am2pm/app/templates/reports/')
-#	report_list.sort()
-#	report_list = report_list[1:-1]
-#	report_list.sort(key=int)
-	with open("/home/choiys/am2pm/app/current", "r") as f:
-		end_num = int(f.readline())
-		count_num = int(f.readline())
-#	num = report_list[-1]
-#	if int(num) > len(report_temp)-1:
-#		for i in range(len(report_temp), int(num)+1):
-#			src = '/home/choiys/cuckoo/.cuckoo/storage/analyses/'+str(i)+'/reports/report.html'
-#			dst = '/home/choiys/am2pm/app/templates/reports/'+str(i)+'.html'
-#			try:
-#				os.symlink(src, dst)
-#			except:
-#				print("symlink Failed!", str(i))
+		data[fname]['risk'] = risk
+
+	stat_temp = {'url': data['url'], 'risk': risk_cnt}
+	if len(stat) == 7:
+		del stat[0]
+
+	flag = True
+	for i in range(len(stat)):
+		if stat[i]['url'] == data['url']:
+			flag = False
+	if flag:
+		stat.append(stat_temp)
+		
+	with open(stat_path, "wb") as f:
+		pickle.dump(stat, f)
 	
-	if passed_num:
-		return render_template('test.html', num = int(end_num), passed_num = int(passed_num), end_num = end_num, count_num = count_num)
-	else:
-		return render_template('test.html', num = int(end_num), end_num = end_num, count_num = count_num)
+	return render_template('test.html', num = int(num), end_num = end_num, count_num = count_num, links = links, data = data, passed_num = int(passed_num))
 
 @app.route('/report/<num>/')
 def report(num):
@@ -119,7 +153,8 @@ def search():
 			return url
 
 		else:
-			return base_url+"/"+url
+##############################20:53 delete '/'############################
+			return base_url+url
 
 	def download(s, url, file_name, temp, links):
 		if file_name != "" and "javascript:" not in file_name and "javascript:" not in url:
@@ -145,28 +180,37 @@ def search():
 			del links[file_name]
 		elif "Hangul" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".hwp")
-			links[file_name] = dpath+file_name+".hwp"
+			links[file_name+'.hwp'] = links[file_name]
+			del links[file_name]
 		elif "PDF" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".pdf")
-			links[file_name] = dpath+file_name+".pdf"
+			links[file_name+'.pdf'] = links[file_name]
+			del links[file_name]
 		elif "PowerPoint" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".pptx")
-			links[file_name] = dpath+file_name+".pptx"
+			links[file_name+'.pptx'] = links[file_name]
+			del links[file_name]
 		elif "Excel" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".xlsx")
+			links[file_name+'.xlsx'] = links[file_name]
+			del links[file_name]
 			links[file_name] = dpath+file_name+".xlsx"
 		elif "Word" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".docx")
-			links[file_name] = dpath+file_name+".docx"
+			links[file_name+'.docx'] = links[file_name]
+			del links[file_name]
 		elif "Zip" in file_type or "zip" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".zip")
-			links[file_name] = dpath+file_name+".zip"
+			links[file_name+'.zip'] = links[file_name]
+			del links[file_name]
 		elif "PE32" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".exe")
-			links[file_name] = dpath+file_name+".exe"
+			links[file_name+'.exe'] = links[file_name]
+			del links[file_name]
 		elif "ASCII" in file_type:
 			os.rename(dpath+file_name, dpath+file_name+".txt")
-			links[file_name] = dpath+file_name+".txt"
+			links[file_name+'.txt'] = links[file_name]
+			del links[file_name]
 	
 		return links
 
@@ -196,7 +240,7 @@ def search():
 
 	all_atags = soup.find_all('a')
 	delete_queue = []
-	links = {}
+	links = {'url': url}
 	for atag in all_atags:
 		link, file_name = split_link(2, atag, base_url)
 #		print link
@@ -214,7 +258,7 @@ def search():
 	files = os.listdir(dpath)
 	count = len(files)
 	
-	return render_template('index.html', download=True, count=count, num=dnum, original = url)
+	return render_template('index.html', download=True, count=count, num=dnum)
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -228,19 +272,18 @@ def submit():
 	if len(dlist) != 0:
 		msg = ". /home/choiys/cuckoo/bin/activate;"
 		for f in dlist:
-			msg += "cuckoo --cwd ~/cuckoo/.cuckoo submit --timeout 60 "
+			msg += "cuckoo --cwd ~/cuckoo/.cuckoo submit --timeout 20 "
 			msg += dpath+str(f)+"&&"
 		msg = msg[:-2]
 	
 		os.system(msg)
-		if len(dlist) != 1:
-			time.sleep(2)
-		else:
-			time.sleep(float(61*len(dlist)))
+		time.sleep(float(30*len(dlist)))
 	
 	num_path = "/home/choiys/am2pm/app/current"
+	av_path = "/home/choiys/am2pm/app/av"
 	all_count = len(os.listdir("/home/choiys/cuckoo/.cuckoo/storage/analyses"))-1
 
+	vt_result = {}
 	vt_scan_url = "https://www.virustotal.com/vtapi/v2/file/scan"
 	vt_report_url = "https://www.virustotal.com/vtapi/v2/file/report"
 	params = {'apikey': 'dcf9d3c8969c08565f0c66e80aa78cf6694d7eb249b6711fdd75ecb983ec2307'}
@@ -249,11 +292,44 @@ def submit():
 		response = requests.post(vt_scan_url, files=files, params=params)
 		params = {'apikey': 'dcf9d3c8969c08565f0c66e80aa78cf6694d7eb249b6711fdd75ecb983ec2307', 'resource': response.json()['resource']}
 		response = requests.get(vt_report_url, params=params)
-		print response.json()
+		vt_count = 0
+		try:
+			vt_json = response.json()
+		except:
+			print response.text
+			vt_json['response_code'] = -2
+		if vt_json['response_code'] == -2:
+			for i in range(3):
+				if vt_json['response_code'] == -2:
+					time.sleep(5)
+					response = requests.get(vt_report_url, params=params)
+					try:
+						vt_json = response.json()
+					except:
+						vt_json['response_code'] = -2
+		vt_av_json = {}
+		vt_total = vt_json['total']
+		vt_av_list = vt_json['scans']
+		for av in vt_av_list:
+			vt_av_details = vt_av_list[av]
+			detected = vt_av_details['detected']
+			if detected == True:
+				vt_count += 1
+				vt_av_name = vt_av_details['result']
+				vt_av_json[av] = vt_av_name
+		
+		vt_av_json['total'] = vt_total
+		vt_av_json['count'] = vt_count
+		vt_av_json['url'] = links[f]
+		vt_result[f] = vt_av_json
+		vt_result['url'] = links['url']
 
 	with open(num_path, "w") as f:
 		f.write(str(all_count)+'\n')
 		f.write(str(len(dlist))+'\n')
 		f.write(json.dumps(links))
+
+	with open(av_path, "w") as f:
+		f.write(json.dumps(vt_result))
 
 	return render_template('index.html', submit=True)

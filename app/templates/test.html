@@ -1,32 +1,17 @@
-{% include 'header.html' %}
+{% include 'header_test.html' %}
 
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<div class="home_content text-center">
-							<div class="home_title">Find malwares on webpage</div>
-							<div class="home_text">Put, Search, View.<br>That's all.</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1">
-						<div class="domain_search_form_container">
-							<form action="#" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">
-								<div class="d-flex flex-row align-items-center justify-content-start">
-									<input type="text" class="domain_search_input" placeholder="targetURL" required="required">
-									<div class="domain_search_dropdown d-flex flex-row align-items-center justify-content-start">
-										<i class="fa fa-chevron-down" aria-hidden="true"></i>
-										<div class="domain_search_selected">single</div>
-										<ul>
-											<li>single</li>
-											<li>related</li>
-										</ul>
-									</div>
-								</div>
-								<button class="domain_search_button d-flex flex-row align-items-center justify-content-center"><img src="{{ url_for('static', filename='images/search.png') }}" alt="">Search</button>
-							</form>
+						<div class="home_content">
+							<div class="home_title">Report</div>
+							<div class="breadcrumbs">
+								<ul class="d-flex flex-row align-items-center justify-content-start">
+									<li><a href="/">Dashboard</a></li>
+									<li>Report</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -40,14 +25,79 @@
 		<div class="container">
 			<div class="row">
 				<div class="col magic_fade_in">
+					<br>
 					<div class="section_title text-center"><h2>Reported List</h2></div>
+					<br>
 				</div>
 			</div>
 			<div style="text-align: center;">
 {% for i in range(end_num, end_num-count_num, -1) %}
-	<a href="/test/{{ i }}"><button type="button" class="btn btn-outline-info">{{ end_num - i + 1 }}</button></a>
+	<a href="/test/{{ i }}"><button type="button" class="btn btn-outline-info">{{ end_num - i + 1 }}</button></a>&nbsp;
 {% endfor %}
-			<br><br>
+<br><br>
+  <table class="table table-bordered">
+	<thead class="thead-dark">
+	  <tr>
+		<th width="25%" class="align-middle">Type</th>
+		<th class="align-middle">Description</th>
+	  </tr>
+	</thead>
+    <tbody class="text-body">
+{% for key in data.keys() %}
+	{% if data[key]['num'] == passed_num %}
+      <tr class="table-default">
+        <td class="align-middle"><strong>Risk</strong></td>
+{% if data[key]['risk'] == 3 %}
+        <td class="align-middle text-danger"><strong>Critical</strong></td>
+{% elif data[key]['risk'] == 2 %}
+        <td class="align-middle text-primary"><strong>Medium</strong></td>
+{% elif data[key]['risk'] == 1 %}
+        <td class="align-middle text-success"><strong>Low</strong></td>
+{% else %}
+        <td class="align-middle text-secondary"><strong>Normal</strong></td>
+{% endif %}
+      </tr>
+      <tr class="table-success">
+        <td class="align-middle"><strong>Target URL</strong></td>
+        <td class="align-middle"><strong>{{ data['url'] }}</strong></td>
+      </tr>
+      <tr class="table-success">
+        <td class="align-middle"><strong>File Link</strong></td>
+        <td class="align-middle"><strong>{{ data[key]['url'] }}</strong></td>
+      </tr>
+      <tr class="table-warning">
+        <td class="align-middle"><strong>Cuckoo Score</strong></td>
+        <td class="align-middle"><strong>{{ data[key]['score'] }}</strong><div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: {{ (data[key]['score']/13)*100 }}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10"></div>
+</div></td>
+      </tr>
+      <tr class="table-warning">
+        <td class="align-middle"><strong>VirusTotal Detection</strong></td>
+        <td class="align-middle"><strong>{{ data[key]['count'] }} / {{ data[key]['total'] }}</strong><div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: {{ (data[key]['count']/data[key]['total'])*100 }}%" aria-valuenow="4" aria-valuemin="0" aria-valuemax="10"></div>
+</div></td>
+	</tbody>
+{% if data[key]['count'] != 0 %}
+	<thead class="thead-dark">
+	  <tr>
+		<th class="align-middle">AntiVirus</th>
+		<th class="align-middle">Detection Rule</th>
+	  </tr>
+	</thead>
+	<tbody class="text-body">
+	{% for k in data[key].keys() %}
+	  {% if (k != 'count') and (k != 'total') and (k != 'url') and (k != 'score') and (k != 'num') %}
+      <tr class="table-info">
+        <td class="align-middle"><strong>{{ k }}</strong></td>		
+        <td class="align-middle"><strong>{{ data[key][k] }}</strong></td>
+      </tr>
+	  {% endif %}
+	{% endfor %}
+{% endif %}
+	{% endif %}
+{% endfor %}
+    </tbody>
+  </table>
 			</div>
 {% if passed_num %}
 			<iframe src="/report/{{ passed_num }}" frameborder=0 width="100%" height="1024px" align="center" scrolling="auto"></iframe>

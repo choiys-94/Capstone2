@@ -1,0 +1,44 @@
+
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>알림메세지</title>
+	
+	<link rel="stylesheet" type="text/css" href="/Web-home/wizUI/css/k2wiz_message.css">
+	<script type="text/javascript" src="/Web-home/wizUI/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="/Web-home/wizUI/js/common.js"></script>
+	
+	<script type="text/javascript">
+	function fncGoAfterErrorPage(){
+	    history.back(-2);
+	}
+	</script>
+</head>
+
+<body>
+	<!-- 404 error -->
+	<div class="message_area">
+		<div class="message_box">
+			<h1>Message</h1>
+			<div class="message_div">
+				<div>
+					<h2><span>조선대학교</span>에서 알립니다!</h2>
+					<p>
+						원하시는 페이지를 찾을 수가 없습니다.
+					</p>
+					<p>
+						<a href="#" onclick="fncGoAfterErrorPage();" class="mButton">이전화면으로</a>
+					</p>
+				</div>
+			</div><!-- END class="message_div" -->
+		</div><!-- END class="message_box" -->
+	</div><!-- END class="message_area" -->
+</body>
+</html>
